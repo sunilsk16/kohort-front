@@ -1,0 +1,57 @@
+<div class="courses-area ptb-100 " style="background: #F0F3FF;">
+    <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+              <div class="banner-wrapper-content">
+                  <h1>Upcoming meetups</h1>
+                  <h6>Sign up for upcoming events below</h6>
+
+
+              </div>
+          </div>
+
+        <div class="row" >
+            <div class="col-lg-4 col-md-12"  *ngFor="let myEvent of myEvents">
+                <div class="single-courses-item">
+                    <div class="row align-items-center">
+
+                      <ul class="courses-content-footer d-flex justify-content-between align-items-center"  style="background:#65EDBF">
+                        <i class='flaticon-calendar'></i>
+                        <p> May 7, 2021</p>
+                        <i class='bxs-time-five'></i>
+                          <p> 07:00 - 09:00 PM </p>
+                          
+                        <i class='flaticon-heart' float:left ></i>
+                      </ul>
+
+                        <div class="col-lg-12 col-md-16">
+
+                            <div class="courses-content">
+
+                                <!-- <a routerLink="/" class="fav"><i class="flaticon-calendar"></i></a>
+                                <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
+                                <h5>{{myEvent.eventTitle}}</h5>
+                                <h4>Join meetups, find support, share knowledge, grow together and explore your passion.</h4>
+                                 <a href="" style="float: right;">learn More </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+<!--
+
+            <div class="col-lg-12 col-md-12">
+                <div class="courses-info">
+                    <a routerLink="/courses-1" class="default-btn"><i class="flaticon-user"></i>View All Courses<span></span></a>
+                    <p>Get into details now?​ <a routerLink="/courses-1">PM Master’s Program</a></p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div>
+</div>
