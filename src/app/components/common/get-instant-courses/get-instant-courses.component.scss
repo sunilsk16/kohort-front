@@ -103,13 +103,13 @@
         height: 50px;
         font-family: Gosha Sans;
         font-style: normal;
-        font-weight: bold;
+        font-weight: normal;
         font-size: 40px;
         line-height: 125%;
         color: #FFFFFF;
         font: {
             size: 36px;
-            weight: 800;
+            // weight: 800;
         };
     }
     p {
@@ -131,7 +131,7 @@
         background: #FFFFFF;
         color: #4264FB;
         // padding:11px;
-        
+
     }
 }
 .get-instant-courses-image-style-two {

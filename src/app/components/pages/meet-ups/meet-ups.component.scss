@@ -89,7 +89,7 @@
     }
 }
 .get-instant-courses-content-style-two {
-  margin-left: 100px;
+  // margin-left: 100px;
     .sub-title {
         display: block;
         color: var(--mainColor);
@@ -113,10 +113,13 @@
             weight: 800;
         };
     }
-
     ul {
-      margin-top: 60px;
+        padding-left: 1rem;
+        margin-top: 60px;
     }
+    // ul {
+    //
+    // }
 
     // ul {
     //     list-style: none;

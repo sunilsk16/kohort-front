@@ -14,7 +14,7 @@ export class OnlineTrainingCoursesComponent implements OnInit {
      },
       {
         id: 2,
-        eventTitle: ' Conference on Teacher Education',
+        eventTitle: ' Conference on  Education',
         description: '',
       },
       {
@@ -24,7 +24,7 @@ export class OnlineTrainingCoursesComponent implements OnInit {
       },
       {
         id: 4,
-        eventTitle: ' Conference on Literacy Teaching',
+        eventTitle: ' Conference on  Teaching',
         description: '',
       },
       {

@@ -102,7 +102,7 @@ const routes: Routes = [
     {path: 'products-list-1', component: ProductsListStyleOneComponent},
     {path: 'products-list-2', component: ProductsListStyleTwoComponent},
     {path: 'cart', component: CartComponent},
-    {path: 'checkout', component: CheckoutComponent},
+    {path: 'billing', component: CheckoutComponent},
     {path: 'single-products', component: ProductsDetailsComponent},
     {path: 'gallery', component: GalleryComponent},
     {path: 'blog-1', component: BlogStyleOneComponent},

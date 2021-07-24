@@ -1,9 +1,7 @@
 @import "../../../common/courses/courses.component.scss";
+@import "../../../common/experience/experience.component.scss";
+@import "../../../common/instructor/instructor.component.scss";
 
-
-.row {
-  margin-left: 6%;
-}
 
 .section-title {
   margin-top: -112px;
@@ -24,6 +22,41 @@
   color: #151B24;
 }
 
+.courses-content {
+    height: 88.3626708984px;
+    width: 216.706909px;
+    left: 0.4260253906px;
+    top: 374.2269287109px;
+    border-radius: 0px;
+    background: black;
+}
+.courses-content  p
+{
+  font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 150%;
+/* or 19px */
+  padding: 5px;
+
+color: #FFFFFF;
+
+}
+
+.experience-content h3{
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 125%;
+margin-top: -50px;
+margin-bottom: 50px;
+/* identical to box height, or 50px */
+
+
+color: #151B24;
+}
 
 .courses-image {
   overflow: hidden;

@@ -92,7 +92,7 @@
     }
 }
 .get-instant-courses-content-style-two {
-  margin-left: 100px;
+
     .sub-title {
         display: block;
         color: var(--mainColor);
@@ -136,16 +136,14 @@
     .default-btn {
         margin-top: 5px;
         background: #4264FB;
-        color: #FFFFFF;
-        height: 50px;
-        width: 340px;
+
     }
 }
 .get-instant-courses-image-style-two {
     // text-align: end;
     background: #4264FB;
     height: 395.9015197753906px;
-    width: 339px;
+    width: 275px;
 
     p {
       // width: 104px;
@@ -169,7 +167,29 @@
 
 }
 
+  .default-btn
+{
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 150%;
 
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.slogan p{
+  font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
 .events-share {
     // text-align: center;
     // margin-top: 25px;
@@ -180,6 +200,7 @@
         display: inline-block;
         // position: relative;
         cursor: pointer;
+
 
         span {
             display: inline-block;
@@ -266,7 +287,7 @@
         }
     }
     .get-instant-courses-content-style-two {
-        text-align: center;
+        // text-align: center;
 
         .sub-title {
             font-size: 13px;
@@ -359,7 +380,7 @@
 .slogan-area {
     position: relative;
     z-index: 1;
-    margin-top: 250px;
+    // margin-top: 50px;
     .shape2 {
         left: 9%;
         bottom: -20%;
@@ -373,18 +394,19 @@
 .slogan-image {
     padding-right: 15px;
     border-radius: 5px;
-    margin-left: 100px;
+ text-align: center;
     // text-align: center;
     // margin-top: -90px;
     margin: {
-        top: -200px;
-        bottom: -200px;
+        // top: -200px;
+        // bottom: -200px;
     };
 
     h3{
       font-family: Gosha Sans;
       font-style: normal;
       font-weight: bold;
+      margin-bottom: 35px;
       // font-size: 40px;
       line-height: 125%;
       color: #333333;
@@ -396,6 +418,10 @@
         height: 239.33px;
     }
 }
+
+ul {
+    padding-left: 1rem;
+}
 .slogan-content {
     position: relative;
     z-index: 1;
@@ -403,7 +429,8 @@
     margin: -160px 0 0 -195px;
 
     p {
-        margin-bottom: 0;
+      // margin-left: 100px;
+    margin-top: 57px;
         font-family: Silka;
         font-style: normal;
         font-weight: normal;

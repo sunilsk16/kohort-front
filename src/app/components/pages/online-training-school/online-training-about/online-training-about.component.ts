@@ -19,7 +19,7 @@ export class OnlineTrainingAboutComponent implements OnInit {
       },
       {
         id: 3,
-        eventTitle: ' Conference on Literacy Teaching',
+        eventTitle: ' Conference on  Teaching',
         description: '',
       },
 

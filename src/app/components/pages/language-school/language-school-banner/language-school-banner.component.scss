@@ -2,7 +2,7 @@
     z-index: 2;
     position: relative;
     padding-bottom: 120px;
-    background-color: #eae1d6;
+  background: #F0F3FF;
 
     .container-fluid {
         max-width: 1395px;
@@ -74,7 +74,7 @@
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
+
     .main-banner-wrapper {
         padding: {
             top: 100px;
@@ -111,7 +111,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
     .main-banner-wrapper {
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
 
         .container-fluid {
             max-width: 960px;
@@ -133,7 +133,7 @@
 
 }
 @media only screen and (min-width: 1550px) {
-    
+
     .main-banner-wrapper {
         .container-fluid {
             max-width: 1480px;
@@ -146,5 +146,62 @@
             };
         }
     }
-    
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+.login-form[_ngcontent-xav-c146]
+{
+    padding: 30px 40px;
+}
+}
+.login-form[_ngcontent-xav-c146] {
+    padding: 40px 0px;
+    border-radius: 3px;
+  background: #4264FB;
+    box-shadow: 0 0 10px #3333331a;
+    margin-right: 30px;
+    text-align: initial;
+    font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+
+color: #FFFFFF;
+}
+
+.p {
+    /* color: var(--optionalColor); */
+    /* margin-bottom: 15px; */
+    /* line-height: 1.6; */
+    /* font-size: var(--fontSize); */
+}
+
+.login-form h6{
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 150%;
+/* identical to box height, or 27px */
+
+
+color: #FFFFFF;
+}
+
+.login-form span
+{
+  margin-left: 30px;
+}
+.login-form li
+{
+  margin-top: 30px;
+}
+.login-form ul  {
+    list-style-type: none;
 }

@@ -7,6 +7,7 @@ Default CSS
     --fontFamily: 'Nunito', sans-serif;
     --fontFamily2: 'Playfair Display', serif;
     --fontFamily3: 'Gosha Sans';
+    --fontFamily4: 'Raleway';
     --mainColor: #fe4a55;
     --secondaryColor: #6ba292;
     --optionalColor: #606060;
@@ -20,10 +21,14 @@ Default CSS
   font-family: "Gosha Sans";
   src: url("~/assets/fonts/Gosha Sans/GoshaSans-Regular.ttf");
 }
+@font-face {
+  font-family: "Raleway";
+  src: url("~/assets/fonts/Raleway-Medium.ttf");
+}
 
 @font-face {
   font-family: "Silka";
-  src: url("~/assets/fonts/Silka-Roman-Webfont/silka-light-webfont.ttf");
+  src: url("~/assets/fonts/Silka-Roman-Webfont/silka-medium-webfont.ttf");
 }
 
 body {

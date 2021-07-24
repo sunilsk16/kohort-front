@@ -1,6 +1,206 @@
+.experience-content span{
+font-family: Gosha Sans;
+font-size: 74px;
+font-style: normal;
+font-weight: 700;
+line-height: 74px;
+letter-spacing: 0px;
+text-align: left;
+}
+.experience-content h2{
+color: #151B24;
+  font-family: Peace Sans;
+font-size: 74px;
+font-style: normal;
+font-weight: 700;
+line-height: 74px;
+letter-spacing: 0px;
+text-align: left;
+}
+.experience-content h4{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 112%;
+  /* or 40px */
+
+  display: flex;
+  align-items: center;
+
+  color: #4264FB;
+
+}
 .about-area {
     position: relative;
     z-index: 1;
+}
+h3{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 112%;
+  /* or 40px */
+
+  display: flex;
+  align-items: center;
+margin-bottom: 25px;
+  color: #4264FB;
+
+}
+
+.about h5{
+  font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 50px;
+}
+.about p
+{
+margin-top: 20px;
+font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 100%;
+/* or 22px */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+.about span{
+   color:#4264FB;
+   margin-left: 10px;
+}
+
+.about-content li{
+  font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 20.8931px;
+line-height: 27px;
+
+color: #000000;
+}
+
+.about-content1 p{
+font-family: Silka;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.about-content1 h6{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.about-content1 h3
+{
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 125%;
+  /* or 50px */
+margin-bottom: 50px;
+color: #020000;
+}
+.experience-content1 h4{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 112%;
+  /* or 40px */
+margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  color: #4264FB;
+}
+
+.experience-content1 p
+{
+  font-family: Silka;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+button[_ngcontent-xtx-c146] {
+    margin-top: 22px;
+    border: none;
+    /* display: block; */
+    text-align: center;
+    overflow: hidden;
+    background: #F854F8;
+    // transition: var(--transition);
+    border-radius: 5px;
+    padding: 14.5px 80px;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    font-family: Gosha Sans;
+font-style: normal;
+font-size: 15px;
+line-height: 150%;
+/* or 30px */
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+// .about-image {
+//     overflow: hidden;
+//     text-align: center;
+//     margin-bottom: 250px;
+// }
+.single-courses-box{
+text-align: center;
+}
+
+.about-content2 h4{
+  font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 34.3396px;
+line-height: 40px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.about-content2 li
+{
+  font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 20.8931px;
+line-height: 27px;
+
+color: #000000;
+
 }
 .about-image {
     overflow: hidden;
@@ -50,6 +250,21 @@
             size: 36px;
             weight: 800;
         };
+    }
+    h4{
+      font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 112%;
+margin-bottom: 25px;
+/* or 54px */
+
+display: flex;
+align-items: center;
+
+color: #1ADB9A;
+
     }
     .features-list {
         padding-left: 0;
@@ -113,6 +328,7 @@
 @media only screen and (max-width: 767px) {
 
     .about-image {
+          margin-bottom: 250px;
         .row {
             .col-lg-6 {
                 &:nth-child(3) {
@@ -166,7 +382,7 @@
 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    
+
     .about-content {
         .about-list {
             li {
@@ -180,6 +396,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     .about-image {
+      margin-bottom: 250px;
         .image {
             img {
                 width: 100%;
