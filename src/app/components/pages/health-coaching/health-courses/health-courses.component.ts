@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MentorService } from '../../../../_services/mentors/mentor.service';
 
 @Component({
     selector: 'app-health-courses',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./health-courses.component.scss']
 })
 export class HealthCoursesComponent implements OnInit {
+    mentorList: any;
   public myEvents:Array<any> = [
       {
         id: 1,
@@ -39,9 +41,14 @@ export class HealthCoursesComponent implements OnInit {
     },
 
   ];
-    constructor() { }
+    constructor( private mentorService: MentorService) { }
 
     ngOnInit(): void {
+      this.mentorService.getAllMentors()
+  .then((res:any) =>{
+   console.log('mentorList ', res);
+     this.mentorList = res;
+    })
     }
 
     bgImage = [

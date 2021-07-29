@@ -177,6 +177,15 @@ import { LearningViewCoursesComponent } from './components/pages/learning-manage
 import { LearningPremiumAccessComponent } from './components/pages/learning-management/learning-premium-access/learning-premium-access.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { MeetUpsComponent } from './components/pages/meet-ups/meet-ups.component';
+// import { AngularFireModule } from 'angularfire2';
+// import { AngularFirestoreModule } from 'angularfire2/firestore';
+// import { AngularFireAuthModule } from 'angularfire2/auth';
+// import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -358,7 +367,14 @@ import { MeetUpsComponent } from './components/pages/meet-ups/meet-ups.component
     NgxScrollTopModule,
     LightboxModule,
     AccordionModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+  AngularFirestoreModule, // firestore
+  AngularFireAuthModule, // auth
+  AngularFireStorageModule // storage
+   //  AngularFireModule.initializeApp(environment.firebase),
+   // AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+   // AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
   providers: [],
   bootstrap: [AppComponent]
