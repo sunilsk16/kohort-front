@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MentorService } from '../../../../_services/mentors/mentor.service';
 
 @Component({
   selector: 'app-learning-about',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./learning-about.component.scss']
 })
 export class LearningAboutComponent implements OnInit {
-
-  constructor() { }
+  testiMonialList: any;
+  constructor( private mentorService: MentorService) { }
 
   ngOnInit(): void {
+    this.mentorService.etAllTestiMonial()
+  .then((res:any) =>{
+  console.log('TestiMonial ', res);
+   this.testiMonialList = res;
+  })
   }
 
-}
+  bgImage = [
+      {
+          img: 'assets/img/courses-bg.jpg'
+      }
+  ]
+
+  }
