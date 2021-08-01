@@ -81,5 +81,49 @@ getMentorsById(id: any) {
         })
     })
   }
+  getAllTestiMonial() {
+  return new Promise((resolve) => {
+    this.firestore.collection('testimonial').snapshotChanges()
+      .subscribe(testimonial => {
+        let contactList = testimonial.map(item => {
+          return {
+            ...item.payload.doc.data() as {},
+            id: item.payload.doc.id
+          };
+        });
+        resolve(contactList);
+      })
+  })
+}
+getTestiMonialById(id: any) {
+  return new Promise((resolve) => {
+    var docRef = this.firestore.collection("testimonial").doc(id);
+
+    docRef.ref.get().then(function(doc) {
+      if (doc.exists) {
+        let res = { ...doc.data()  as {} , id: doc.id }
+        resolve(res)
+      }
+    }).catch(function(error) {
+      resolve(null);
+    });
+  })
+}
+
+getTestiMonialBId(testimonialId: any) {
+  return new Promise((resolve) => {
+    this.firestore.collection('testimonial',
+      ref => ref.where('testimonialId', '==', parseInt(testimonialId))).snapshotChanges()
+      .subscribe(testimonial => {
+        let contactList = testimonial.map(item => {
+          return {
+            ...item.payload.doc.data() as {},
+            id: item.payload.doc.id
+          };
+        });
+        resolve(contactList);
+      })
+  })
+}
 
 }
