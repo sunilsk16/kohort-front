@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from 'angularfire2/firestore';
 // import { HttpClient } from '@angular/common/http';
-import { AngularFireStorage } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
 import firebase from 'firebase/app';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class MeetupService {
 
   ref = firebase.firestore().collection('users');
@@ -16,7 +16,6 @@ export class MeetupService {
     private firestore: AngularFirestore,
     public afs: AngularFirestore,
     // private httpService: HttpClient,
-    private storage: AngularFireStorage
   )
   {
     this.mentorsCollection = this.afs.collection<any>('meetups', ref => ref.orderBy('created_on'));
@@ -47,7 +46,7 @@ export class MeetupService {
     })
   }
 
-getMeetupsById(id: any) {
+getMeetupById(id: any) {
     return new Promise((resolve) => {
       var docRef = this.firestore.collection("meetups").doc(id);
 

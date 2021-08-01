@@ -56,7 +56,7 @@ import { BlogDetailsStyleThreeComponent } from './components/pages/blog-details-
 import { GymCoachingComponent } from './components/pages/gym-coaching/gym-coaching.component';
 import { LearningManagementComponent } from './components/pages/learning-management/learning-management.component';
 import { HomeComponent } from './components/pages/home/home.component';
-
+import { MeetupDetailComponent } from './components/pages/meetup-detail/meetup-detail.component';
 
 const routes: Routes = [
     // {path: '', component: ElearningSchoolComponent},
@@ -102,7 +102,8 @@ const routes: Routes = [
     {path: 'products-list-1', component: ProductsListStyleOneComponent},
     {path: 'products-list-2', component: ProductsListStyleTwoComponent},
     {path: 'cart', component: CartComponent},
-    {path: 'billing', component: CheckoutComponent},
+    {path: 'checkout', component: CheckoutComponent},
+    {path: 'checkout/:id', component: CheckoutComponent},
     {path: 'single-products', component: ProductsDetailsComponent},
     {path: 'gallery', component: GalleryComponent},
     {path: 'blog-1', component: BlogStyleOneComponent},
@@ -114,7 +115,7 @@ const routes: Routes = [
     {path: 'single-blog-2', component: BlogDetailsStyleTwoComponent},
     {path: 'single-blog-3', component: BlogDetailsStyleThreeComponent},
     {path: 'contact', component: ContactUsComponent},
-    {path: 'home', component: HomeComponent},
+    {path: 'meetup/:id', component: MeetupDetailComponent},
     // Here add new pages component
 
     {path: '**', component: ErrorComponent},

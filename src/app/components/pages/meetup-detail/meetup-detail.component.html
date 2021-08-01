@@ -1,0 +1,78 @@
+<div class="courses-area" style="background: #F0F3FF;" *ngIf="meetupData">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="get-instant-courses-content-style-two">
+                    <h2>{{ meetupData.name }}</h2>
+                    <a routerLink="/checkout/{{meetupData.id}}" class="default-btn">₹ {{ meetupData.price }} - Buy Tickets <span></span></a>
+                    <div class="events-share">
+                        <div class="share-info">
+                            <span>Share the event with</span>
+                            <ul class="social-link">
+                                <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="get-instant-courses-image-style-two">
+                      <p><i class="bx bx-calendar"></i>{{ getDate(meetupData.dates) }}</p>
+                      <p><i class="bx bx-time"></i>{{ getReadableTime(meetupData.startTime) }} - {{ getReadableTime(meetupData.endTime, true) }}</p>
+                      <p><i class="bx bx-map"></i>Online, Zoom Call</p>
+                      <p><i class="bx bx-map"></i>Link will be shared, on your email</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  class="courses-area ptb-100 ">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12">
+                <div class="slogan-image" >
+                  <h3>Speaker name</h3>
+                    <img src="../assets/img/walter-white.jpg" alt="image">
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="slogan">
+                    <p>Join meetups, find support, share knowledge, grow <br/>together and explore your passion. Join meetups, find <br/>support, share knowledge, grow together and explore <br/>your passion.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="courses-area ptb-100" style="background: #F0F3FF;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="get-instant-courses-content-style-two">
+                    <!-- <span class="sub-title">GET INSTANT ACCESS TO THE FREE</span> -->
+                    <h2>The 5 biggest things you’ll <br/> learn in this Meetup</h2>
+                    <ul>
+                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
+                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
+                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
+                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <!-- <div class="get-instant-courses-image-style-two">
+                      <img src="../assets/img/illustration_2 (2).png" alt="">
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <app-meet-ups></app-meet-ups> -->
