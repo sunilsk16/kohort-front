@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from 'angularfire2/firestore';
 // import { HttpClient } from '@angular/common/http';
-import { AngularFireStorage } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
 import firebase from 'firebase/app';
 
@@ -15,7 +14,6 @@ export class MentorService {
     private firestore: AngularFirestore,
     public afs: AngularFirestore,
     // private httpService: HttpClient,
-    private storage: AngularFireStorage
   )
   {
     this.mentorsCollection = this.afs.collection<any>('mentors', ref => ref.orderBy('created_on'));
@@ -76,7 +74,7 @@ getMentorsById(id: any) {
         })
     })
   }
-  etAllTestiMonial() {
+  getAllCoupons() {
   return new Promise((resolve) => {
     this.firestore.collection('testimonial').snapshotChanges()
       .subscribe(testimonial => {
@@ -90,7 +88,7 @@ getMentorsById(id: any) {
       })
   })
 }
-getTestiMonialById(id: any) {
+getcouponsById(id: any) {
   return new Promise((resolve) => {
     var docRef = this.firestore.collection("testimonial").doc(id);
 
@@ -105,7 +103,7 @@ getTestiMonialById(id: any) {
   })
 }
 
-getTestiMonialBId(testimonialId: any) {
+getCouponsBId(testimonialId: any) {
   return new Promise((resolve) => {
     this.firestore.collection('testimonial',
       ref => ref.where('testimonialId', '==', parseInt(testimonialId))).snapshotChanges()

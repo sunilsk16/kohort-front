@@ -1,27 +1,27 @@
 <div class="advisor-area pt-100 pb-70">
     <div class="container">
         <div class="row">
-          <div class="experience-content">
-                <h3>Learn from the World’s best <br/><span style="color:#4264FB"> <span></span></span> </h3>
-                  </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="experience-content">
+                <h3>Learn from the World’s best <br /><span style="color:#4264FB"> <span></span></span> </h3>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
                 <div class="single-advisor-item">
                     <div class="advisor-image">
                         <img src="assets/img/advisor/img4.jpg" alt="image">
                         <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                            <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                            <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                            <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
                         </ul>
+                        <!-- <h3 class="social-link"><a routerLink="/profile">James Andy</a></h3> -->
                     </div>
                     <div class="advisor-content">
-                        <!-- <h3><a routerLink="/profile">James Andy</a></h3> -->
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
+                        <span>{{ mentor.achievement }}</span>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
+            <!-- <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-advisor-item">
                     <div class="advisor-image">
                         <img src="assets/img/advisor/img5.jpg" alt="image">
@@ -33,12 +33,11 @@
                         </ul>
                     </div>
                     <div class="advisor-content">
-                        <!-- <h3><a routerLink="/profile">Jassica Hische</a></h3> -->
                         <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
+            </div> -->
+            <!-- <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-advisor-item">
                     <div class="advisor-image">
                         <img src="assets/img/advisor/img6.jpg" alt="image">
@@ -53,8 +52,8 @@
                         <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
                         </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
+            </div> -->
+            <!-- <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="single-advisor-item">
                     <div class="advisor-image">
                         <img src="assets/img/advisor/img6.jpg" alt="image">
@@ -69,10 +68,7 @@
                         <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
                     </div>
                 </div>
-            </div>
-
-
-
+            </div> -->
         </div>
     </div>
 </div>
