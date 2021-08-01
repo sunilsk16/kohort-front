@@ -1,175 +1,162 @@
 @import "../../../common/courses/courses.component.scss";
-h1
-{
-  width: 364px;
-height: 50px;
-left: 193.26px;
-top: 539.96px;
 
-/* Desktop/Headline2 */
-
-font-family: Gosha Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 125%;
-/* identical to box height, or 50px */
-
-
-/* Primary */
-
-color: #4264FB;
-
+h1 {
+    width: 364px;
+    height: 50px;
+    left: 193.26px;
+    top: 539.96px;
+    /* Desktop/Headline2 */
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 125%;
+    /* identical to box height, or 50px */
+    /* Primary */
+    color: #4264FB;
 }
+
 .courses-content h3 a {
+    left: 4.36%;
+    right: 6.71%;
+    top: 47.42%;
+    bottom: 25.85%;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    /* or 19px */
+    color: #333333;
+}
 
-left: 4.36%;
-right: 6.71%;
-top: 47.42%;
-bottom: 25.85%;
+.card-title-hdr {
+    padding: 15px 0 10px 15px;
+    border-bottom: 1px solid #d3d2d2;
+    background: #65EDBF;
+    // color: white;
+    // font-weight: 900;
+    margin-bottom: 0 !important;
+}
 
-font-family: Silka;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 150%;
-/* or 19px */
+.card {
+    border: 2px solid #65EDBF;
+    box-sizing: border-box;
+}
 
-
-color: #333333;
-
+.card-timing {
+    margin-right: 20px;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .h5 {
-  left: 4.36%;
-  right: 8.82%;
-  top: 26.14%;
-  bottom: 52.77%;
-
-  font-family: Gosha Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 124%;
-  /* or 33px */
-
-
-  /* Primary */
-
-  color: #4264FB;
-
+    left: 4.36%;
+    right: 8.82%;
+    top: 26.14%;
+    bottom: 52.77%;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 124%;
+    /* or 33px */
+    /* Primary */
+    color: #4264FB;
 }
-p{
-  left: 46.74%;
-right: 22.18%;
-top: 8.11%;
-bottom: 83.65%;
 
-font-family: Gosha Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 130%;
-/* identical to box height, or 16px */
-
-margin-top: 12px;
-color: #0B6144;
-
+p {
+    left: 46.74%;
+    right: 22.18%;
+    top: 8.11%;
+    bottom: 83.65%;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 130%;
+    /* identical to box height, or 16px */
+    margin-top: 12px;
+    color: #0B6144;
 }
+
 h4 {
-  left: 4.36%;
-right: 6.71%;
-top: 47.42%;
-bottom: 25.85%;
-
-font-family: Silka;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 150%;
-/* or 19px */
-
-
-color: #333333;
-
+    left: 4.36%;
+    right: 6.71%;
+    top: 47.42%;
+    bottom: 25.85%;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    /* or 19px */
+    color: #333333;
 }
 
-h6{
-  width: 552.77px;
-height: 60px;
-left: 189.25px;
-top: 1302.05px;
-
-/* Desktop/body-text */
-
-font-family: Silka;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 150%;
-/* or 30px */
-
-
-color: #222222;
-}
-a{
-  left: 71.09%;
-right: 4.86%;
-top: 80.85%;
-bottom: 8.84%;
-
-font-family: Gosha Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 124%;
-/* identical to box height, or 20px */
-
-text-decoration-line: underline;
-
-/* Primary */
-
-color: #4264FB;
-margin-bottom: 10px;
-
+h6 {
+    width: 552.77px;
+    height: 60px;
+    left: 189.25px;
+    top: 1302.05px;
+    /* Desktop/body-text */
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    color: #222222;
 }
 
-.single-courses-item{
+a {
+    left: 71.09%;
+    right: 4.86%;
+    top: 80.85%;
+    bottom: 8.84%;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 124%;
+    /* identical to box height, or 20px */
+    text-decoration-line: underline;
+    /* Primary */
+    color: #4264FB;
+    margin-bottom: 10px;
+}
 
-left: 0.18%;
-right: 0.11%;
-top: 0.1%;
-bottom: 0.18%;
+.single-courses-item {
+    left: 0.18%;
+    right: 0.11%;
+    top: 0.1%;
+    bottom: 0.18%;
+    left: 0.18%;
+    right: 0.11%;
+    top: 0.1%;
+    bottom: 0.18%;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    box-sizing: border-box;
+}
 
-left: 0.18%;
-right: 0.11%;
-top: 0.1%;
-bottom: 0.18%;
-
-background: #FFFFFF;
-border: 2px solid #AAAAAA;
-box-sizing: border-box;
-}.single-courses-item{
-
-left: 0.18%;
-right: 0.11%;
-top: 0.1%;
-bottom: 0.18%;
-
-left: 0.18%;
-right: 0.11%;
-top: 0.1%;
-bottom: 0.18%;
-
-background: #FFFFFF;
-border: 2px solid #65EDBF;
-box-sizing: border-box;
-
+.single-courses-item {
+    left: 0.18%;
+    right: 0.11%;
+    top: 0.1%;
+    bottom: 0.18%;
+    left: 0.18%;
+    right: 0.11%;
+    top: 0.1%;
+    bottom: 0.18%;
+    background: #FFFFFF;
+    border: 2px solid #65EDBF;
+    box-sizing: border-box;
 }
 
 .single-courses-item:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-      // transform: rotate(1deg) scale(1.1);
+    // transform: rotate(1deg) scale(1.1);
 }
 //
 // .single-courses-item:hover {
@@ -183,46 +170,35 @@ box-sizing: border-box;
 //     }
 // }
 
-.flaticon-heart:hover{
+.flaticon-heart:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.courses-content h5{
-  left: 4.36%;
-right: 8.82%;
-top: 26.14%;
-bottom: 52.77%;
-
-font-family: Gosha Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 27px;
-line-height: 124%;
-/* or 33px */
-
-
-/* Primary */
-
-color: #4264FB;
-
-
+.courses-content h5 {
+    left: 4.36%;
+    right: 8.82%;
+    top: 26.14%;
+    bottom: 52.77%;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 124%;
+    /* or 33px */
+    /* Primary */
+    color: #4264FB;
 }
-.courses-content h4{
-  left: 4.36%;
-right: 6.71%;
-top: 47.42%;
-bottom: 25.85%;
 
-font-family: Silka;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 150%;
-/* or 19px */
-
-
-color: #333333;
-
-
-
+.courses-content h4 {
+    left: 4.36%;
+    right: 6.71%;
+    top: 47.42%;
+    bottom: 25.85%;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    /* or 19px */
+    color: #333333;
 }

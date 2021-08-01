@@ -3,17 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  firebase: {
-    apiKey: "AIzaSyC3UyipxgFR__SPmSGhn8qbsAiAR5IeY9M",
- authDomain: "kohort-role.firebaseapp.com",
- projectId: "kohort-role",
- storageBucket: "kohort-role.appspot.com",
- messagingSenderId: "814931125427",
- appId: "1:814931125427:web:dfb51ae1f15749ecc5fcc6",
- measurementId: "G-JCCH76NKEB"
-  },
-  googleApiKey: 'AIzaSyBHoO0a4Yqbmrx7wnoZiQ2EZ3vvz4eC_WI'
+    production: false,
+    firebase: {
+        apiKey: "AIzaSyDCgpVPWrlzySpZEMl-slunM8-CS5FH_pc",
+        authDomain: "kohort-live.firebaseapp.com",
+        projectId: "kohort-live",
+        storageBucket: "kohort-live.appspot.com",
+        messagingSenderId: "771474749014",
+        appId: "1:771474749014:web:eb98e8c9cb2fa804a7edf7",
+        measurementId: "G-Z1GTC69GNT"
+    },
+    googleApiKey: 'AIzaSyBHoO0a4Yqbmrx7wnoZiQ2EZ3vvz4eC_WI'
 };
 /*
  * For easier debugging in development mode, you can import the following file

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from 'angularfire2/firestore';
 // import { HttpClient } from '@angular/common/http';
-import { AngularFireStorage } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
 import firebase from 'firebase/app';
 
@@ -15,7 +14,6 @@ export class MentorService {
     private firestore: AngularFirestore,
     public afs: AngularFirestore,
     // private httpService: HttpClient,
-    private storage: AngularFireStorage
   )
   {
     this.mentorsCollection = this.afs.collection<any>('mentors', ref => ref.orderBy('created_on'));
