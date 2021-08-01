@@ -12,6 +12,8 @@ export class MeetupService {
 
   ref = firebase.firestore().collection('users');
   private mentorsCollection: any;
+  private ticketCollections: any;
+  
   constructor(
     private firestore: AngularFirestore,
     public afs: AngularFirestore,
@@ -19,6 +21,7 @@ export class MeetupService {
   )
   {
     this.mentorsCollection = this.afs.collection<any>('meetups', ref => ref.orderBy('created_on'));
+    this.ticketCollections = this.afs.collection<any>('purchasedTickets', ref => ref.orderBy('created_on'));
   }
 
   generateUniqNumber(length?: any) {
@@ -29,6 +32,10 @@ export class MeetupService {
       retVal += charset.charAt(Math.floor(Math.random() * n));
     }
     return retVal;
+  }
+
+  addPurchase(data: any) {
+    return this.ticketCollections.add(data);
   }
 
   getAllMeetups() {

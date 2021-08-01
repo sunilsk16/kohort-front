@@ -31,9 +31,11 @@ export class CheckoutComponent implements OnInit {
       city: '',
       address: ''
     }
+    isLoading: any = false;
 
     constructor(
       private route: ActivatedRoute,
+      private router: Router,
       private meetupService: MeetupService,
       private helper: HelperService
     ) { }
@@ -60,6 +62,22 @@ export class CheckoutComponent implements OnInit {
       return this.quantity++
     }
 
+    purchaseNow(){
+      let data = {
+        ...this.userData,
+        created_on: moment().format('DD-MM-YYYY hh:mm A'),
+        createdAt: moment().format('x')
+      }
+      this.meetupService.addPurchase(data)
+      .then(() =>{
+        this.helper.showSuccess('Payment received !', '5000', 'Details sent to your mail !');
+        this.router.navigate(['/'])
+      })
+      .catch(() =>{
+        this.helper.showError('Error purchasing event ');
+      })
+    }
+
     payNow() {
       if(!this.userData.firstName || !this.userData.lastName || !this.userData.email
          || !this.userData.country || !this.userData.address || !this.userData.state
@@ -79,7 +97,7 @@ export class CheckoutComponent implements OnInit {
             "handler": function(response) {
                 console.log(response);
                 if (response && response.razorpay_payment_id) {
-                    // self.bookNow();
+                    self.purchaseNow();
                 }
             },
             "prefill": {
