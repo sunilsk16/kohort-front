@@ -11,7 +11,7 @@ export class LearningAboutComponent implements OnInit {
   constructor( private mentorService: MentorService) { }
 
   ngOnInit(): void {
-    this.mentorService.etAllTestiMonial()
+    this.mentorService.getAllTestiMonial()
   .then((res:any) =>{
   console.log('TestiMonial ', res);
    this.testiMonialList = res;

@@ -74,7 +74,7 @@ getMentorsById(id: any) {
         })
     })
   }
-  getAllCoupons() {
+  getAllTestiMonial() {
   return new Promise((resolve) => {
     this.firestore.collection('testimonial').snapshotChanges()
       .subscribe(testimonial => {
@@ -88,7 +88,7 @@ getMentorsById(id: any) {
       })
   })
 }
-getcouponsById(id: any) {
+getTestiMonialById(id: any) {
   return new Promise((resolve) => {
     var docRef = this.firestore.collection("testimonial").doc(id);
 
@@ -103,7 +103,7 @@ getcouponsById(id: any) {
   })
 }
 
-getCouponsBId(testimonialId: any) {
+getTestiMonialBId(testimonialId: any) {
   return new Promise((resolve) => {
     this.firestore.collection('testimonial',
       ref => ref.where('testimonialId', '==', parseInt(testimonialId))).snapshotChanges()
