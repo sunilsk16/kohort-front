@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-8 col-md-12">
                 <div class="get-instant-courses-content-style-two">
-                    <h2>{{ meetupData.name }}</h2>
+                    <h2 class="name">{{ meetupData.name }}</h2>
                     <a routerLink="/checkout/{{meetupData.id}}" class="default-btn">₹ {{ meetupData.price }} - Buy Tickets <span></span></a>
                     <div class="events-share">
                         <div class="share-info">
@@ -19,10 +19,10 @@
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="get-instant-courses-image-style-two">
-                      <p><i class="bx bx-calendar"></i>{{ getDate(meetupData.dates) }}</p>
-                      <p><i class="bx bx-time"></i>{{ getReadableTime(meetupData.startTime) }} - {{ getReadableTime(meetupData.endTime, true) }}</p>
-                      <p><i class="bx bx-map"></i>Online, Zoom Call</p>
-                      <p><i class="bx bx-map"></i>Link will be shared, on your email</p>
+                    <p><i class="bx bx-calendar"></i>{{ getDate(meetupData.dates) }}</p>
+                    <p><i class="bx bx-time"></i>{{ getReadableTime(meetupData.startTime) }} - {{ getReadableTime(meetupData.endTime, true) }}</p>
+                    <p><i class="bx bx-map"></i>Online, Zoom Call</p>
+                    <p><i class="bx bx-map"></i>Link will be shared, on your email</p>
 
                 </div>
             </div>
@@ -30,22 +30,42 @@
     </div>
 </div>
 
-<div  class="courses-area ptb-100 ">
+<div class="courses-area ptb-100 ">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-12">
-                <div class="slogan-image" >
-                  <h3>Speaker name</h3>
-                    <img src="../assets/img/walter-white.jpg" alt="image">
+            <div class=" row">
+                <h3>MELANIE SOMETHING</h3>
+                <div class=" row" style="  margin-top: 25px;">
+                    <div class="col-md-2">
+                        <div>
+                            <img src="../assets/img/walter-white.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="slogan-image">
+                            <p>test wefwfwgwgwW</p>
+                            <h6>Designation and country (flag)</h6>
+                            <a href="#" style="margin-top: 40px;" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12">
+
+            </div>
+
+        </div>
+        <div class="row " style="margin-top: 100px;">
+            <div class="col-lg-8 col-md-12">
+                <h4> What is this meetup about? </h4>
                 <div class="slogan">
-                    <p>Join meetups, find support, share knowledge, grow <br/>together and explore your passion. Join meetups, find <br/>support, share knowledge, grow together and explore <br/>your passion.</p>
+                    <p>Join meetups, find support, share knowledge, grow together and explore your passion. Join meetups, find support, share knowledge, grow together and explore your passion. Join meetups, find support, share knowledge, grow
+                        together and explore your passion. Join meetups, find support, share knowledge, grow together and explore your passion.
+
+                        Join meetups, find support, share knowledge, grow together and explore your passion. Join meetups, find support, share knowledge, grow together and explore your passion.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-12">
-              </div>
+
         </div>
     </div>
 </div>
@@ -54,15 +74,13 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 col-md-12">
-                <div class="get-instant-courses-content-style-two">
+                <div class="get-instant-courses">
                     <!-- <span class="sub-title">GET INSTANT ACCESS TO THE FREE</span> -->
-                    <h2>The 5 biggest things you’ll <br/> learn in this Meetup</h2>
-                    <ul>
-                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
-                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
-                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
-                      <li><p>Lorem ipsum dummy text Lorem ipsum dummy text.</p></li>
-                    </ul>
+                    <h2>Agend</h2>
+                    <p> Intro - meet the speaker
+                        <br>Presentation
+                        <br>Q&A/Discussion with the audience
+                    </p>
 
                 </div>
             </div>
@@ -70,6 +88,97 @@
                 <!-- <div class="get-instant-courses-image-style-two">
                       <img src="../assets/img/illustration_2 (2).png" alt="">
                 </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="courses-area ptb-100">
+    <div class="container">
+      <div class="courses-area-contentTwo">
+        <div class="row align-items-center">
+            <h2>Why attend the meetup</h2>
+
+            <div class="col-lg-4 col-md-12">
+                <div >
+                    <img src="../assets/img/meetup7.png" alt="">
+                </div>
+                <div>
+                    <h4>Reason 1</h4>
+                    <p> Join meetups, find support, share knowledge, grow together and explore your passion. Join meetups.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div>
+                    <img src="../assets/img/meetup8.png" alt="">
+                </div>
+                <div>
+                    <h4>Reason 2</h4>
+                    <p> Join meetups, find support, share knowledge, grow together and explore your passion. Join meetups.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div>
+                    <img src="../assets/img/meetup9.png" alt="">
+                </div>
+                <div>
+                    <h4>Reason 3</h4>
+                    <p> Join meetups, find support, share knowledge, grow together and explore your passion. Join meetups.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="courses-area ptb-100" style="background: #F0F3FF;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="get-instant-courses-content-style-two">
+                    <!-- <span class="sub-title">GET INSTANT ACCESS TO THE FREE</span> -->
+                    <h2>The 5 biggest things you’ll
+                      <br> learn in this Meetup</h2>
+                    <ul>
+                        <li>
+                            <p>Lorem ipsum dummy text Lorem ipsum dummy text.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dummy text Lorem ipsum dummy text.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dummy text Lorem ipsum dummy text.</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dummy text Lorem ipsum dummy text.</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div>
+                  <img src="../assets/img/meetup10.png" alt="">
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="courses-area ptb-100" >
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <div class="get-instant">
+                    <!-- <span class="sub-title">GET INSTANT ACCESS TO THE FREE</span> -->
+                  <p>This Meetup is designed for aspiring entrepreneurs like you to help in every step of the way to start up. From building an MVP, marketing your product to raising funding and scaling your business</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+              <div style="text-align: center;">
+                <a routerLink="/checkout/{{meetupData.id}}" class="default-btn">₹ {{ meetupData.price }} - Buy Tickets <span></span></a>
+
+              </div>
             </div>
         </div>
     </div>

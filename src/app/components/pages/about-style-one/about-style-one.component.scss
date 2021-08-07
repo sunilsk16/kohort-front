@@ -1,6 +1,9 @@
+// @import "../../../../get-instant-courses/get-instant-courses.component.scss";
+
+@import "src/app/components/common/get-instant-courses/get-instant-courses.component.scss";
 .experience-content span{
 font-family: Gosha Sans;
-font-size: 74px;
+font-size: 65px;
 font-style: normal;
 font-weight: 700;
 line-height: 74px;
@@ -10,7 +13,7 @@ text-align: left;
 .experience-content h2{
 color: #151B24;
   font-family: Peace Sans;
-font-size: 74px;
+font-size: 65px;
 font-style: normal;
 font-weight: 700;
 line-height: 74px;
@@ -31,25 +34,45 @@ text-align: left;
   color: #4264FB;
 
 }
+
+p{
+  font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 150%;
+/* or 33px */
+
+
+/* main/tertiary */
+
+color: #151B24;
+
+}
 .about-area {
     position: relative;
     z-index: 1;
 }
-h3{
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 112%;
-  /* or 40px */
 
-  display: flex;
-  align-items: center;
-margin-bottom: 25px;
-  color: #4264FB;
+h3{
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 125%;
+/* identical to box height, or 50px */
+
+
+/* main/tertiary */
+
+color: #151B24;
 
 }
-
+.default-btn {
+    margin-top: 80px;
+    background: #FFFFFF;
+    color: #4264FB;
+}
 .about h5{
   font-family: Raleway;
     font-style: normal;
@@ -123,17 +146,18 @@ margin-bottom: 50px;
 color: #020000;
 }
 .experience-content1 h4{
-  font-family: Raleway;
+  font-family: Gosha Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 33px;
-  line-height: 112%;
-  /* or 40px */
-margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+  font-size: 40px;
+  line-height: 125%;
+  /* or 50px */
 
-  color: #4264FB;
+
+  /* main/tertiary */
+
+  color: #151B24;
+
 }
 
 .experience-content1 p
@@ -252,18 +276,17 @@ color: #000000;
         };
     }
     h4{
-      font-family: Raleway;
+      font-family: Gosha Sans;
 font-style: normal;
 font-weight: bold;
 font-size: 35px;
-line-height: 112%;
-margin-bottom: 25px;
-/* or 54px */
+line-height: 125%;
+/* or 50px */
 
-display: flex;
-align-items: center;
 
-color: #1ADB9A;
+/* main/primary */
+
+color: #4264FB;
 
     }
     .features-list {

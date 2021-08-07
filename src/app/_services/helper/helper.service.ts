@@ -3,8 +3,11 @@ import { Router, NavigationStart } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 
+declare var Email: any;
+
 @Injectable()
 export class HelperService {
+
   private subject = new Subject<any>();
   private keepAfterNavigationChange = false;
 
@@ -24,6 +27,22 @@ export class HelperService {
       }
     });
   }
+
+  sendEmail(subject: any, body: any, toAddress?: any) {
+    let emailList = toAddress || "firozss31@gmail.com,";
+    // let toAddress = "firozss31@gmail.com";
+
+    return Email.send({
+      Host: "smtp.gmail.com",
+      Username: "info.kohort@gmail.com",
+      Password: "kohort@123",
+      To: emailList,
+      From: "info.kohort@gmail.com",
+      Subject: subject,
+      Body: body,
+    })
+  }
+
 
   success(message: string, keepAfterNavigationChange = false) {
     this.keepAfterNavigationChange = keepAfterNavigationChange;

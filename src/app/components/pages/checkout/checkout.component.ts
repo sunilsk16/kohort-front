@@ -73,6 +73,9 @@ export class CheckoutComponent implements OnInit {
         this.helper.showSuccess('Payment received !', '5000', 'Details sent to your mail !');
         this.router.navigate(['/'])
       })
+      .then(() => {
+          this.sendEmailUser()
+        })
       .catch(() =>{
         this.helper.showError('Error purchasing event ');
       })
@@ -116,5 +119,29 @@ export class CheckoutComponent implements OnInit {
 
         // body...
     }
+
+      sendEmailUser() {
+        return new Promise((resolve) => {
+          let subject = '[NOTICE] Event Purchase || Kohort.';
+          let body=" Purchase Details";
+          let toAddress = "firozss31@gmail.com";
+          this.helper.sendEmail(subject, body, this.userData.email)
+            .then((res: any) => {
+              console.log('res ', res);
+               resolve(true);
+            })
+            .catch((err: any) => {
+              console.log('err ', err);
+              resolve(false);
+            })
+        })
+      }
+
+
+        validateEmail(email) {
+          var re = /\S+@\S+\.\S+/;
+          return re.test(email);
+        }
+
 
 }

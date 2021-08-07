@@ -109,14 +109,15 @@
       left: 190.65px;
       top: 163.74px;
       font-family: Gosha Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 55px;
-      line-height: 120%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 120%;
+        color: #4264FB;
       color: var(--mainColor);
         font: {
-            size: 36px;
-            weight: 800;
+            // size: 36px;
+            // weight: 800;
         };
     }
     p {
@@ -355,7 +356,7 @@ color: #FFFFFF;
     }
     .get-instant-courses-content-style-two {
         h2 {
-            font-size: 30px;
+            font-size: 45px;
         }
     }
 
@@ -373,10 +374,44 @@ color: #FFFFFF;
 
 }
 
+h3{
+  font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 125%;
+    color: #4264FB;
+
+}
+
+h4{
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 125%;
+margin-bottom: 25px;
+
+/* identical to box height, or 50px */
 
 
+/* main/tertiary */
+
+color: #151B24;
+}
 ///// App -slogan css
+h6{
+  font-family: Silka;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 150%;
+/* or 30px */
 
+margin-top: 75px;
+color: #333333;
+
+}
 .slogan-area {
     position: relative;
     z-index: 1;
@@ -394,7 +429,7 @@ color: #FFFFFF;
 .slogan-image {
     padding-right: 15px;
     border-radius: 5px;
- text-align: center;
+
     // text-align: center;
     // margin-top: -90px;
     margin: {
@@ -406,10 +441,9 @@ color: #FFFFFF;
       font-family: Gosha Sans;
       font-style: normal;
       font-weight: bold;
-      margin-bottom: 35px;
-      // font-size: 40px;
+      font-size: 40px;
       line-height: 125%;
-      color: #333333;
+      color: #4264FB;
     }
     img {
         // border-radius: 5px;
@@ -418,6 +452,7 @@ color: #FFFFFF;
         height: 239.33px;
     }
 }
+
 
 ul {
     padding-left: 1rem;
@@ -430,14 +465,14 @@ ul {
 
     p {
       // margin-left: 100px;
-    margin-top: 57px;
-        font-family: Silka;
+      font-family: Silka;
         font-style: normal;
         font-weight: normal;
+        font-size: 20px;
         line-height: 150%;
         color: #222222;
         font: {
-            size: 15px;
+            size: 20px;
             weight: 600;
         };
     }
@@ -472,7 +507,88 @@ ul {
         };
     }
 }
+p{
+  font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
 
+.get-instant-courses h2{
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 125%;
+  color: #151B24;
+  margin-bottom: 20px;
+}
+.get-instant-courses p{
+  font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+
+color: #222222;
+
+}
+.courses-area-contentTwo h2{
+
+  /* Desktop/Headline2 */
+
+font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 125%;
+/* identical to box height, or 50px */
+text-align: center;
+
+
+/* main/primary */
+margin-bottom: 30px;
+color: #4264FB;
+
+}
+.courses-area-contentTwo h4{
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 135%;
+  /* identical to box height, or 41px */
+
+  text-align: center;
+margin-top: 20px;
+  /* main/tertiary */
+
+  color: #151B24;
+
+
+}
+.courses-area-contentTwo p{
+  font-family: Silka;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+
+
+  color: #151B24;
+
+
+text-align: left;
+
+}
+
+.courses-area-contentTwo{
+  text-align: center;
+}
 @media only screen and (max-width: 767px) {
 
     .slogan-image {

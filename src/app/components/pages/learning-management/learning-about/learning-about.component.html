@@ -1,25 +1,39 @@
-<div class="about-area ptb-100 "  style="background: #F0F3FF;">
+<div class="about-area ptb-100 " style="background: #F0F3FF;">
     <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12"  >
-            <div class="banner-wrapper-image1" style="background-image: url('../assets/img/Blob11.png');">
-                <img src="../assets/img/landing1.png" alt="image">
-                <!-- <div class="banner-shape8"><img src="assets/img/banner-shape8.png" alt="image"></div>
-                <div class="banner-shape9"><img src="assets/img/banner-shape9.png" alt="image"></div>
-                <div class="banner-shape10"><img src="assets/img/banner-shape10.png" alt="image"></div> -->
+            <div class="col-lg-6 col-md-12">
+                <div style="margin-bottom:100px" class="experience-content">
+                    <p> How it works ?</p>
+                    <h4 class="title1" id="target"><span class="highlight">We have curated
+                      <br>   specialized learning tracks
+                    <br>   to guide learners through
+                    <br>   the rough spot to
+                    <br>    fast track on the
+                        <br> path  to success.</span></h4>
+                </div>
+
             </div>
-             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="experience-content">
-                    <h2>Get Mentored</h2>
-                    <p>Get tailored guidance and learn</p>
-                    <!-- <ul class="features-list">
-                        <li><span><i class="flaticon-experience"></i> Expert Instruction</span></li>
-                        <li><span><i class="flaticon-time-left"></i> Lifetime Access</span></li>
-                        <li><span><i class="flaticon-tutorials"></i> Remote Learning</span></li>
-                        <li><span><i class="flaticon-self-growth"></i> Self Development</span></li>
-                    </ul> -->
-                    <a routerLink="/home" class="default-btn">Get Started<span></span></a>
+                    <h4> Enroll</h4>
+                    <p class="title" id="target"><span class="highlight">Enrollments are open according to the track schedules. With kohorts running anywhere between three
+                            to six months.
+                        </span></p>
+
+                    <!-- <a routerLink="/home" class="default-btn">Get Started<span></span></a> -->
+                </div>
+                <div class="experience-content">
+                    <h4> Get</h4>
+                    <p class="title" id="target"><span class="highlight">Receive invaluable feedback, set track goals to keep moving forward.</span></p>
+
+                    <!-- <a routerLink="/home" class="default-btn">Get Started<span></span></a> -->
+                </div>
+                <div class="experience-content">
+                    <h4> Go</h4>
+                    <p class="title" id="target"><span class="highlight">Connect with the Kohort community and begin your journey towards success.
+                        </span></p>
+
+                    <!-- <a routerLink="/home" class="default-btn">Get Started<span></span></a> -->
                 </div>
             </div>
         </div>
@@ -28,25 +42,25 @@
 
 <div class="blog-area ptb-100">
     <div class="container">
-      <div class="experience-content">
+        <div class="experience-content">
             <h2>From the Kohort community </h2>
             <p>With Kohort your growth always comes first.</p>
-              </div>
+        </div>
         <div class="row">
-          <div class="col-lg-2 col-md-6" *ngFor="let testMonila of testiMonialList">
-              <div class="single-blog-post" >
-                  <div class="post-image">
-                      <a  class="d-block">
+            <div class="col-lg-2 col-md-6" *ngFor="let testMonila of testiMonialList">
+                <div class="single-blog-post">
+                    <div class="post-image">
+                        <a class="d-block">
                             <img src="assets/img/advisor/img5.jpg" alt="image">
-                      </a>
-                  </div>
-                  <div class="post-content">
-                    <h4 >{{testMonila.name}}</h4>
-                    <h6>{{testMonila.specialties}}</h6>
-                      <p>{{testMonila.bio}}</p>
-                  </div>
-              </div>
-          </div>
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <h4>{{testMonila.name}}</h4>
+                        <h6>{{testMonila.specialties}}</h6>
+                        <p>{{testMonila.bio}}</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>

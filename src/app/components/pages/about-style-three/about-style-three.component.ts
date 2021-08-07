@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MentorService } from '../../../_services/mentors/mentor.service';
+
 
 @Component({
   selector: 'app-about-style-three',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-style-three.component.scss']
 })
 export class AboutStyleThreeComponent implements OnInit {
+  testiMonialList: any;
+  constructor( private mentorService: MentorService) { }
 
-    constructor() { }
+  ngOnInit(): void {
+    this.mentorService.getAllTestiMonial()
+  .then((res:any) =>{
+  console.log('TestiMonial ', res);
+   this.testiMonialList = res;
+  })
+  }
 
-    ngOnInit(): void {
-    }
+  bgImage = [
+      {
+          img: 'assets/img/courses-bg.jpg'
+      }
+  ]
 
-}
+  }
