@@ -57,6 +57,7 @@ import { GymCoachingComponent } from './components/pages/gym-coaching/gym-coachi
 import { LearningManagementComponent } from './components/pages/learning-management/learning-management.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { MeetupDetailComponent } from './components/pages/meetup-detail/meetup-detail.component';
+import { ZoomMeetingComponent } from './components/pages/zoom-meeting/zoom-meeting.component';
 
 const routes: Routes = [
     // {path: '', component: ElearningSchoolComponent},
@@ -116,6 +117,7 @@ const routes: Routes = [
     {path: 'single-blog-3', component: BlogDetailsStyleThreeComponent},
     {path: 'contact', component: ContactUsComponent},
     {path: 'meetup/:id', component: MeetupDetailComponent},
+    {path: 'zoom', component: ZoomMeetingComponent},
     // Here add new pages component
 
     {path: '**', component: ErrorComponent},

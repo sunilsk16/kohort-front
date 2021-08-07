@@ -18,6 +18,15 @@ Default CSS
     --transition: .5s;
 }
 
+#zmmtg-root {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent !important;
+}
+
 @font-face {
   font-family: "Gosha Sans";
   src: url("~/assets/fonts/Gosha Sans/GoshaSans-Regular.ttf");
