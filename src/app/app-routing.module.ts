@@ -117,7 +117,7 @@ const routes: Routes = [
     {path: 'single-blog-3', component: BlogDetailsStyleThreeComponent},
     {path: 'contact', component: ContactUsComponent},
     {path: 'meetup/:id', component: MeetupDetailComponent},
-    {path: 'zoom', component: ZoomMeetingComponent},
+    // {path: 'zoom', component: ZoomMeetingComponent},
     // Here add new pages component
 
     {path: '**', component: ErrorComponent},
