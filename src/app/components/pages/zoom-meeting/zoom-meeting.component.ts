@@ -74,7 +74,7 @@ export class ZoomMeetingComponent implements OnInit {
 
     startMeeting(signature) {
 
-        document.getElementById('zmmtg-root').style.display = 'block'
+        // document.getElementById('zmmtg-root').style.display = 'block'
 
         ZoomMtg.init({
             leaveUrl: this.leaveUrl,
