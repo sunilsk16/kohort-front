@@ -170,6 +170,10 @@
     }
 }
 
+.product-name{
+  width: 10px;
+}
+
 @media only screen and (max-width: 767px) {
 
     .profile-box {
@@ -187,9 +191,107 @@
 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .profile p{
+    width: 428.59px;
+        height: 189.44px;
+        left: 460px;
+        top: 298.37px;
+        font-family: Silka;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #222222;
+  }
+  .profile h5  {
+    width: 427.3px;
+    height: 115.36px;
+    left: 460px;
+    top: 512.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+.advisor h5
+{
+  width: 367.66px;
+    height: 31.58px;
+    left: 190px;
+    top: 926.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+.advisor-content {
+  height: 88.3626708984px;
+    left: 0.4260253906px;
+    top: 374.2269287109px;
+    border-radius: 0px;
+    left: 0.17%;
+    right: 0.35%;
+    top: 80.83%;
+    bottom: 0.09%;
+    padding: 5px;
+    background: #1E2229;
+}
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .profile p{
+    width: 428.59px;
+        height: 189.44px;
+        left: 460px;
+        top: 298.37px;
+        font-family: Silka;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #222222;
+  }
+  .profile  h5{
+    width: 427.3px;
+    height: 115.36px;
+    left: 460px;
+    top: 512.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+.advisor h5
+{
+  width: 367.66px;
+    height: 31.58px;
+    left: 190px;
+    top: 926.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+.advisor-content {
+  height: 88.3626708984px;
+  left: 0.4260253906px;
+  top: 374.2269287109px;
+  border-radius: 0px;
+  left: 0.17%;
+  right: 0.35%;
+  top: 80.83%;
+  bottom: 0.09%;
+  padding: 5px;
+  background: #1E2229;
+}
 
     .profile-box {
         .content {
@@ -203,6 +305,82 @@
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .profile p{
+    // width: 428.59px;
+      height: 135.44px;
+        left: 460px;
+        top: 298.37px;
+        font-family: Silka;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #222222;
+  }
+  .profile h5{
+     // width: 427.3px;
+      height: 100.36px;
+      left: 460px;
+      top: 512.79px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 150%;
+      color: #222222;
+
+  }
+  .product-name{
+    width: 10px;
+  }
+
+  .advisor h5 {
+    width: 310.66px;
+    height: 31.58px;
+    left: 190px;
+    top: 926.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+
+  .table h4{
+    font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 29px;
+      line-height: 150%;
+      color: #222222;
+  }
+
+  .table h5{
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  color: #222222;
+  }
+  .table {
+      border-top: none;
+      border-bottom: none;
+      border-right: blank
+  }
+
+  .table{
+      // padding: 0.5rem 0.5rem;
+      background-color: var(--bs-table-bg);
+      border-bottom: 0px;
+      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+      border: beige;
+  }
+
 
     .profile-box {
         .content {
@@ -216,11 +394,61 @@
 
 }
 @media only screen and (min-width: 1200px) and (max-width: 1355px) {
+  .profile p{
+    width: 428.59px;
+        height: 189.44px;
+        left: 460px;
+        top: 298.37px;
+        font-family: Silka;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #222222;
+  }
+  .advisor h5
+  {
+    width: 367.66px;
+      height: 31.58px;
+      left: 190px;
+      top: 926.79px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+  }
 
 }
 
-
-
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .profile p{
+    width: 428.59px;
+        height: 189.44px;
+        left: 460px;
+        top: 298.37px;
+        font-family: Silka;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+        color: #222222;
+  }
+  .advisor h5
+  {
+    width: 367.66px;
+      height: 31.58px;
+      left: 190px;
+      top: 926.79px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+  }
+}
 /////   About blog-area
 
 
@@ -280,7 +508,7 @@
       color: var(--whiteColor);
       /* background-color: var(--mainColor); */
       transition: var(--transition);
-      border-radius: 5px;
+
       font-weight: 700;
       font-size: var(--fontSize);
       padding-left: 55px;
@@ -401,7 +629,7 @@
       color: var(--whiteColor);
       /* background-color: var(--mainColor); */
       transition: var(--transition);
-      border-radius: 5px;
+
       font-weight: 700;
       font-size: var(--fontSize);
       padding-left: 55px;
@@ -412,9 +640,35 @@
   }
 }
 
+.fullimage-cover img{
+  height: 88px;
+width: 88px;
+left: 190px;
+top: 1849.87255859375px;
+border-radius: 0px;
 
+}
+
+.title{
+  width: 60px;
+  height: 30px;
+  left: 1015px;
+  top: 1647.04px;
+
+  font-family: Silka;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  color: #222222;
+
+
+}
 .details-btn {
-  margin-top: 5px;
+  margin-top: 10px;
   background: #4264FB;
   color: #FFFFFF;
   border: none;
@@ -445,8 +699,9 @@ box-sizing: border-box;
 
     border-radius: 5px;
     font-weight: 700;
-
-    padding-left: 30px;
+    width: 258px;
+      height: 60px;
+    padding-left: 45px;
     padding-right: 30px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -518,7 +773,7 @@ color: #222222;
       color: var(--whiteColor);
       /* background-color: var(--mainColor); */
       transition: var(--transition);
-      border-radius: 5px;
+
       font-weight: 700;
       font-size: var(--fontSize);
       padding-left: 55px;
@@ -530,15 +785,23 @@ color: #222222;
 }
 
 .advisor h2{
-  font-family: Gosha Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 125%;
-    color: #4264FB;
+  width: 431.11px;
+      height: 80px;
+      left: 190px;
+      top: 858.44px;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 125%;
+      color: #4264FB;
 }
 
 .default-btn {
+  margin-top: 10px;
+  width: 160px;
+    height: 70px;
+    background: #4264FB;
   border: none;
   position: relative;
   display: inline-block;
@@ -548,19 +811,23 @@ color: #222222;
   color: var(--whiteColor);
   /* background-color: var(--mainColor); */
   transition: var(--transition);
-  border-radius: 5px;
+border-radius: 0px;
   font-weight: 700;
   font-size: var(--fontSize);
   padding-left: 55px;
   padding-right: 55px;
-  padding-top: 11px;
+  padding-top: 18px;
   padding-bottom: 11px;
   background-color: #4264FB;
 }
 
 .advisor h3
 {
-  font-family: Silka;
+  width: 367.66px;
+    height: 31.58px;
+    left: 190px;
+    top: 926.79px;
+    font-family: Silka;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -568,6 +835,19 @@ color: #222222;
     color: #222222;
 }
 
+// .advisor h5
+// {
+//   width: 367.66px;
+//     height: 31.58px;
+//     left: 190px;
+//     top: 926.79px;
+//     font-family: Silka;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-size: 20px;
+//     line-height: 150%;
+//     color: #222222;
+// }
 .span1{
   font-family: Silka;
     font-style: normal;
@@ -577,14 +857,18 @@ color: #222222;
     color: #222222;
 }
 
-.profile p{
-  font-family: Silka;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 150%;
-    color: #222222;
-}
+// .profile p{
+//   width: 428.59px;
+//       height: 189.44px;
+//       left: 460px;
+//       top: 298.37px;
+//       font-family: Silka;
+//       font-style: normal;
+//       font-weight: normal;
+//       font-size: 20px;
+//       line-height: 150%;
+//       color: #222222;
+// }
 .advisor span{
   font-family: Silka;
     font-style: normal;
@@ -594,12 +878,14 @@ color: #222222;
     color: #222222;
 }
 .advisor p{
+  margin-top: 40px;
   font-family: Silka;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 150%;
-    color: #222222;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+      text-decoration: underline;
 }
 @media only screen and (max-width: 767px) {
 
@@ -652,6 +938,18 @@ color: #222222;
     .get-instant-courses-image-style-two {
         margin-top: 30px;
         text-align: center;
+    }
+    .profile p{
+      width: 428.59px;
+          height: 189.44px;
+          left: 460px;
+          top: 298.37px;
+          font-family: Silka;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 150%;
+          color: #222222;
     }
 
 }
@@ -712,7 +1010,256 @@ color: #222222;
     }
 
 }
+
+@media only screen and (max-width: 1280){
+  .profile p {
+    width: 428.59px;
+    height: 189.44px;
+    left: 460px;
+    top: 298.37px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #222222;
+}
+.profile h5{
+  width: 427.3px;
+    height: 115.36px;
+    left: 460px;
+    top: 512.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+
+}
+
+}
 @media only screen and (min-width: 1200px) and (max-width: 1355px) {
+  .h2 {
+    font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 120%;
+  /* identical to box height, or 66px */
+
+
+  /* Primary */
+
+  color: #4264FB;
+  }
+  .profile h5{
+    width: 427.3px;
+      height: 115.36px;
+      left: 460px;
+      top: 512.79px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+
+  }
+
+
+  h6
+  {
+    font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+      margin-top: 20px;
+      margin-bottom: 30px;
+  height: 50px;
+  }
+
+  h2{
+    font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 120%;
+  height: 80px;
+  /* identical to box height, or 66px */
+
+
+  /* Primary */
+
+  color: #4264FB;
+  }
+
+
+  .single-courses-box courses-content {
+      height: 88.3626708984px;
+      width: 248.7069091797px;
+      left: 0.4260253906px;
+      top: 374.2269287109px;
+      border-radius: 0px;
+
+  }
+
+
+  .banner-wrapper-content h1{
+    font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 125%;
+  /* identical to box height, or 50px */
+
+
+  /* Primary */
+
+  color: #4264FB;
+  margin-bottom: 30px
+  }
+
+  .widget-area{
+    margin-top: 70px;
+  }
+
+  .sub-title{
+    font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 124%;
+  /* identical to box height, or 25px */
+
+
+  /* Primary */
+
+  color: #4264FB;
+
+  }
+
+  .profile h5{
+    width: 427.3px;
+      height: 115.36px;
+      left: 460px;
+      top: 512.79px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+
+  }
+
+  .profile button
+  {
+  //margin-top: 50px;
+  background: #FFFFFF;
+  /* Primary */
+
+  border: 2px solid #4264FB;
+  box-sizing: border-box;
+
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primary */
+
+  color: #4264FB;
+  }
+
+
+  .table h4{
+    font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 29px;
+      line-height: 150%;
+      color: #222222;
+  }
+
+  .table h5{
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+
+  color: #222222;
+  }
+  .table {
+      border-top: none;
+      border-bottom: none;
+      border-right: blank
+  }
+
+  .table  {
+      padding: 0.5rem 0.5rem;
+      background-color: var(--bs-table-bg);
+      border-bottom: 0px;
+      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+      border: beige;
+  }
+
+  .widget-area h4 {
+     display: inline-block;
+     font-family: Silka;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 150%;
+     color: #222222;
+  }
+  .widget-area p{
+    width: 339px;
+        // height: 80.67px;
+        left: 190px;
+        top: 1956.87px;
+        font-family: Silka;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #222222;
+  }
+
+
+  .social-link li{
+    font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #222222;
+  }
+
+  .profile p{
+    width: 428.59px;
+        height: 189.44px;
+        left: 460px;
+        top: 298.37px;
+        font-family: Silka;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        color: #222222;
+  }
+
 
 }
 @media only screen and (min-width: 1550px) {
@@ -722,6 +1269,37 @@ color: #222222;
             width: auto;
         }
     }
+
+}
+
+@media only screen and (max-width: 1281) {
+  .profile h5{
+    width: 427.3px;
+      height: 115.36px;
+      left: 460px;
+      top: 512.79px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+
+  }
+
+  .profile p {
+    color: red;
+      width: 428.59px;
+      height: 189.44px;
+      left: 460px;
+      top: 298.37px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      color: #222222;
+  }
 
 }
 
@@ -749,7 +1327,7 @@ h6
     color: #222222;
     margin-top: 20px;
     margin-bottom: 30px;
-
+height: 50px;
 }
 
 h2{
@@ -758,6 +1336,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 55px;
 line-height: 120%;
+height: 80px;
 /* identical to box height, or 66px */
 
 
@@ -811,22 +1390,23 @@ color: #4264FB;
 
 }
 
-.profile h5{
-  font-family: Silka;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 150%;
-  /* or 30px */
-margin-top: 25px;
-
-  color: #222222;
-
-}
+// .profile h5{
+//   width: 427.3px;
+//     height: 115.36px;
+//     left: 460px;
+//     top: 512.79px;
+//     font-family: Silka;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 20px;
+//     line-height: 150%;
+//     color: #222222;
+//
+// }
 
 .profile button
 {
-margin-top: 50px;
+//margin-top: 50px;
 background: #FFFFFF;
 /* Primary */
 
@@ -850,39 +1430,39 @@ color: #4264FB;
 }
 
 
-.table h4{
-  font-family: Gosha Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 150%;
-    color: #222222;
-}
-
-.table h5{
-font-family: Gosha Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 150%;
-/* identical to box height, or 30px */
-
-
-color: #222222;
-}
-.table {
-    border-top: none;
-    border-bottom: none;
-    border-right: blank
-}
-
-.table  {
-    padding: 0.5rem 0.5rem;
-    background-color: var(--bs-table-bg);
-    border-bottom: 0px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-    border: beige;
-}
+// .table h4{
+//   font-family: Gosha Sans;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 29px;
+//     line-height: 150%;
+//     color: #222222;
+// }
+//
+// .table h5{
+// font-family: Gosha Sans;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 20px;
+// line-height: 150%;
+// /* identical to box height, or 30px */
+//
+//
+// color: #222222;
+// }
+// .table {
+//     border-top: none;
+//     border-bottom: none;
+//     border-right: blank
+// }
+//
+// .table  {
+//     padding: 0.5rem 0.5rem;
+//     background-color: var(--bs-table-bg);
+//     border-bottom: 0px;
+//     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+//     border: beige;
+// }
 
 .widget-area h4 {
    display: inline-block;
@@ -894,12 +1474,16 @@ color: #222222;
    color: #222222;
 }
 .widget-area p{
-  font-family: Silka;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    color: #222222;
+  // width: 339px;
+      // height: 80.67px;
+      left: 190px;
+      top: 1956.87px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #222222;
 }
 
 

@@ -1,13 +1,26 @@
 @import "../../../common/experience/experience.component.scss";
 
+
+@media only screen and (min-width: 576px) and (max-width: 1279px) {
+
 h2 {
-    font-family: 'Gosha Sans';
-    font-weight: 700;
-    font-size: 40px;
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+line-height: 120%;
+height: 150px;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
+
 }
 
 p {
-    
+
     /* Desktop/body-text */
     font-family: Silka;
     font-style: normal;
@@ -17,7 +30,69 @@ p {
     /* or 30px */
     color: #222222;
 }
-
-.banner-wrapper-image img {
-    margin-left: 75px;
 }
+@media (min-width: 768px) {
+  h2 {
+    font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 120%;
+  height: 150px;
+  /* identical to box height, or 66px */
+
+
+  /* main/primary */
+
+  color: #4264FB;
+
+  }
+
+  p {
+
+      /* Desktop/body-text */
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      /* or 30px */
+      color: #222222;
+  }
+
+
+}
+@media only screen and (max-width: 1279px) {
+
+h2 {
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 120%;
+height: 150px;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
+
+}
+
+p {
+
+    /* Desktop/body-text */
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+    color: #222222;
+}
+}
+
+// .banner-wrapper-image img {
+//     margin-left: 75px;
+// }

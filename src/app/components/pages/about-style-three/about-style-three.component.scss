@@ -4,23 +4,49 @@
 @import "src/app/components/common/instructor/instructor.component.scss";
 @import "src/app/components/common/get-instant-courses/get-instant-courses.component.scss";
 .experience-content span{
-font-family: Gosha Sans;
-font-size: 65px;
-font-style: normal;
-font-weight: 700;
-line-height: 74px;
-letter-spacing: 0px;
-text-align: left;
+  width: 768.94px;
+      height: 174px;
+      left: 190px;
+      top: 206.3px;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 84px;
+      line-height: 104%;
+      // color: #151B24;
 }
 .experience-content h2{
-color: #151B24;
-  font-family: Peace Sans;
-font-size: 65px;
-font-style: normal;
-font-weight: 700;
-line-height: 74px;
-letter-spacing: 0px;
-text-align: left;
+  width: 768.94px;
+      height: 174px;
+      left: 190px;
+      top: 206.3px;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 84px;
+      line-height: 104%;
+      color: #151B24;
+}
+.experience-content1 h2{
+  width: 768.94px;
+      height: 50px;
+      left: 190px;
+      top: 206.3px;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 104%;
+      color: #151B24;
+}
+
+.post-image img{
+  height: 238.80477905273438px;
+width: 158.7069091796875px;
+left: 0.7744140625px;
+top: 0.8779296875px;
+border-radius: 0px;
+
 }
 .courses-area-contentTwo h2{
 
@@ -36,43 +62,49 @@ text-align: center;
 
 
 /* main/primary */
-margin-bottom: 30px;
+margin-bottom: 50px;
 color: #4264FB;
 
 }
 .post-content h4{
   font-family: Gosha Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 124%;
-color: #4264FB;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 124%;
+      color: #4264FB;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 2px 0px;
 }
 
 .post-content h6
 {
   font-family: Silka;
-font-style: italic;
-font-weight: normal;
-font-size: 14px;
-line-height: 150%;
-/* identical to box height, or 21px */
-
-
-color: #222222;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 150%;
+      color: #222222;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 2px 0px;
 
 }
 .post-content p
 {
   font-family: Silka;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 150%;
-/* or 18px */
-
-
-color: #565656;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #565656;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 15px 0px;
 
 }
 .courses-area-contentThree h2{
@@ -203,7 +235,7 @@ text-align: left;
         }
     }
     .advisor-content {
-        padding: 22px;
+        padding: 10px;
         background: #1E2229;
 
         h3 {
@@ -241,6 +273,25 @@ color: #FFFFFF;
 .courses-area-contentTwo{
   text-align: center;
 }
+
+.default-btn {
+  height: 60px;
+  width: 340px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #4264FB;
+  margin-top: 150px;
+}
 .experience-content h4{
   font-family: Raleway;
   font-style: normal;
@@ -256,18 +307,35 @@ color: #FFFFFF;
 
 }
 
+
+.get-instant-courses-content-style-two h2{
+    /* height: 50px; */
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
 p{
+  // width: 519.71px;
+  height: 67.66px;
+  left: 192.06px;
+  top: 403.76px;
+
   font-family: Silka;
-font-style: normal;
-font-weight: normal;
-font-size: 22px;
-line-height: 150%;
-/* or 33px */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  /* or 33px */
 
 
-/* main/tertiary */
+  /* main/tertiary */
 
-color: #151B24;
+  color: #151B24;
+
 
 }
 .about-area {
@@ -289,11 +357,7 @@ line-height: 125%;
 color: #151B24;
 
 }
-.default-btn {
-    margin-top: 80px;
-    background: #FFFFFF;
-    color: #4264FB;
-}
+
 .about h5{
   font-family: Raleway;
     font-style: normal;

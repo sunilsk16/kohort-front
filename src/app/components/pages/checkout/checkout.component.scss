@@ -450,18 +450,25 @@ h1 {
 }
 
 .login-form {
+
     padding: 40px 50px;
     border-radius: 5px;
-    background-color: var(--whiteColor);
+    background: #F0F3FF;
+    // background-color: var(--whiteColor);
     box-shadow: 0 0 10px rgba(51,51,51,.1);
     margin-right: 30px;
 
     h2 {
-        margin-bottom: 25px;
-        font: {
-            size: 36px;
-            weight: 800;
-        };
+      width: 138px;
+    height: 60px;
+    left: 214.8px;
+    top: 794.06px;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 135%;
+    color: #333333;
     }
 
     form {
@@ -709,6 +716,28 @@ h1 {
         }
     }
 
+    .login-form2 {
+        padding: 30px 20px;
+        margin-right: 0;
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        form {
+            .lost-your-password-wrap {
+                text-align: start;
+                margin-top: 15px;
+            }
+
+            button {
+                padding: 13px 30px;
+                font-size: 15px;
+            }
+        }
+    }
     .register-form {
         margin-top: 40px;
         border-top: 1px solid #eeeeee;
@@ -745,6 +774,13 @@ h1 {
             font-size: 30px;
         }
     }
+    .login-form2 {
+        margin-right: 0;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
 
     .register-form {
         margin-top: 40px;
@@ -760,6 +796,20 @@ h1 {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .login-form {
+        padding: 30px 40px;
+        background: #F0F3FF;
+
+        h2 {
+            font-size: 30px;
+            font-family: Gosha Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 135%;
+            color: #333333;
+        }
+    }
+    .login-form2 {
         padding: 30px 40px;
         background: #F0F3FF;
 

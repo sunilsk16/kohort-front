@@ -535,8 +535,8 @@
         };
         .container-fluid {
             padding: {
-                right: var(--bs-gutter-x, 0.75rem);
-                left: var(--bs-gutter-x, 0.75rem);
+                right: var(--bs-gutter-x, 3.75rem);
+                left: var(--bs-gutter-x, 3.75rem);
             };
         }
         .navbar {
@@ -1048,8 +1048,8 @@
     .navbar-area {
         .container-fluid {
             padding: {
-                right: var(--bs-gutter-x, 0.75rem);
-                left: var(--bs-gutter-x, 0.75rem);
+                right: var(--bs-gutter-x, 3.75rem);
+                left: var(--bs-gutter-x, 2.5rem);
             };
         }
         .navbar {
@@ -1138,8 +1138,8 @@
         .container-fluid {
             max-width: 1200px;
             padding: {
-                left: var(--bs-gutter-x, 0.75rem);
-                right: var(--bs-gutter-x, 0.75rem);
+                left: var(--bs-gutter-x, 2.75rem);
+                right: var(--bs-gutter-x, 3.75rem);
             };
         }
         .navbar {
