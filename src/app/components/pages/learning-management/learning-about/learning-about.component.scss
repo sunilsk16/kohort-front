@@ -70,25 +70,43 @@ $padding: 0.5rem;
       font-size: 17px;
       line-height: 150%;
       color: #151B24;
-      margin-top: 35px;
+      // margin-top: 35px;
 
 
   .highlight {
-    display: inline;
-    // background: $highlight;
-    color: black;
-    padding: $padding;
-    padding-left: 0;
-    padding-right: 0;
-    -webkit-box-decoration-break: clone;
-    -ms-box-decoration-break: clone;
-    -o-box-decoration-break: clone;
-    box-decoration-break: clone;
+    font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  /* or 25px */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
   }
 
 
 }
 
+.experience-content h1{
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 125%;
+margin-top: 10px;
+// margin-top: 35px;
+/* identical to box height, or 50px */
+
+
+/* main/tertiary */
+
+color: #151B24;
+
+}
 .experience-content h2{
   font-family: Gosha Sans;
 font-style: normal;
@@ -102,13 +120,46 @@ color: #151B24;
 }
 .experience-content h4{
   font-family: Gosha Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 30px;
-      line-height: 125%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
 
-      margin-bottom: 20px;
-      color: #151B24;
+// width: 412px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+}
+.experience-content h5{
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+margin-top: 15px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+}
+.experience-content h6{
+  font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+margin-top: 40px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
 }
 
 .post-image img{
@@ -151,35 +202,29 @@ color: #222222;
 }
 
 .default-btn {
-  font-family: Gosha Sans;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 150%;
-/* or 30px */
-
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
+  height: 60px;
+    width: 340px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    margin-top: 22px;
     border: none;
-    position: relative;
-    display: inline-block;
     text-align: center;
     overflow: hidden;
-    z-index: 1;
-
     background: #4264FB;
-
-    border-radius: 5px;
+    padding: 16.5px 95px;
+    box-sizing: border-box;
+    border-radius: 0px;
     font-weight: 400;
     font-size: var(--fontSize);
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 60px;
 }
 
 .post-content h4{

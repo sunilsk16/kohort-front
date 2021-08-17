@@ -1,21 +1,21 @@
 .banner-wrapper-area {
-    position: relative;
-    z-index: 1;
+    // position: relative;
+    // z-index: 1;
     // background-color: #f8f9f8;
     padding: {
         top: 40px;
     };
-    .divider {
-        // background-color: #f5f7fa;
-        top: auto;
-        bottom: 0;
-    }
+    // .divider {
+    //     // background-color: #f5f7fa;
+    //     top: auto;
+    //     bottom: 0;
+    // }
 }
 
 img {
     max-width: 100%;
     height: auto;
-    margin-left: 50px;
+    // margin-left: 50px;
 }
 
 
@@ -54,7 +54,7 @@ p {
 @media (min-width: 768px) {
   .banner-wrapper-content {
       h1 {
-          margin-bottom: 18px;
+          // margin-bottom: 18px;
           font-family: Gosha Sans;
           font-style: normal;
           font-weight: bold;
@@ -258,7 +258,7 @@ p {
     font-size: 50px;
     line-height: 120%;
     color: #4264FB;
-    width: 680px;
+    // width: 680px;
       }
       p {
 
