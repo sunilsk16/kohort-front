@@ -264,6 +264,19 @@ color: #111111;
     }
 }
 @media only screen and (max-width: 767px) {
+  .single-footer-widget p{
+    /* text-align: end; */
+    color: black;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    /* align-items: center; */
+    /* text-align: end; */
+    color: #111111;
+}
     .footer-area {
         padding-top: 60px;
     }

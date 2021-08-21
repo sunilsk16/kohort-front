@@ -205,3 +205,32 @@ color: #333333;
 
 
 }
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: 175px;
+}
+
+
+@media only screen and (max-width: 767px){
+p{
+    left: 46.74%;
+    right: 22.18%;
+    top: 8.11%;
+    bottom: 83.65%;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: 12px;
+    color: #FFFFFF;
+}
+}

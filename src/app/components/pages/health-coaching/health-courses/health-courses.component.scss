@@ -1,8 +1,8 @@
 @import "../../../common/courses/courses.component.scss";
 h1
 {
-  width: 364px;
-height: 80px;
+//   width: 364px;
+// height: 80px;
 left: 193.26px;
 top: 539.96px;
 
@@ -95,8 +95,8 @@ color: #333333;
 }
 
 h6{
-  width: 552.77px;
-height: 80px;
+//   width: 552.77px;
+// height: 80px;
 left: 189.25px;
 top: 1302.05px;
 
@@ -224,10 +224,26 @@ color: #333333;
   font-family: Gosha Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 130%;
   /* identical to box height, or 16px */
 
 
   color: #FFFFFF;
+}
+
+
+
+
+.courses-content-footer i, p {
+    left: 46.74%;
+    right: 22.18%;
+    top: 8.11%;
+    bottom: 83.65%;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
 }

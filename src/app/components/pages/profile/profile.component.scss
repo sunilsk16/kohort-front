@@ -785,8 +785,8 @@ color: #222222;
 }
 
 .advisor h2{
-  width: 431.11px;
-      height: 80px;
+//  width: 431.11px;
+      // height: 80px;
       left: 190px;
       top: 858.44px;
       font-family: Gosha Sans;
@@ -823,7 +823,7 @@ border-radius: 0px;
 
 .advisor h3
 {
-  width: 367.66px;
+  // width: 367.66px;
     height: 31.58px;
     left: 190px;
     top: 926.79px;
@@ -940,8 +940,8 @@ border-radius: 0px;
         text-align: center;
     }
     .profile p{
-      width: 428.59px;
-          height: 189.44px;
+      // width: 428.59px;
+      //     height: 189.44px;
           left: 460px;
           top: 298.37px;
           font-family: Silka;
@@ -1262,6 +1262,56 @@ border-radius: 0px;
 
 
 }
+
+
+
+@media only screen and (max-width: 767px){
+  .profile h5{
+    // width: 427.3px;
+    // height: 115.36px;
+    left: 460px;
+    top: 512.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+
+.advisor h5 {
+  margin-top: 25px;
+    left: 190px;
+    top: 926.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+
+.table h4 {
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+
+.advisor h3{
+  margin-top: 25px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+}
+
+
 @media only screen and (min-width: 1550px) {
 
     .get-instant-courses-area-two {
@@ -1327,7 +1377,7 @@ h6
     color: #222222;
     margin-top: 20px;
     margin-bottom: 30px;
-height: 50px;
+// height: 50px;
 }
 
 h2{
@@ -1336,7 +1386,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 55px;
 line-height: 120%;
-height: 80px;
+// height: 80px;
 /* identical to box height, or 66px */
 
 

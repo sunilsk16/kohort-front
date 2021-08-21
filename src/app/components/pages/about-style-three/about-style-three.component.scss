@@ -16,7 +16,7 @@
       // color: #151B24;
 }
 .experience-content h2{
-  width: 768.94px;
+  // width: 768.94px;
       height: 174px;
       left: 190px;
       top: 206.3px;
@@ -28,8 +28,8 @@
       color: #151B24;
 }
 .experience-content1 h2{
-  width: 768.94px;
-      height: 50px;
+  // width: 768.94px;
+      // height: 50px;
       left: 190px;
       top: 206.3px;
       font-family: Gosha Sans;
@@ -320,7 +320,7 @@ color: #FFFFFF;
 
 p{
   // width: 519.71px;
-  height: 67.66px;
+  // height: 67.66px;
   left: 192.06px;
   top: 403.76px;
 
@@ -633,7 +633,46 @@ color: #4264FB;
     }
 }
 
+
 @media only screen and (max-width: 767px) {
+
+  .experience-content span{
+     width: 768.94px;
+         height: 174px;
+        left: 190px;
+        top: 206.3px;
+        font-family: Gosha Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 104%;
+        // color: #151B24;
+  }
+  .experience-content h2{
+    // width: 768.94px;
+        // height: 174px;
+        left: 190px;
+        top: 206.3px;
+        font-family: Gosha Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 104%;
+        color: #151B24;
+  }
+  .experience-content1 h2{
+    // width: 768.94px;
+        // height: 50px;
+        left: 190px;
+        top: 206.3px;
+        font-family: Gosha Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 104%;
+        color: #151B24;
+  }
+
 
     .about-image {
           margin-bottom: 250px;
@@ -767,6 +806,44 @@ color: #4264FB;
             }
         }
     }
+
+    .experience-content span{
+       width: 768.94px;
+           height: 174px;
+          left: 190px;
+          top: 206.3px;
+          font-family: Gosha Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 70px;
+          line-height: 104%;
+          // color: #151B24;
+    }
+    .experience-content h2{
+      // width: 768.94px;
+          // height: 174px;
+          left: 190px;
+          top: 206.3px;
+          font-family: Gosha Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 70px;
+          line-height: 104%;
+          color: #151B24;
+    }
+    .experience-content1 h2{
+      // width: 768.94px;
+          height: 50px;
+          left: 190px;
+          top: 206.3px;
+          font-family: Gosha Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 50px;
+          line-height: 104%;
+          color: #151B24;
+    }
+
 
 }
 @media only screen and (min-width: 1200px) and (max-width: 1355px) {

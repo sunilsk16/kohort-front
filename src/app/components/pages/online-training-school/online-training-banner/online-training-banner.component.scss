@@ -636,6 +636,9 @@ p {
 //     }
 // }
 
+
+
+
 @media only screen and (max-width: 767px) {
 
     .banner-wrapper-area {
@@ -645,15 +648,23 @@ p {
         text-align: center;
 
         p {
-            max-width: 100%;
-            font: {
-                weight: 500;
-                size: 15px;
-            };
-        }
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      color: #222222;
+  }
         h1 {
-            margin-bottom: 12px;
-            font-size: 28px;
+
+    margin-bottom: 18px;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    color: #4264FB;
+
         }
         form {
             .input-search {

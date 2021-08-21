@@ -625,10 +625,10 @@ h1 {
                 size: var(--fontSize);
             };
 
-            &:hover {
-                background-color: var(--blackColor);
-                color: var(--whiteColor);
-            }
+            // &:hover {
+            //     background-color: var(--blackColor);
+            //     color: var(--whiteColor);
+            // }
         }
     }
 }
@@ -710,6 +710,7 @@ h1 {
             }
 
             button {
+              margin-bottom: 25px;
                 padding: 13px 30px;
                 font-size: 15px;
             }
