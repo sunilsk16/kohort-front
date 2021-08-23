@@ -39,22 +39,18 @@ color: #333333;
 
 }
 
-p{
-  left: 46.74%;
-right: 22.18%;
-top: 8.11%;
-bottom: 83.65%;
-
-font-family: Gosha Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 130%;
-/* identical to box height, or 16px */
-margin-top: 12px;
-
-color: #FFFFFF;
-
+p {
+    left: 46.74%;
+    right: 22.18%;
+    top: 8.11%;
+    bottom: 83.65%;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: 12px;
+    color: #FFFFFF;
 }
 
 h4 {
@@ -167,45 +163,63 @@ box-sizing: border-box;
 }
 
 .courses-content h5{
-  left: 4.36%;
-right: 8.82%;
-top: 26.14%;
-bottom: 52.77%;
-
-font-family: Gosha Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 27px;
-line-height: 124%;
-/* or 33px */
-
-
-/* Primary */
-
-color: #4264FB;
-
+  width: 300px;
+      height: 2.5em;
+      line-height: 1.4em;
+      display: flex;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      left: 4.36%;
+      right: 8.82%;
+      top: 26.14%;
+      bottom: 52.77%;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 124%;
+      color: #4264FB;
 
 }
 .courses-content h4{
-  left: 4.36%;
-right: 6.71%;
-top: 47.42%;
-bottom: 25.85%;
-
-font-family: Silka;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 150%;
-/* or 19px */
-
-
-color: #333333;
+  width: 300px;
+      height: 2.8em;
+      line-height: 1.4em;
+      display: flex;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      left: 4.36%;
+      right: 6.71%;
+      top: 47.42%;
+      bottom: 25.85%;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 150%;
+      color: #333333;
 
 
 
 }
-
+@media only screen and (max-width: 1279px){
+.card-title-hdr {
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #d3d2d2;
+    background: #65EDBF;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 130%;
+    color: #0B6144;
+    margin-bottom: 0 !important;
+}
+}
 .card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem;
@@ -218,6 +232,9 @@ color: #333333;
     height: 175px;
 }
 
+.single-courses-item .courses-content {
+    padding: 10px;
+}
 
 @media only screen and (max-width: 767px){
 p{
@@ -228,9 +245,13 @@ p{
     font-family: Gosha Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 130%;
     margin-top: 12px;
     color: #FFFFFF;
+}
+
+.single-courses-item .courses-content {
+    padding: 0px;
 }
 }
