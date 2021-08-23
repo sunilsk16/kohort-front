@@ -8,37 +8,40 @@
               </div>
           </div>
 
-        <div class="row" >
-            <div class="col-lg-4 col-md-12" *ngFor="let myEvent of mentorList">
-                <div class="single-courses-item">
-                    <div class="row align-items-center">
 
-                      <ul class="courses-content-footer d-flex justify-content-between align-items-center"  style="background:#4264FB">
-                        <i class='flaticon-calendar'></i>
-                        <p> May 7, 2021</p>
-                        <i class="flaticon-time-left"></i>
-                          <p> 07:00 - 09:00 PM </p>
 
-                        <i class='flaticon-heart' float:left ></i>
-                      </ul>
+          <div class="row">
+              <div class="col-lg-4 col-md-12" *ngFor="let meetup of mentorList" style="padding-bottom: 30px">
+                  <div class="card">
+                      <div class="card-title-hdr">
+                        <i class="fa fa-calendar-o"></i>
+                          <div class="card-timing">
+                          <!-- {{ getDate(meetup.dates) }} -->
+                           May 7, 2021
+                          </div>
 
-                        <div class="col-lg-12 col-md-16">
+                          <i class="fa fa-clock-o"></i>
+                          <div class="card-timing">
+                            07:00 - 09:00 PM
+                            <!-- {{ getReadableTime(meetup.startTime) }} - {{ getReadableTime(meetup.endTime, true) }} -->
+                          </div>
+                           <i class="fa fa-heart-o" ></i>
+                      </div>
 
-                            <div class="courses-content">
+                      <div class="card-body">
+                        <div class="courses-content">
 
-                                <!-- <a routerLink="/" class="fav"><i class="flaticon-calendar"></i></a>
-                                <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
-                                <h5>{{myEvent.name}}</h5>
-                                <h4>{{ myEvent.achievement }}</h4>
-                                <!-- <h4>Join meetups, find support, share knowledge, grow together and explore your passion..</h4> -->
-                                 <a href="" style="float: right;">learn More </a>
-                            </div>
-
+                            <!-- <a routerLink="/" class="fav"><i class="flaticon-calendar"></i></a>
+                        <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
+                            <h5>{{meetup.name}}</h5>
+                            <h4>{{ meetup.achievement }}</h4>
                         </div>
+                        <a routerLink="/meetup/{{meetup.id}}"style="float: right;">learn More </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-                    </div>
-                </div>
-            </div>
 
 
 
