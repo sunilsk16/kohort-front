@@ -334,6 +334,19 @@ margin-top: 20px;
 
 color: #4264FB;
 }
+
+@media (min-width: 1200px) {
+
+h6{
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 133px;
+    color: #333333;
+}
+}
 @media only screen and (max-width: 767px) {
     .get-instant-courses-content {
         padding: {
@@ -439,7 +452,9 @@ color: #4264FB;
         }
     }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1355px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}
 @media only screen and (min-width: 1550px) {
     .get-instant-courses-area-two {
         .bulb {
@@ -474,16 +489,16 @@ h4 {
 }
 ///// App -slogan css
 
-h6 {
-    font-family: Silka;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 150%;
-    /* or 30px */
-    margin-top: 75px;
-    color: #333333;
-}
+// h6 {
+//     font-family: Silka;
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 18px;
+//     line-height: 150%;
+//     /* or 30px */
+//     margin-top: 75px;
+//     color: #333333;
+// }
 
 .slogan-area {
     position: relative;

@@ -34,12 +34,16 @@
 }
 
 .experience-content h1{
-  font-family: Gosha Sans;
+  // width: 768.94px;
+      // height: 174px;
+      left: 190px;
+      top: 206.3px;
+      font-family: Gosha Sans;
       font-style: normal;
       font-weight: bold;
       font-size: 84px;
       line-height: 104%;
-      color: #151B24;
+      color:  #151B24
 }
 .experience-content h2{
   font-family: Gosha Sans;
@@ -60,13 +64,18 @@
 
 
 .experience-content P{
-  font-family: Silka;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 150%;
+  margin-top: 30px;
+      // width: 519.71px;
+      // height: 67.66px;
+      left: 190.29px;
+      top: 420.34px;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 150%;
     color: #151B24;
-      margin-top: 15px;
+
     }
 .main-banner-content-style-two {
     // margin-left: 150px;
@@ -151,6 +160,14 @@
 }
 
 @media only screen and  (min-width: 768px){
+  .form-group label {
+    height: 24px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
   button[_ngcontent-xtx-c146] {
       margin-top: 22px;
       border: none;

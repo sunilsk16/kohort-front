@@ -304,7 +304,95 @@
     }
 
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+@media (min-width: 1200px){
+
+
+  .profile h5 {
+    width: 427.3px;
+    height: 115.36px;
+    left: 460px;
+    top: 512.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+  .profile  p {
+    width: 428.59px;
+    height: 189.44px;
+    left: 460px;
+    top: 298.37px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #222222;
+}
+  .advisor h2 {
+    height: 75px;
+    left: 190px;
+    top: 858.44px;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 125%;
+    color: #4264FB;
+}
+
+.advisor h5{
+    width: 367.66px;
+    height: 31.58px;
+    left: 190px;
+    top: 926.79px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #222222;
+}
+  .table h4{
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 150%;
+      color: #222222;
+  }
+
+  thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+      border-style: solid;
+      border-width: 0;
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  .profile  p {
+    width: 428.59px;
+    height: 189.44px;
+    left: 460px;
+    top: 298.37px;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #222222;
+}
+
+.table h4{
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    color: #222222;
+}
   .profile p{
     // width: 428.59px;
       height: 135.44px;
