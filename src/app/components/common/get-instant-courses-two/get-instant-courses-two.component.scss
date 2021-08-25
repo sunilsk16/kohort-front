@@ -39,3 +39,154 @@ color: #FFFFFF;
     padding-top: 11px;
     padding-bottom: 11px;
 }
+
+.about-content h4{
+  font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+line-height: 120%;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
+
+
+}
+
+.about-content p
+{
+  font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+text-align: justify;
+width: 350px;
+color: #222222;
+
+}
+
+.card-title-hdr {
+    padding: 10px ;
+    border-bottom: 1px solid #FEC8FF;
+  background: #FEC8FF;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: end;
+    // color: white;
+    // font-weight: 900;
+    margin-bottom: 0 !important;
+}
+
+.card-title-hdr1 {
+    padding: 10px ;
+    border-bottom: 1px solid #FEC8FF;
+  background: #CFD0D3;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: end;
+    // color: white;
+    // font-weight: 900;
+    margin-bottom: 0 !important;
+}
+
+
+
+.card {
+    border: 2px solid #FEC8FF;
+    box-sizing: border-box;
+}
+
+
+.card-timing {
+    margin-right: 30px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.courses-content h5
+{
+font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 27px;
+line-height: 124%;
+/* or 33px */
+
+
+/* main/primary */
+
+color: #4264FB;
+}
+
+.courses-content h4
+{
+  font-family: Silka;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  /* or 19px */
+
+  color: #333333;
+}
+
+.link
+{
+  font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    // line-height: 124%;
+    text-decoration-line: underline;
+    color: #4264FB;
+    float: left;
+}
+.link2
+{
+  font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    // line-height: 124%;
+    text-decoration-line: underline;
+    color: #A9A9AC;
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 0px;
+    /* margin-left: 20px; */
+}
+
+
+@media only screen and (max-width: 767px)
+{
+  .about-content p {
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      text-align: justify;
+      color: #222222;
+      width: 275px;
+
+  }
+}
