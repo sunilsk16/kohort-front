@@ -60,6 +60,9 @@ $padding: 0.5rem;
 
 }
 
+// .experience-content{
+//   margin-top: 35px;
+// }
 .title {
   // font: 2.2rem/1.25 Ubuntu, sans-serif;
   // text-transform: capitalize;
@@ -164,7 +167,7 @@ margin-top: 40px;
 
 .post-image img{
   height: 238.80477905273438px;
-width: 158.7069091796875px;
+width: 180.706909px;
 left: 0.7740478515625px;
 top: 0.8780517578125px;
 border-radius: 0px;
@@ -176,6 +179,29 @@ border-radius: 0px;
 //   background-size: 100%;
 // }
 
+.experience-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 35px;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1355px)
+{
+  .experience-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1200px)
+{
+  .experience-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 35px;
+  }
+}
 .banner-wrapper-image1{
 
 background-repeat: no-repeat;
@@ -203,7 +229,7 @@ color: #222222;
 
 .default-btn {
   height: 60px;
-    width: 340px;
+    // width: 340px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
@@ -211,20 +237,21 @@ color: #222222;
     border: none;
     text-align: center;
     overflow: hidden;
-    background: #4264FB;
-    padding: 16.5px 95px;
+    letter-spacing: 1px;
+  background: #151B24;
+    padding: 12.5px 95px;
     box-sizing: border-box;
     border-radius: 0px;
-    font-weight: 400;
-    font-size: var(--fontSize);
+    font-weight: 700;
+    // font-size: var(--fontSize);
     font-family: Gosha Sans;
     font-style: normal;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 150%;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .post-content h4{
@@ -382,6 +409,11 @@ color: #565656;
 }
 
 @media only screen and (max-width: 767px) {
+  .experience-content{
+    position: relative;
+    z-index: 1;
+
+}
 
     .about-image {
         .row {
@@ -437,6 +469,10 @@ color: #565656;
 
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .experience-content{
+    position: relative;
+    z-index: 1;
+}
 
     .about-content {
         .about-list {
@@ -449,6 +485,11 @@ color: #565656;
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .experience-content{
+    position: relative;
+    z-index: 1;
+      margin-top: 20px;
+}
 
     .about-image {
         .image {
@@ -500,6 +541,11 @@ color: #565656;
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .experience-content{
+    position: relative;
+    z-index: 1;
+      margin-top: 20px;
+}
 
     .about-content {
         h2 {
@@ -519,6 +565,10 @@ color: #565656;
 
 }
 @media only screen and (min-width: 1550px) {
+  .experience-content{
+    position: relative;
+    z-index: 1;
+}
 
     .about-area {
         .bulb {

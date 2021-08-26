@@ -10,19 +10,22 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12" *ngFor="let meetup of meetupList" style="padding-bottom: 30px">
                     <div class="card">
-                        <div class="card-title-hdr">
-                          <i class="fa fa-calendar-o"></i>
-                            <div class="card-timing">
-                              {{ getDate(meetup.dates) }}
-                            </div>
+                      <div class="card-title-hdr">
+                      <ul  class="courses-box-footer d-flex justify-content-between align-items-center">
+                        <li >
+                          <img src="../assets/icon/kohort-cal.png" alt="image">
+                        {{ getDate(meetup.dates) }}
+                          </li>
+                        <li >
+                          <img src="../assets/icon/kohort-time.png" alt="image">
+                        {{ getReadableTime(meetup.startTime) }} - {{ getReadableTime(meetup.endTime, true) }}
+                        </li>
+                        <li>
+                          <img src="../assets/icon/kohort-like.png" alt="image">
 
-                            <i class="fa fa-clock-o"></i>
-                            <div class="card-timing">
-                              {{ getReadableTime(meetup.startTime) }} - {{ getReadableTime(meetup.endTime, true) }}
-                            </div>
-                             <i class="fa fa-heart-o" ></i>
-                        </div>
-
+                          </li>
+                      </ul>
+                      </div>
                         <div class="card-body">
                           <div class="courses-content">
 

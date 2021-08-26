@@ -123,28 +123,36 @@
       margin: 5px 0px;
     }
     .default-btn {
-        margin-top: 75px;
-        background: #FFFFFF;
-        color: #4264FB;
-        height: 60px;
-    // width: 249px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-    left: 0%;
-    right: 0%;
-    top: 19%;
-    bottom: 21%;
-    font-family: Gosha Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 150%;
-    // display: flex;
-    align-items: center;
-    text-align: center;
-    color: #4264FB;
-        // padding:11px;
+      height: 60px;
+          left: 0px;
+          top: 0px;
+          letter-spacing: 1px;
+          border-radius: 0px;
+          margin-top: 50px;
+          border: none;
+          text-align: center;
+          overflow: hidden;
+          background: #FFFFFF;
+          padding: 12.5px 95px;
+          box-sizing: border-box;
+          border-radius: 0px;
+          font-weight: 700;
+          font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  /* or 30px */
+
+  // display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* main/primary */
+
+  color: #4264FB;
+
+
 
     }
 }
@@ -154,28 +162,28 @@
 
 @media only screen and (max-width: 767px) {
   .default-btn {
-      margin-top: 100px;
-      background: #FFFFFF;
-      color: #4264FB;
-      height: 60px;
-  // width: 249px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-  left: 0%;
-  right: 0%;
-  top: 19%;
-  bottom: 21%;
-  font-family: Gosha Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 150%;
-  // display: flex;
-  align-items: center;
-  text-align: center;
-  color: #4264FB;
-      // padding:11px;
+    height: 60px;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+        margin-top: 22px;
+        border: none;
+        text-align: center;
+        overflow: hidden;
+        background: #4264FB;
+        padding: 16.5px 95px;
+        box-sizing: border-box;
+        border-radius: 0px;
+        font-weight: 700;
+        font-size: var(--fontSize);
+        font-family: Gosha Sans;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 150%;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 20px;
 
   }
 

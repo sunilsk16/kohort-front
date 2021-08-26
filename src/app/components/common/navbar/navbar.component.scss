@@ -531,8 +531,8 @@
 {
 .navbar-area .container-fluid {
   max-width: 1200px;
-    padding-left: var(--bs-gutter-x, -1.5rem);
-    padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, -1.5rem);
+      padding-right: var(--bs-gutter-x, -1.5rem);
 }
 
 }
@@ -1057,10 +1057,8 @@
 
     .navbar-area {
         .container-fluid {
-            padding: {
-                right: var(--bs-gutter-x, 3.75rem);
-                left: var(--bs-gutter-x, 2.5rem);
-            };
+          padding-right: var(--bs-gutter-x, 2.2rem);
+    padding-left: var(--bs-gutter-x, 2.4rem);
         }
         .navbar {
             .search-box {
@@ -1146,11 +1144,9 @@
 
     .navbar-area {
         .container-fluid {
-            max-width: 1200px;
-            padding: {
-                left: var(--bs-gutter-x, 2.75rem);
-                right: var(--bs-gutter-x, 3.75rem);
-            };
+          max-width: 1200px;
+    padding-left: var(--bs-gutter-x, 2.8rem);
+    padding-right: var(--bs-gutter-x, 2.8rem);
         }
         .navbar {
             .search-box {
