@@ -27,7 +27,7 @@
 
   }
   .about-content2 h4 {
-    width: 610px;
+    // width: 610px;
       height: 60px;
       left: 192.27px;
       top: 2622.53px;
@@ -38,7 +38,18 @@
       line-height: 125%;
       color: #4264FB;
   }
+.about-content2 p
+{
+  font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
 
+
+color: #000000;
+}
   .experience-content1 h4 {
     width: 789.13px;
      height: 100px;
@@ -70,8 +81,7 @@
   }
 
   .experience-content h2 {
-       width: 868.9px;
-      height: 175px;
+
       left: 190px;
       top: 176.3px;
       font-family: Gosha Sans;
@@ -80,6 +90,37 @@
       font-size: 84px;
       line-height: 104%;
       color: #151B24;
+  }
+
+  .meetups-li ul{
+
+padding-left: 25px;
+  }
+
+  .meetups-li ul li::before {
+     // background-image: ;
+  content:url(/assets/icon/kohort-bullet.svg) ;
+  color: #4264FB;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -25px;
+  font-size: 20px;
+  }
+
+  .meetups-li li{
+    font-family: Silka;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 20px;
+  /* identical to box height, or 30px */
+
+
+  /* main/primary */
+
+  color: #000000;
   }
 
   .experience-content h4 {
@@ -104,7 +145,7 @@
     font-family: Gosha Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 84px;
+    font-size: 55px;
     line-height: 104%;
     /* or 87px */
     /* or 33px */
@@ -120,10 +161,11 @@
     font-family: Gosha Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 84px;
-    line-height: 104%;
+    font-size: 55px;
+    line-height: 120%;
     color: #151B24;
 }
+
 
 .experience-content h4 {
     font-family: Raleway;
@@ -164,13 +206,33 @@ h3 {
     line-height: 125%;
     /* identical to box height, or 50px */
     /* main/tertiary */
-    color: #151B24;
+
+    color:   #4264FB;
 }
 
 .default-btn {
-    margin-top: 80px;
-    background: #FFFFFF;
-    color: #4264FB;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    margin-top: 22px;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 1px;
+    background: #151B24;
+    padding: 12.5px 95px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    font-weight: 700;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 50px;
 }
 
 .about h5 {
@@ -207,7 +269,7 @@ h3 {
     font-family: Silka;
     font-style: normal;
     font-weight: normal;
-    font-size: 20.8931px;
+    font-size: 20px;
     line-height: 27px;
     color: #000000;
     margin-top: 20px;
@@ -382,7 +444,7 @@ button[_ngcontent-xtx-c146] {
     font-weight: bold;
     font-size: 40px;
     line-height: 125%;
-    color: #4264FB;
+    color: #151B24;
 }
 
 .about-content2 li {
@@ -456,7 +518,7 @@ button[_ngcontent-xtx-c146] {
       font-family: Gosha Sans;
       font-style: normal;
       font-weight: bold;
-      font-size: 40px;
+      font-size: 38px;
       line-height: 135%;
       color: #4264FB;
 
@@ -519,12 +581,12 @@ button[_ngcontent-xtx-c146] {
                     line-height: 40px;
                     color: var(--mainColor);
                     font-size: 25px;
-                    background: {
-                        image: url("../../../../assets/img/circle-border.png");
-                        position: center center;
-                        repeat: no-repeat;
-                        size: cover;
-                    };
+                    // background: {
+                    //     image: url("../../../../assets/img/circle-border.png");
+                    //     position: center center;
+                    //     repeat: no-repeat;
+                    //     size: cover;
+                    // };
                 }
             }
         }
@@ -536,7 +598,30 @@ button[_ngcontent-xtx-c146] {
 }
 
 
+
 @media only screen and (max-width: 767px) {
+  .meetups-li li {
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      margin-top: 20px;
+      color: #000000;
+  }
+  .meetups-li ul{
+    list-style: none;
+    padding-left: 25px;
+}
+.meetups-li ul li::before {
+    content: url(/assets/icon/kohort-bullet.svg);
+    color: #4264FB;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -25px;
+    font-size: 20px;
+}
   .about-content3 h3
   {
 
@@ -677,6 +762,15 @@ button[_ngcontent-xtx-c146] {
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .meetups-li li {
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      margin-top: 20px;
+      color: #000000;
+  }
     .about-image {
         margin-bottom: 250px;
 
@@ -732,6 +826,30 @@ button[_ngcontent-xtx-c146] {
     }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .meetups-li li {
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      margin-top: 20px;
+      color: #000000;
+  }
+
+  .meetups-li ul{
+    list-style: none;
+    padding-left: 25px;
+}
+.meetups-li ul li::before {
+    content: url(/assets/icon/kohort-bullet.svg);
+    color: #4264FB;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -25px;
+    font-size: 20px;
+}
+
     .about-content {
         h2 {
             font-size: 30px;
@@ -746,4 +864,52 @@ button[_ngcontent-xtx-c146] {
         }
     }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1355px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1355px)
+{
+  .meetups-li li {
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      margin-top: 20px;
+      color: #000000;
+  }
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    background-color: #ececec;
+    border: none;
+}
+
+.accordion-body {
+    padding: 1rem 1.25rem;
+    background-color: #ececec;
+
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+      background-color: #ececec;
+}
+
+.panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: none;
+}
+
+.accordion{
+  border: 0px;
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border: none;
+}
+
+.accordion-item:not(:first-of-type) {
+    border-top: 0;
+    border: none;
+}

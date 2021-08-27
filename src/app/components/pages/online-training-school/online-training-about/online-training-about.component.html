@@ -1,59 +1,48 @@
 <div class="courses-area ptb-100 " style="background:#ECECEC">
     <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12">
-              <div class="banner-wrapper-content">
-                  <h1>Meetups archives</h1>
-                  <h6>Look through our archive of former gatherings to see what you might have missed</h6>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="banner-wrapper-content">
+                    <h1>Meetups archives</h1>
+                    <h6>Look through our archive of former gatherings to see what you might have missed</h6>
 
 
-              </div>
-          </div>
+                </div>
+            </div>
 
+        </div>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let meetup of meetupList" style="padding-bottom: 30px">
+                <div class="card">
+                    <div class="card-title-hdr">
+                        <ul class="courses-box-footer d-flex justify-content-between align-items-center">
+                            <li>
+                                <img src="../assets/img/kohort-calw.svg" alt="image" style="margin-right:5px;">
+                                {{ getDate(meetup.dates) }}
+                            </li>
+                            <li>
+                                <img src="../assets/img/kohort-timew.svg" alt="image" style="margin-right:5px;">
+                                {{ getReadableTime(meetup.startTime) }} - {{ getReadableTime(meetup.endTime, true) }}
+                            </li>
+                            <li>
+                                <img src="../assets/img/kohort-likew.svg" alt="image">
 
-          <div class="row">
-              <div class="col-lg-4 col-md-12" *ngFor="let meetup of meetupList" style="padding-bottom: 30px">
-                  <div class="card">
-                      <div class="card-title-hdr">
-                        <i class="fa fa-calendar-o"></i>
-                          <div class="card-timing">
-                            {{ getDate(meetup.dates) }}
-                          </div>
-
-                          <i class="fa fa-clock-o"></i>
-                          <div class="card-timing">
-                            {{ getReadableTime(meetup.startTime) }} - {{ getReadableTime(meetup.endTime, true) }}
-                          </div>
-                           <i class="fa fa-heart-o" ></i>
-                      </div>
-
-                      <div class="card-body">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
                         <div class="courses-content">
 
                             <!-- <a routerLink="/" class="fav"><i class="flaticon-calendar"></i></a>
-                        <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
+                  <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
                             <h5>{{meetup.name}}</h5>
                             <h4>{{ meetup.description }}</h4>
                         </div>
-                        <a routerLink="/meetup/{{meetup.id}}"style="float: right;">learn More </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-
-
-
-
-<!--
-
-            <div class="col-lg-12 col-md-12">
-                <div class="courses-info">
-                    <a routerLink="/courses-1" class="default-btn"><i class="flaticon-user"></i>View All Courses<span></span></a>
-                    <p>Get into details now?​ <a routerLink="/courses-1">PM Master’s Program</a></p>
+                        <a routerLink="/meetup/{{meetup.id}}" style="float: right;">learn More </a>
+                    </div>
                 </div>
-            </div> -->
+            </div>
         </div>
+
     </div>
-    <!-- <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div> -->
 </div>
