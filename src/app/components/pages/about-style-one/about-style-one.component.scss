@@ -877,17 +877,16 @@ button[_ngcontent-xtx-c146] {
   }
 }
 
-.accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
-    background-color: #ececec;
-    border: none;
-}
+// .accordion-item:first-of-type .accordion-button {
+//     border-top-left-radius: calc(0.25rem - 1px);
+//     border-top-right-radius: calc(0.25rem - 1px);
+//     background-color: #ececec;
+//     border: none;
+// }
 
 .accordion-body {
     padding: 1rem 1.25rem;
     background-color: #ececec;
-
 }
 
 button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
@@ -903,13 +902,41 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   border: 0px;
 }
 
+.accordion-item {
+  border-color: #ececec;
+}
+
 .accordion-item:first-of-type {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    border: none;
+    // border: none;
 }
 
-.accordion-item:not(:first-of-type) {
+//
+.accordion-item {
     border-top: 0;
     border: none;
+    border-bottom: 1px solid #828282;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: inset 0 -1px 0 #ececec;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+      background-image:url("/assets/icon/kohort-plus.svg");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image:url("/assets/icon/kohort-minus.svg");
+    transform: rotate(-180deg
+);
 }
