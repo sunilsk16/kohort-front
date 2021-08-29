@@ -65,11 +65,12 @@ const routes: Routes = [
   {path: 'meetup/:id', component: MeetupDetailComponent},
   {path: 'mentors', component: HealthCoachingComponent},
   {path: 'profile', component: ProfileComponent},
+  {path: 'profile/:id', component: ProfileComponent},
   {path: 'about-1', component: AboutStyleOneComponent},
   {path: 'about-3', component: AboutStyleThreeComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'checkout/:id', component: CheckoutComponent},
-  
+
 
     // {path: '', component: ElearningSchoolComponent},
     // {path: 'vendor-certification-etraining', component: VendorCertificationEtrainingComponent},

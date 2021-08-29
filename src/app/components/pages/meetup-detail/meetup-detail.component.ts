@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MeetupService } from '../../../_services/meetups/meetup.service';
+import { MentorService } from '../../../_services/mentors/mentor.service';
 import { ActivatedRoute, Router } from '@angular/router'
 import * as moment from 'moment';
 
@@ -12,9 +13,12 @@ import * as moment from 'moment';
 export class MeetupDetailComponent implements OnInit {
   meetupId: any = '';
   meetupData: any;
+  mentorData: any;
+  mentorId: any = '';
 
   constructor(
     private meetupService: MeetupService,
+    private mentorService: MentorService,
     private route: ActivatedRoute,
   ) { }
 
@@ -25,8 +29,17 @@ export class MeetupDetailComponent implements OnInit {
       this.meetupService.getMeetupById(this.meetupId)
       .then((res: any) =>{
         this.meetupData = res;
+        this.mentorId = res.mentorId;
+        console.log("  this.mentorId",  this.mentorId);
+
         console.log('meetupData ', res);
+        return this.mentorService.getMentorsById(res.mentorId)
       })
+      .then((res: any) =>{
+        this.mentorData = res;
+        console.log('mentorData ', res);
+      })
+
     }
   }
 

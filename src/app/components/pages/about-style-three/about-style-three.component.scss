@@ -15,6 +15,33 @@
       line-height: 104%;
       // color: #151B24;
 }
+
+
+  .about-content[_ngcontent-pto-c85] .default-btn[_ngcontent-pto-c85] {
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    margin-top: 50px;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    background: #4264FB;
+    padding: 12.5px 95px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    font-weight: 700;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 .experience-content h2{
   // width: 768.94px;
       height: 174px;
@@ -150,9 +177,8 @@ margin-top: 20px;
 
 
   color: #151B24;
-
-
-text-align: left;
+  text-align: initial;
+      width: 340px;
 
 }
 .single-advisor-item {
@@ -274,9 +300,9 @@ color: #FFFFFF;
   text-align: center;
 }
 
-.default-btn {
+.experience-content default-btn1 {
   height: 60px;
-  width: 340px;
+   width: 340px;
   left: 0px;
   top: 0px;
   border-radius: 0px;
@@ -290,9 +316,8 @@ color: #FFFFFF;
   text-align: center;
   color: #FFFFFF;
   background: #4264FB;
-  margin-top: 100px;
+  // margin-top: 100px;
 }
-
 .experience-content h4{
   font-family: Raleway;
   font-style: normal;
@@ -630,7 +655,28 @@ color: #4264FB;
         }
     }
     .default-btn {
-        margin-top: 30px;
+      height: 60px;
+      left: 0px;
+      top: 0px;
+      letter-spacing: 1px;
+      border-radius: 0px;
+      margin-top: 50px;
+      border: none;
+      text-align: center;
+      overflow: hidden;
+      background: #4264FB;
+      padding: 12.5px 95px;
+      box-sizing: border-box;
+      border-radius: 0px;
+      font-weight: 700;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      align-items: center;
+      text-align: center;
+      color: #FFFFFF;
     }
 }
 
@@ -849,30 +895,4 @@ color: #4264FB;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1355px) {
 
-}
-
-
-.get-instant-courses-content-style-two
-{
-  default-btn {
-    margin-top: 75px;
-    background: #FFFFFF;
-    color: #4264FB;
-    height: 60px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-    left: 0%;
-    right: 0%;
-    top: 19%;
-    bottom: 21%;
-    font-family: Gosha Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 150%;
-    align-items: center;
-    text-align: center;
-    color: #4264FB;
-}
 }

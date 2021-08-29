@@ -7,7 +7,7 @@
             <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
                 <div class="single-advisor-item">
                     <div class="advisor-image">
-                        <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile" >
+                        <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
                         <ul class="social-link">
                             <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
                             <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>

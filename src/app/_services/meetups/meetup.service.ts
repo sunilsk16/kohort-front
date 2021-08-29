@@ -13,7 +13,7 @@ export class MeetupService {
   ref = firebase.firestore().collection('users');
   private mentorsCollection: any;
   private ticketCollections: any;
-  
+
   constructor(
     private firestore: AngularFirestore,
     public afs: AngularFirestore,
@@ -68,9 +68,29 @@ getMeetupById(id: any) {
     })
   }
 
+  getMentorByMeetupId(mentorId: any)
+  {
+   return new Promise((resolve) => {
+     this.firestore.collection('meetups',
+       ref => ref
+         // .where('id', '==', meetupId)
+         .where('id', '==', mentorId)
+     ).snapshotChanges()
+       .subscribe(users => {
+         let contactList = users.map(item => {
+           return {
+             ...item.payload.doc.data() as {},
+             id: item.payload.doc.id
+           };
+         });
+         resolve(contactList);
+       })
+   })
+ }
+
   getMeetupsBId(meetupsId: any) {
     return new Promise((resolve) => {
-      this.firestore.collection('meetups',
+      this.firestore.collection('mentors',
         ref => ref.where('meetupsId', '==', parseInt(meetupsId))).snapshotChanges()
         .subscribe(meetups => {
           let contactList = meetups.map(item => {

@@ -68,8 +68,8 @@ getMentorsById(id: any) {
 
   getMentorsBId(mentorId: any) {
     return new Promise((resolve) => {
-      this.firestore.collection('mentors',
-        ref => ref.where('mentorId', '==', parseInt(mentorId))).snapshotChanges()
+      this.firestore.collection('meetups',
+        ref => ref.where('mentorId', '==', (mentorId))).snapshotChanges()
         .subscribe(mentors => {
           let contactList = mentors.map(item => {
             return {

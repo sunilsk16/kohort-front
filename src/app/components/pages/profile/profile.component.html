@@ -5,8 +5,8 @@
                 <li><a routerLink="/">Home</a></li>
                 <li>Profile</li>
             </ul> -->
-            <h2>Bertam Gilfoyle</h2>
-            <h6>4.7 (102) | California, USA | Network Engineer and System Architect <span style="float:right;margin-right: 40px;">Share <span style="margin-left: 20px;"><i _ngcontent-xav-c47="" class="flaticon-heart"></i> </span></span></h6>
+            <h2>{{mentorData.name? mentorData.name : " "}}</h2>
+            <h6>{{mentorData.address}} | {{mentorData.state}}, {{mentorData.city}} | {{mentorData.designation}} <span style="float:right;margin-right: 40px;">Share <span style="margin-left: 20px;"><i _ngcontent-xav-c47="" class="flaticon-heart"></i> </span></span></h6>
             <div class="row ">
                 <div class="col-lg-3 col-md-4">
                     <div class="image">
@@ -17,9 +17,8 @@
                     <div class="profile">
                         <!-- <h3>Sarah Taylor</h3>
                         <span class="sub-title">Agile Project Expert</span> -->
-                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply dummy text of the printing and typesetting
-                            industry. </p>
-                        <h5> “Border are merely a construct. I prefer to think of myself as a citizen of the world.” </h5>
+                        <p>{{mentorData.achievement}} </p>
+                        <h5> “{{mentorData.shortBio}}” </h5>
                         <!-- <li><span>Email:</span> <a href="mailto:hello@sarahtaylor.com">hello@sarahtaylor.com</a></li> -->
                         <button routerLink="/" class="details-btn" type="button" name="button">Contact Mentor</button>
                     </div>
@@ -30,8 +29,8 @@
                         <span class="sub-title">Mentoring experience</span>
                         <ul class="social-link">
                             <li>75 mins</li>
-                            <li>Language: English</li>
-                            <li>Higher Education, Music, Health</li>
+                            <li>Language: {{mentorData.language}}</li>
+                            <li>Higher Education:{{mentorData.education}}</li>
                             <li>Join from computer, phone, or tablet</li>
                         </ul>
                     </div>
