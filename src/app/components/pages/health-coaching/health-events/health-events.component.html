@@ -1,53 +1,79 @@
-<div class="events-area bg-image bg-eee8df pt-100 pb-70">
+<div class="courses-area ptb-100 " style="background: #E2FAF4;">
     <div class="container">
-        <div class="section-title">
-            <span class="sub-title">Events</span>
-            <h2 class="playfair-display-font">Our Upcoming Events</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="single-events-box-item">
-                    <div class="image">
-                        <a routerLink="/single-events" class="d-block">
-                            <img src="assets/img/events/health-img1.jpg" alt="image">
-                        </a>
-                        <span class="date">Wed, 20 May, 2020</span>
-                    </div>
-                    <div class="content">
-                        <h3 class="playfair-display-font"><a routerLink="/single-events">Global Conference on Business Management</a></h3>
-                        <span class="location"><i class="bx bx-map"></i>Vancover, Canada</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-events-box-item">
-                    <div class="image">
-                        <a routerLink="/single-events" class="d-block">
-                            <img src="assets/img/events/health-img2.jpg" alt="image">
-                        </a>
-                        <span class="date">Tue, 19 May, 2020</span>
-                    </div>
-                    <div class="content">
-                        <h3 class="playfair-display-font"><a routerLink="/single-events">International Conference on Teacher Education</a></h3>
-                        <span class="location"><i class="bx bx-map"></i>Sydney, Australia</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-events-box-item">
-                    <div class="image">
-                        <a routerLink="/single-events" class="d-block">
-                            <img src="assets/img/events/health-img3.jpg" alt="image">
-                        </a>
-                        <span class="date">Mon, 18 May, 2020</span>
-                    </div>
-                    <div class="content">
-                        <h3 class="playfair-display-font"><a routerLink="/single-events">International Conference on Special Needs Education</a></h3>
-                        <span class="location"><i class="bx bx-map"></i>Istanbul, Turkey</span>
-                    </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="banner-wrapper-content">
+                    <h1>I Want To Learn </h1>
+                    <h6> </h6>
                 </div>
             </div>
         </div>
+
+        <div class="row align-items-center" >
+          <div class="col-lg-4 col-md-12">
+
+            <label class="label" for="">Continent/Country </label>
+              <form class="search-box">
+                  <input type="text" class="input-search" placeholder="Search for anything"   (input) ="getValue()" [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}">
+                  <!-- <button type="submit"><i class="flaticon-search"></i></button> -->
+              </form>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+              <label for=""></label>
+                <div class="search-box">
+                    <button _ngcontent-xtx-c146="" type="submit"  (click)="getValue()">
+                        <!-- <i class="fa fa-refresh fa-spin" ></i> -->
+                      Explore
+                    </button>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top:30px;">
+          
+            <div class="col-lg-4 col-md-12" *ngFor="let meetup of studiesList2 " style="padding-bottom: 30px">
+                <div class="card">
+                    <div class="card-title-hdr">
+                      <img _ngcontent-xxw-c71="" src="../assets/icon/kohort-gcal.svg" alt="image" >
+
+                        <div class="card-timing">
+                            <!-- {{ getDate(meetup.dates) }} -->
+                            {{ readableDateFormat(meetup.startDate) }} to {{ readableDateFormat(meetup.endDate) }}
+
+                        </div>
+                        <img _ngcontent-xxw-c71="" src="../assets/icon/kohort-likeg.svg" alt="image" style="float: right;">
+
+                    </div>
+
+                    <div class="card-body">
+                        <div class="courses-content">
+
+                            <!-- <a routerLink="/" class="fav"><i class="flaticon-calendar"></i></a>
+                        <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
+                            <h5>{{meetup.code}}</h5>
+                            <h4>{{ meetup.description }}</h4>
+                        </div>
+                        <a routerLink="/profile" style="float: left;">Join now </a>
+
+                        <a routerLink="/profile" style="float: right;color: #151B24;">learn More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--
+
+            <div class="col-lg-12 col-md-12">
+                <div class="courses-info">
+                    <a routerLink="/courses-1" class="default-btn"><i class="flaticon-user"></i>View All Courses<span></span></a>
+                    <p>Get into details now?​ <a routerLink="/courses-1">PM Master’s Program</a></p>
+                </div>
+            </div> -->
     </div>
 </div>
+<!-- <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div> -->

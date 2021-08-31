@@ -1,51 +1,66 @@
 <div class="courses-area ptb-100 " style="background: #F0F3FF;">
     <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12">
-              <div class="banner-wrapper-content">
-                  <h1>Find you Mentor</h1>
-                  <h6>Sign up for upcoming events below</h6>
-              </div>
-          </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="banner-wrapper-content">
+                    <h1>Study Abroad </h1>
+                    <h6>Join specialized mentoring sessions </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center" >
+            <div class="col-lg-4 col-md-12">
+
+              <label class="label" for="">Continent/Country </label>
+                <form class="search-box">
+                    <input type="text" class="input-search" placeholder="Search for anything"   (input) ="getValue()" [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}">
+                    <!-- <button type="submit"><i class="flaticon-search"></i></button> -->
+                </form>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <label for=""></label>
+                  <div class="search-box">
+                      <button _ngcontent-xtx-c146="" type="submit"  (click)="getValue()">
+                          <!-- <i class="fa fa-refresh fa-spin" ></i> -->
+                        Explore
+                      </button>
+                </div>
+            </div>
+        </div>
 
 
-
-          <div class="row">
-              <div class="col-lg-4 col-md-12" *ngFor="let meetup of mentorList" style="padding-bottom: 30px">
-                  <div class="card">
-                      <div class="card-title-hdr">
-                        <i class="fa fa-calendar-o"></i>
-                          <div class="card-timing">
-                          <!-- {{ getDate(meetup.dates) }} -->
-                           May 7, 2021
-                          </div>
-
-                          <i class="fa fa-clock-o"></i>
-                          <div class="card-timing">
-                            07:00 - 09:00 PM
-                            <!-- {{ getReadableTime(meetup.startTime) }} - {{ getReadableTime(meetup.endTime, true) }} -->
-                          </div>
-                           <i class="fa fa-heart-o" ></i>
-                      </div>
-
-                      <div class="card-body">
+        <div class="row" style="margin-top:30px;">
+            <div class="col-lg-4 col-md-12" *ngFor="let meetup of studiesList2  " style="padding-bottom: 30px">
+                <div class="card">
+                    <div class="card-title-hdr">
+                      <img  src="../assets/img/kohort-calw.svg" alt="image" >
+                        <div class="card-timing">
+                           {{ readableDateFormat(meetup.startDate) }} to {{ readableDateFormat(meetup.endDate) }}
+                          <!-- Sept 24, 2021 to March 2022 -->
+                        </div>
+                        <img  src="../assets/img/kohort-likew.svg" alt="image" style="float: right;">
+                    </div>
+                    <div class="card-body">
                         <div class="courses-content">
-
                             <!-- <a routerLink="/" class="fav"><i class="flaticon-calendar"></i></a>
                         <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
-                            <h5>{{meetup.name}}</h5>
-                            <h4>{{ meetup.achievement }}</h4>
+                            <h5>{{meetup.code}}</h5>
+                            <h4>{{ meetup.description }}</h4>
                         </div>
-                        <a  routerLink="/profile"  style="float: right;">learn More </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+                        <a routerLink="/profile" style="float: left;">Join now </a>
+
+                        <a routerLink="/profile" style="float: right;">learn More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
 
-<!--
+        <!--
 
             <div class="col-lg-12 col-md-12">
                 <div class="courses-info">
@@ -53,7 +68,6 @@
                     <p>Get into details now?​ <a routerLink="/courses-1">PM Master’s Program</a></p>
                 </div>
             </div> -->
-        </div>
     </div>
-    <!-- <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div> -->
 </div>
+<!-- <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div> -->

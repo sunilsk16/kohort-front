@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MeetupService } from '../../../../_services/meetups/meetup.service';
 
 import * as moment from 'moment';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-online-training-about',
@@ -64,6 +65,19 @@ export class OnlineTrainingAboutComponent implements OnInit {
       return ''
     }
   }
+
+  readableDateFormat(userDate: any) {
+    if (!_.isObject(userDate)) {
+      return userDate;
+    } else {
+      let year = userDate.year;
+      let month = userDate.month <= 9 ? '0' + userDate.month : userDate.month;;
+      let day = userDate.day <= 9 ? '0' + userDate.day : userDate.day;;
+      let finalDate = day + "-" + month + "-" + year;
+      return finalDate;
+    }
+  }
+
 
   getReadableTime(userTime, isFirst) {
     if(userTime){

@@ -126,4 +126,34 @@ getTestiMonialBId(testimonialId: any) {
   })
 }
 
+getAllStudies() {
+  return new Promise((resolve) => {
+    this.firestore.collection('studies').snapshotChanges()
+      .subscribe(studies => {
+        let contactList = studies.map(item => {
+          return {
+            ...item.payload.doc.data() as {},
+            id: item.payload.doc.id
+          };
+        });
+        resolve(contactList);
+      })
+  })
+}
+
+getAllLanguage() {
+  return new Promise((resolve) => {
+    this.firestore.collection('language').snapshotChanges()
+      .subscribe(language => {
+        let contactList = language.map(item => {
+          return {
+            ...item.payload.doc.data() as {},
+            id: item.payload.doc.id
+          };
+        });
+        resolve(contactList);
+      })
+  })
+}
+
 }
