@@ -206,6 +206,11 @@ font-style: normal;
 font-weight: normal;
 font-size: 13px;
 line-height: 150%;
+display: flex;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 /* or 19px */
 
 

@@ -12,7 +12,7 @@
         <div class="row align-items-center" >
           <div class="col-lg-4 col-md-12">
 
-            <label class="label" for="">Continent/Country </label>
+            <label class="label" >Language</label>
               <form class="search-box">
                   <input type="text" class="input-search" placeholder="Search for anything"   (input) ="getValue()" [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}">
                   <!-- <button type="submit"><i class="flaticon-search"></i></button> -->
@@ -32,7 +32,7 @@
 
 
         <div class="row" style="margin-top:30px;">
-          
+
             <div class="col-lg-4 col-md-12" *ngFor="let meetup of studiesList2 " style="padding-bottom: 30px">
                 <div class="card">
                     <div class="card-title-hdr">
@@ -55,9 +55,9 @@
                             <h5>{{meetup.code}}</h5>
                             <h4>{{ meetup.description }}</h4>
                         </div>
-                        <a routerLink="/profile" style="float: left;">Join now </a>
+                        <a routerLink="/" style="float: left;">Join now </a>
 
-                        <a routerLink="/profile" style="float: right;color: #151B24;">learn More </a>
+                        <a routerLink="/" style="float: right;color: #151B24;">learn More </a>
                     </div>
                 </div>
             </div>

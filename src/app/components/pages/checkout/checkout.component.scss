@@ -138,6 +138,126 @@ input[type=number] {
     }
 }
 
+
+
+.testMonial{
+ padding: 30px;
+ margin-top: 70px;
+
+}
+
+.testMonial h4{
+  display: flex;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 124%;
+      color: #4264FB;
+      margin-top: 10px;
+}
+
+.testMonial h6{
+  font-family: Silka;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #222222;
+
+}
+
+.testMonial p{
+  font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #565656;
+}
+
+.testMonial img{
+  height: 238.80477905273438px;
+width: 158.7069091796875px;
+left: 0.77392578125px;
+top: 0.8779296875px;
+border-radius: 0px;
+
+}
+
+.testMonialTwo{
+ padding: 10px;
+ text-align: center;
+
+
+}
+
+.contentTwo h4{
+  display: flex;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 124%;
+      color: #4264FB;
+      margin-top: 10px;
+}
+
+.contentTwo h6{
+  font-family: Silka;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #222222;
+
+}
+
+.contentTwo p{
+  font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #565656;
+}
+
+.testMonialTwo img{
+  height: 200.80477905273438px;
+width: 158.7069091796875px;
+left: 0.77392578125px;
+top: 0.8779296875px;
+border-radius: 50%;
+
+}
 .order-details {
     .title {
         margin-bottom: 30px;
@@ -408,7 +528,7 @@ input[type=number] {
 
 .form-control {
     height: 50px;
-    color: var(--blackColor);
+    // color: var(--blackColor);
     box-shadow: unset !important;
     border: 1px solid #f5f5f5;
     background-color: #f5f5f5;
@@ -420,6 +540,14 @@ input[type=number] {
     background: #FFFFFF;
     border: 2px solid #9BADFD;
     box-sizing: border-box;
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #4264FB;
 }
 
 h1 {
@@ -459,7 +587,7 @@ h1 {
     margin-right: 30px;
 
     h2 {
-      width: 138px;
+      // width: 138px;
     height: 60px;
     left: 214.8px;
     top: 794.06px;
@@ -861,6 +989,11 @@ h1 {
     opacity: 1;
 }
 
+.form-control:focus {
+     border-color: var(--mainColor);
+     background-color: transparent;
+}
+
 .inp label {
     font-family: Silka;
     font-style: normal;
@@ -899,6 +1032,22 @@ span {
     width: 340px;
     background: #4264FB;
     margin-top: 50px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-family: Gosha Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
 }
 
 .inp span {
@@ -969,5 +1118,145 @@ span {
                 };
             }
         }
+    }
+}
+
+
+
+
+
+//css
+
+
+div#main-card {
+    max-width: 300px;
+    box-shadow: -5px 2px 18px 4px #ccc;
+}
+
+.top-photo {
+    background: #9BADFD;
+    // width: 300px;
+    height: 20px;
+    // padding: 35px;
+}
+.cover-photo {
+    background: #ffffff;
+    // width: 300px;
+    height: 150px;
+    padding: 35px;
+}
+
+.photo {
+    background: #9BADFD;
+    // width: 300px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+img {
+    position: relative;
+    top: -50px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    box-shadow: -1px 1px 11px 6px rgba(189, 172, 172, 0.33);
+}
+.contentTwo {
+    background: #9BADFD;
+    // width: 300px;
+    // height: 100px;
+    position: relative;
+    top: -35px;
+    text-align: center;
+}
+
+
+
+h2.name,
+h3,
+a {
+    margin: 0;
+    // text-align: center;
+}
+
+h2.name {
+    padding-bottom: 20px;
+}
+
+h3.fullstack {
+    padding-bottom: 10px;
+}
+
+a {
+    color: #0ab581;
+    text-decoration: none;
+}
+
+a:hover {
+    // color: black;
+}
+
+ul {
+    padding: 0;
+}
+
+.fa {
+    font-size: 22px;
+    padding: 10px;
+    text-decoration: none;
+    color: #0ab581;
+}
+
+.fa:hover {
+    color: #000;
+}
+
+a.certified {
+  color: black;
+  cursor: pointer;
+}
+
+a.certified:hover {
+  color: #0ab581;
+}
+
+div#main-card:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+    @-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+    @keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
 }

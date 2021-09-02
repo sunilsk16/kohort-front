@@ -16,6 +16,7 @@ export class ProfileComponent implements OnInit {
   meetupData: any;
   mentorData: any;
   mentorId: any = '';
+  imageList: any = [];
 
   constructor(
     private meetupService: MeetupService,
@@ -30,6 +31,9 @@ export class ProfileComponent implements OnInit {
       this.mentorService.getMentorsById(this.mentorId)
       .then((res: any) =>{
         this.mentorData = res;
+        this.imageList = res.fileSource || [];
+        // this.imageList = res[index]['fileSource'] || []
+          console.log('got id ', this.imageList);
 
       })
 

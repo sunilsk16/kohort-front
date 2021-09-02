@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router'
 import { MeetupService } from '../../../_services/meetups/meetup.service';
 import { HelperService } from '../../../_services/helper/helper.service';
+import { MentorService } from '../../../_services/mentors/mentor.service';
+
 
 import * as moment from 'moment';
 declare var Razorpay: any;
@@ -18,6 +20,7 @@ export class CheckoutComponent implements OnInit {
     razor_key = 'rzp_test_7HIzld6TnnDX0r';
     paymentAmount: number = 5000;
     meetupData: any;
+    mentorData: any;
     meetupId: any
     quantity: any = 1;
     userData: any = {
@@ -37,6 +40,7 @@ export class CheckoutComponent implements OnInit {
       private route: ActivatedRoute,
       private router: Router,
       private meetupService: MeetupService,
+        private mentorService: MentorService,
       private helper: HelperService
     ) { }
 
@@ -48,7 +52,14 @@ export class CheckoutComponent implements OnInit {
         .then((res: any) =>{
           this.meetupData = res;
           console.log('meetupData ', res);
+          return this.mentorService.getMentorsById(res.mentorId)
+
         })
+        .then((res: any) =>{
+          this.mentorData = res;
+          console.log('mentorData ', res);
+        })
+
       }
     }
 

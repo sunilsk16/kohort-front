@@ -10,7 +10,7 @@
 
             <form>
                 <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-lg-9 col-md-12">
                         <div class="billing-details">
                             <h3 class="title">Personal information</h3>
                             <div class="row">
@@ -35,8 +35,8 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6">
                                     <div class="form-group">
-                                        <label>Phone Number</label>
-                                        <input type="number" class="form-control" name="phoneNumber" [(ngModel)]="userData.phoneNumber">
+                                        <label>Company Name (optional)</label>
+                                        <input type="text" class="form-control" name="phoneNumber" [(ngModel)]="userData.phoneNumber">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-6">
@@ -73,17 +73,50 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="col-lg-6 col-md-12">
-                        <div class="login-form" style="height: 400px; margin-top: 75px;">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="testMonial">
+                            <a class="d-block">
+                                <img src="assets/img/advisor/img5.jpg" alt="image"></a>
+                            <h4>Max Super</h4>
+                            <h6>Personal Developer</h6>
+                            <p>“This is something about me, my experience, what I can offer you and so on...”</p>
+                        </div>
+                    </div>
+</div>
+<div class="row" style="margin-top:20px">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="login-form" style="background: #9BADFD;padding: 5px;">
+                          <div class="top-photo">
+                            </div>
+                          <div class="cover-photo">
+                              <h2 style="text-align: center;">Our Esteemed Guest </h2></div>
+
+                          <div class="photo">
+                          <a>  <img src="assets/img/advisor/img5.jpg" alt="image"></a>
+
+                          </div>
+                          <div class="contentTwo" >
+                            <h4>{{mentorData.name}}</h4>
+                            <h6>{{mentorData.designation}}</h6>
+                            <p>“{{mentorData.shortBio}}”</p>
 
                           </div>
 
-                      </div>
+                          <!-- <div class="testMonialTwo">
+                              <a class="d-block">
+                                  <img src="assets/img/advisor/img5.jpg" alt="image"></a>
+                              <h4>Max Super</h4>
+                              <h6>Personal Developer</h6>
+                              <p>“This is something about me, my experience, what I can offer you and so on...”</p>
+                          </div> -->
+
+
+                          </div>
+                          </div>
                     <div class="col-lg-6 col-md-12">
                         <div class="login-form">
                             <h2>Your cart</h2>
                             <form *ngIf="meetupData">
-
                                 <div class="inp">
                                     <label>Event Title</label><span>{{ meetupData.name }}</span>
                                 </div>

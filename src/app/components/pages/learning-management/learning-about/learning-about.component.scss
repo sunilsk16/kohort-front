@@ -237,12 +237,12 @@ color: #222222;
     border: none;
     text-align: center;
     overflow: hidden;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
   background: #151B24;
     padding: 12.5px 95px;
     box-sizing: border-box;
     border-radius: 0px;
-    font-weight: 700;
+    font-weight: 500;
     // font-size: var(--fontSize);
     font-family: Gosha Sans;
     font-style: normal;
@@ -255,6 +255,11 @@ color: #222222;
 }
 
 .post-content h4{
+  display: flex;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
   font-family: Gosha Sans;
 font-style: normal;
 font-weight: bold;
@@ -271,6 +276,11 @@ font-style: italic;
 font-weight: normal;
 font-size: 14px;
 line-height: 150%;
+display: flex;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 /* identical to box height, or 21px */
 
 
@@ -284,6 +294,11 @@ font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 150%;
+display: flex;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 /* or 18px */
 
 

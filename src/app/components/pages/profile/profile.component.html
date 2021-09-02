@@ -9,7 +9,8 @@
             <h6>{{mentorData.address}} | {{mentorData.state}}, {{mentorData.city}} | {{mentorData.designation}} <span style="float:right;margin-right: 40px;">Share <span style="margin-left: 20px;"><i _ngcontent-xav-c47="" class="flaticon-heart"></i> </span></span></h6>
             <div class="row ">
                 <div class="col-lg-3 col-md-4">
-                    <div class="image">
+                    <div class="image" >
+                       <!-- <img *ngIf="mentorData.fileSource[0]" [src]="mentorData.fileSource[0]" (mouseout)="onMouseOut(mentorData)" (mouseover)="onMouseOver(mentorData, 0)"  alt="image"> -->
                         <img src="../assets/img/Hip guy.jpg" alt="image">
                     </div>
                 </div>
