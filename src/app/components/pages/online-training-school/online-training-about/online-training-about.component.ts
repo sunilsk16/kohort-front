@@ -10,51 +10,18 @@ import * as _ from 'underscore';
   styleUrls: ['./online-training-about.component.scss']
 })
 export class OnlineTrainingAboutComponent implements OnInit {
-  public myEvents:Array<any> = [
-      {
-        id: 1,
-        eventTitle: ' Conference on  Management',
-        description: '',
-     },
-      {
-        id: 2,
-        eventTitle: ' Conference on  Education',
-        description: '',
-      },
-      {
-        id: 3,
-        eventTitle: ' Conference on Special Needs ',
-        description: '',
-      },
-      {
-        id: 4,
-        eventTitle: ' Conference on  Teaching',
-        description: '',
-      },
-      {
-        id: 5,
-        eventTitle: ' Conference on  Administration',
-        description: '',
-      },
-      {
-        id: 6,
-      eventTitle: 'Research Conference Aims ',
-      description: '',
-    },
-
-  ];
-
+    show = 6;
   meetupList: any = [];
   constructor(
     public meetupService: MeetupService
   ) { }
 
   ngOnInit(): void {
-    console.log('res',this.myEvents);
+
     this.meetupService.getAllMeetups()
     .then((res: any) =>{
-      console.log('meetups ', res);
-      this.meetupList = res;
+      console.log('meetupsssss ', res);
+      this.meetupList = _.reject(res, {'isActive': true});
     })
   }
 
@@ -94,6 +61,10 @@ export class OnlineTrainingAboutComponent implements OnInit {
         return (hourFormat || 0) + ':' + (minFormat || 0) + ' ' + format;
       }
     }
+  }
+
+  increaseShow() {
+      this.show += 3;
   }
 
 }

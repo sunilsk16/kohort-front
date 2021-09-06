@@ -70,6 +70,7 @@ const routes: Routes = [
   {path: 'about-3', component: AboutStyleThreeComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'checkout/:id', component: CheckoutComponent},
+  {path: 'blog-1', component: BlogStyleOneComponent},
 
 
     // {path: '', component: ElearningSchoolComponent},

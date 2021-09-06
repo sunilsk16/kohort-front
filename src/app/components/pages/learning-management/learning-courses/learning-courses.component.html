@@ -4,78 +4,91 @@
             <div class="experience-content">
                 <h3>Learn from the World’s best <br /><span style="color:#4264FB"> <span></span></span> </h3>
             </div>
-            <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
-                        <ul class="social-link">
-                            <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
-                        </ul>
-                        <!-- <h3 class="social-link"><a routerLink="/profile">James Andy</a></h3> -->
-                    </div>
-                    <div class="advisor-content">
-                        <span>{{ mentor.achievement }}</span>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img5.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img6.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li> -->
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
+                            <div class="single-advisor-item">
+                                <div class="advisor-image">
+                                    <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
+                                    <ul class="social-link">
+                                        <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                        <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                        <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                        <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
+                                    </ul>
+                                    <!-- <h3 class="social-link"><a routerLink="/profile">James Andy</a></h3> -->
+                                </div>
+                                <div class="advisor-content">
+                                    <span>{{ mentor.achievement }}</span>
+                                </div>
+                            </div>
                         </div>
-                </div>
-            </div> -->
-            <!-- <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img6.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
+
                     </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
+
+                    <div class="item">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
+                            <div class="single-advisor-item">
+                                <div class="advisor-image">
+                                    <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
+                                    <ul class="social-link">
+                                        <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                        <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                        <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                        <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
+                                    </ul>
+                                    <!-- <h3 class="social-link"><a routerLink="/profile">James Andy</a></h3> -->
+                                </div>
+                                <div class="advisor-content">
+                                    <span>{{ mentor.achievement }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
+                            <div class="single-advisor-item">
+                                <div class="advisor-image">
+                                    <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
+                                    <ul class="social-link">
+                                        <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                        <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                        <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                        <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
+                                    </ul>
+                                    <!-- <h3 class="social-link"><a routerLink="/profile">James Andy</a></h3> -->
+                                </div>
+                                <div class="advisor-content">
+                                    <span>{{ mentor.achievement }}</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> -->
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="explore">
+     <a  href="/blog-1" >Explore Mentors</a>
         </div>
     </div>
 </div>
-
-<!-- <div class="premium-access-area pb-100">
-    <app-premium-access></app-premium-access>
-    <div class="shape3"><img src="assets/img/shape3.png" alt="image"></div>
-    <div class="shape4"><img src="assets/img/shape4.png" alt="image"></div>
-    <div class="shape8"><img src="assets/img/shape7.png" alt="image"></div>
-</div> -->

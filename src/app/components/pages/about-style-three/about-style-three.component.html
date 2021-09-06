@@ -127,77 +127,31 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img4.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img5.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img6.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img7.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-
-
+          <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors | slice:0:show; let i=index">
+              <!-- <a href="#" class="span-tag tag">{{ mentor.name }}</a> -->
+              <div class="single-advisor-item">
+                  <div class="advisor-image">
+                      <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
+                      <ul class="social-link">
+                          <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                          <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                          <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                          <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="advisor-content">
+                      <span>{{ mentor.achievement }}</span>
+                  </div>
+              </div>
+          </div>
+          <div class="explore">
+              <a style="cursor: grab;" *ngIf="show < topMentors.length" (click)="increaseShow()">Explore Mentors</a>
+          </div>
         </div>
     </div>
 </div>
-<div class="experience-area ptb-100 ">
 
+<div class="experience-area ptb-100 ">
     <div class="get-instant-courses-area-two bg-f9fbff">
         <div class="container">
             <div class="row align-items-center">

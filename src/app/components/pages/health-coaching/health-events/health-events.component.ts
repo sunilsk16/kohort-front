@@ -51,22 +51,12 @@ public myEvents:Array<any> = [
 }
 
   ngOnInit(): void {
-
-
-
-    // this.studiesList2=this.studiesList
-
     this.mentorService.getAllLanguage()
 .then((res:any) =>{
  console.log('studiesList ', res);
    this.studiesList = res;
-  return this.studiesList2 = this.studiesList.filter((x:any) => x.name.toLowerCase() == this.selectedValue.toLowerCase())
-
-
+  return this.studiesList2 = this.studiesList.filter((x:any) => x.name.toLowerCase().includes( "German".toLowerCase()))
   })
-
-  this.selectedValue='German'
-
   }
 
   bgImage = [
@@ -98,8 +88,12 @@ public myEvents:Array<any> = [
     }
 
 getValue() {
-    this.studiesList2 = this.studiesList.filter((x:any) => x.name.toLowerCase() == this.selectedValue.toLowerCase())
+  if(!this.selectedValue || !this.selectedValue.length){
+    this.studiesList2 = _.groupBy(this.studiesList, "name")["German"].slice(0, 3)
+  } else {
+    this.studiesList2 = this.studiesList.filter((x:any) => x.name.toLowerCase().includes( this.selectedValue.toLowerCase()))
     console.log('value',this.selectedValue);
+  }
 }
 
   getReadableTime(userTime, isFirst) {

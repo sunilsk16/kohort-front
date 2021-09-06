@@ -156,4 +156,35 @@ getAllLanguage() {
   })
 }
 
+getReviewsById(id: any) {
+    return new Promise((resolve) => {
+      var docRef = this.firestore.collection("reviews").doc(id);
+
+      docRef.ref.get().then(function(doc) {
+        if (doc.exists) {
+          let res = { ...doc.data()  as {} , id: doc.id }
+          resolve(res)
+        }
+      }).catch(function(error) {
+        resolve(null);
+      });
+    })
+  }
+
+  getReviewsBId(mentorId: any) {
+    return new Promise((resolve) => {
+      this.firestore.collection('reviews',
+        ref => ref.where('mentorId', '==', (mentorId))).snapshotChanges()
+        .subscribe(reviews => {
+          let contactList = reviews.map(item => {
+            return {
+              ...item.payload.doc.data() as {},
+              id: item.payload.doc.id
+            };
+          });
+          resolve(contactList);
+        })
+    })
+  }
+
 }

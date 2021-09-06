@@ -8,39 +8,7 @@ import * as moment from 'moment';
   styleUrls: ['./online-training-courses.component.scss']
 })
 export class OnlineTrainingCoursesComponent implements OnInit {
-  public myEvents:Array<any> = [
-      {
-        id: 1,
-        eventTitle: ' Conference on  Management',
-        description: '',
-     },
-      {
-        id: 2,
-        eventTitle: ' Conference on  Education',
-        description: '',
-      },
-      {
-        id: 3,
-        eventTitle: ' Conference on Special Needs ',
-        description: '',
-      },
-      {
-        id: 4,
-        eventTitle: ' Conference on  Teaching',
-        description: '',
-      },
-      {
-        id: 5,
-        eventTitle: ' Conference on  Administration',
-        description: '',
-      },
-      {
-        id: 6,
-      eventTitle: 'Research Conference Aims ',
-      description: '',
-    },
-
-  ];
+    show = 6;
 
   meetupList: any = [];
   constructor(
@@ -48,7 +16,6 @@ export class OnlineTrainingCoursesComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log('res',this.myEvents);
     this.meetupService.getAllMeetups()
     .then((res: any) =>{
       console.log('meetups ', res);
@@ -79,6 +46,10 @@ export class OnlineTrainingCoursesComponent implements OnInit {
         return (hourFormat || 0) + ':' + (minFormat || 0) + ' ' + format;
       }
     }
+  }
+
+  increaseShow() {
+      this.show += 3;
   }
 
 }

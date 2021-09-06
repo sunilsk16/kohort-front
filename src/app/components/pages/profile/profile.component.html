@@ -5,8 +5,8 @@
                 <li><a routerLink="/">Home</a></li>
                 <li>Profile</li>
             </ul> -->
-            <h2>{{mentorData.name? mentorData.name : " "}}</h2>
-            <h6>{{mentorData.address}} | {{mentorData.state}}, {{mentorData.city}} | {{mentorData.designation}} <span style="float:right;margin-right: 40px;">Share <span style="margin-left: 20px;"><i _ngcontent-xav-c47="" class="flaticon-heart"></i> </span></span></h6>
+            <h2>{{mentorData && mentorData.name }}</h2>
+            <h6>{{mentorData && mentorData.address}} | {{mentorData && mentorData.state}}, {{mentorData && mentorData.city}} | {{mentorData && mentorData.designation}} <span style="float:right;margin-right: 40px;">Share <span style="margin-left: 20px;"><i _ngcontent-xav-c47="" class="flaticon-heart"></i> </span></span></h6>
             <div class="row ">
                 <div class="col-lg-3 col-md-4">
                     <div class="image" >
@@ -18,8 +18,17 @@
                     <div class="profile">
                         <!-- <h3>Sarah Taylor</h3>
                         <span class="sub-title">Agile Project Expert</span> -->
-                        <p>{{mentorData.achievement}} </p>
-                        <h5> “{{mentorData.shortBio}}” </h5>
+                        <!-- <p>{{mentorData.achievement}} </p> -->
+                        <p class="clearfix" >
+                			<span class="collapsable float-left" > {{  (mentorData && mentorData.achievement.length>firstCount) ? (mentorData && mentorData.achievement | slice:0:counter)+'..':(mentorData && mentorData.achievement) }}
+                					<span style="cursor: grab;" class="redTxt" *ngIf="(mentorData && mentorData.achievement.length>20)" (click)="toggleSkil($event)"  >
+                							{{showTxt}}
+                				   </span>
+                			</span>
+
+
+                         </p>
+                        <h5> “{{mentorData && mentorData.shortBio}}” </h5>
                         <!-- <li><span>Email:</span> <a href="mailto:hello@sarahtaylor.com">hello@sarahtaylor.com</a></li> -->
                         <button routerLink="/" class="details-btn" type="button" name="button">Contact Mentor</button>
                     </div>
@@ -30,8 +39,8 @@
                         <span class="sub-title">Mentoring experience</span>
                         <ul class="social-link">
                             <li>75 mins</li>
-                            <li>Language: {{mentorData.language}}</li>
-                            <li>Higher Education:{{mentorData.education}}</li>
+                            <li>Language: {{mentorData && mentorData.language}}</li>
+                            <li>Higher Education:{{mentorData && mentorData.education}}</li>
                             <li>Join from computer, phone, or tablet</li>
                         </ul>
                     </div>
@@ -271,7 +280,7 @@
 </div>
 
 
-<div class="advisor-area pt-100 pb-70">
+<!-- <div class="advisor-area pt-100 pb-70">
 
     <div class="container">
         <div class="banner-wrapper-content">
@@ -295,56 +304,37 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img5.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img6.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img7.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
     </div>
-</div>
+</div> -->
+<div class="advisor-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+          <div class="banner-wrapper-content">
+              <h1>Explore our Mentors </h1>
+          </div>
+            <div class="col-lg-3 col-sm-6 col-md-6"  *ngFor="let mentor of topMentors | slice:0:show; let i=index">
+              <!-- <a href="#" class="span-tag tag">{{ mentor.name }}</a> -->
+              <div class="single-advisor-item">
+                  <div class="advisor-image">
+                      <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
+                      <ul class="social-link">
+                          <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                          <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                          <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                          <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="advisor-content">
+                      <span>{{mentorData &&  mentor.achievement }}</span>
+                  </div>
+              </div>
+            </div>
+
+                        <div class="explore">
+                      <a style="cursor: grab;" *ngIf="show < topMentors && topMentors.length" (click)="increaseShow()" >Explore Mentors</a>
+                        </div>
+                    </div>
+            </div>
+        </div>

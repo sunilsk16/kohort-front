@@ -167,6 +167,7 @@ color: #000000;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
+    color: #151B24;
 }
 
 .search-box {
@@ -320,6 +321,20 @@ color: #151B24;
 
 }
 
+.courses-content h6{
+      left: 4.36%;
+      right: 6.71%;
+      top: 47.42%;
+      bottom: 25.85%;
+      font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 150%;
+      color: #333333;
+
+}
+
 .courses-content-footer i,p{
   left: 46.74%;
   right: 22.18%;
@@ -405,4 +420,57 @@ color: #151B24;
     font-size: 14px;
     line-height: 130%;
     color: #FFFFFF;
+}
+
+
+
+//courses-style-six
+
+.wrap{
+  position: relative;
+padding:0;
+}
+h1 {
+  margin:0; padding:0;
+  white-space: nowrap;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  line-height: 50px;
+  box-sizing: border-box;
+}
+
+
+#after{
+  cursor: pointer;
+      /* border: 1px solid red; */
+      display: block;
+      position: absolute;
+      top: 0;
+      /* right: 40%; */
+      width: 2.2em;
+      height: 2.2em;
+      left: 80%;
+}
+
+
+.tooltip {
+  width: 100%;
+  visibility: hidden;
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 50px 0 rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position:absolute;
+  top:5em;
+  left:0;
+}
+
+
+#after:hover + .tooltip {
+  visibility: visible;
+  transition: opacity 0.5s ease;
+  opacity: 1;
 }

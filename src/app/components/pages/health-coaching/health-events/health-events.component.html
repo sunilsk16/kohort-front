@@ -9,34 +9,35 @@
             </div>
         </div>
 
-        <div class="row align-items-center" >
-          <div class="col-lg-4 col-md-12">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12">
 
-            <label class="label" >Language</label>
-              <form class="search-box">
-                  <input type="text" class="input-search" placeholder="Search for anything"   (input) ="getValue()" [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}">
-                  <!-- <button type="submit"><i class="flaticon-search"></i></button> -->
-              </form>
-          </div>
 
-          <div class="col-lg-4 col-md-12">
-              <label for=""></label>
+                <label class="label">Language</label>
+                <form class="search-box">
+                    <input type="text" class="input-search" placeholder="Search for anything" (input)="getValue()" [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}">
+                    <!-- <button type="submit"><i class="flaticon-search"></i></button> -->
+                </form>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <label for=""></label>
                 <div class="search-box">
-                    <button _ngcontent-xtx-c146="" type="submit"  (click)="getValue()">
+                    <button _ngcontent-xtx-c146="" type="submit" (click)="getValue()">
                         <!-- <i class="fa fa-refresh fa-spin" ></i> -->
-                      Explore
+                        Explore
                     </button>
-              </div>
-          </div>
+                </div>
+            </div>
         </div>
 
 
-        <div class="row" style="margin-top:30px;">
+        <div class="row" style="margin-top:50px;">
 
             <div class="col-lg-4 col-md-12" *ngFor="let meetup of studiesList2 " style="padding-bottom: 30px">
                 <div class="card">
                     <div class="card-title-hdr">
-                      <img _ngcontent-xxw-c71="" src="../assets/icon/kohort-gcal.svg" alt="image" >
+                        <img _ngcontent-xxw-c71="" src="../assets/icon/kohort-gcal.svg" alt="image">
 
                         <div class="card-timing">
                             <!-- {{ getDate(meetup.dates) }} -->
@@ -52,21 +53,27 @@
 
                             <!-- <a routerLink="/" class="fav"><i class="flaticon-calendar"></i></a>
                         <a routerLink="/" class="fav"><i class="flaticon-heart"></i></a> -->
-                            <h5>{{meetup.code}}</h5>
+                          <h5>{{meetup.code}}</h5>
+                           <div class="wrap">
                             <h4>{{ meetup.description }}</h4>
+                            <span id="after"></span>
+                            <div class='tooltip'>
+                                <h6>{{ meetup.description }}</h6>
+                            </div>
+                            <div>
                         </div>
-                        <a routerLink="/" style="float: left;">Join now </a>
+                                <a routerLink="/" style="float: left;">Join now </a>
 
-                        <a routerLink="/" style="float: right;color: #151B24;">learn More </a>
+                                <a routerLink="/" style="float: right;color: #151B24;">learn More </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
 
 
 
-        <!--
+                <!--
 
             <div class="col-lg-12 col-md-12">
                 <div class="courses-info">
@@ -74,6 +81,6 @@
                     <p>Get into details now?​ <a routerLink="/courses-1">PM Master’s Program</a></p>
                 </div>
             </div> -->
-    </div>
-</div>
-<!-- <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div> -->
+            </div>
+        </div>
+        <!-- <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div> -->

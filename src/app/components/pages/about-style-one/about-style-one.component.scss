@@ -1,5 +1,8 @@
 // @import "../../../../get-instant-courses/get-instant-courses.component.scss";
 @import "src/app/components/common/get-instant-courses/get-instant-courses.component.scss";
+@import "../../common/courses/courses.component.scss";
+@import "../../common/experience/experience.component.scss";
+@import "../../common/instructor/instructor.component.scss";
 
 
 
@@ -92,6 +95,77 @@ color: #000000;
       color: #151B24;
   }
 
+  .experience-contentTwo  h4 {
+    left: 192.27px;
+      top: 2622.53px;
+      font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 125%;
+      color: #151B24;
+  }
+
+  .experience-contentTwo p {
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.post-image img{
+    height: 238.8047790527px;
+    width: 180.706909px;
+    left: 0.7740478516px;
+    top: 0.8780517578px;
+    border-radius: 0px;
+}
+
+.post-content h4 {
+    display: flex;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 124%;
+    color: #4264FB;
+    margin-top: 10px;
+}
+
+.post-content h6{
+    font-family: Silka;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #222222;
+}
+
+.post-content p {
+    font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #565656;
+}
   .meetups-li ul{
 
 padding-left: 25px;

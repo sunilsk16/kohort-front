@@ -22,6 +22,39 @@
   color: #151B24;
 }
 
+.explore{
+  text-align: end;
+  font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 125%;
+    color: #4264FB;
+}
+.glyphicon-chevron-left:before {
+    content: "\e079";
+    font-size: 22px;
+     color: #0062e4;
+}
+.glyphicon-chevron-right:before {
+    // content: "\e079";
+    font-size: 22px;
+   color: #0062e4;
+}
+
+._sexpk1 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.bx-chevron-right:before {
+    content: "\e9b2";
+    font-size: 30px;
+}
+a {
+    color: #0062e4;
+    text-decoration: none;
+}
 .courses-content {
     height: 88.3626708984px;
     width: 216.706909px;
@@ -68,4 +101,52 @@ color: #151B24;
 
 .courses-image :hover {
   transform: scale(1.07);
+}
+
+
+.carousel-control.left {
+  margin-left: -1%;
+    background: none;
+    width: 10px;
+    color: black;
+}
+
+
+.carousel-control.right {
+  margin-right: -1%;
+      background: none;
+      width: 10px;
+      color: black;
+
+}
+
+.carousel-indicators li{
+  background: gray;
+}
+
+.carousel-indicators{
+  width: 70%;
+}
+
+.carousel-indicators .active{
+  background: black;
+}
+
+
+.pagination-area .page-numbers {
+  width: 120px;
+    background: none;
+    /* width: 33px; */
+    // height: 33px;
+    /* background-color: #f3f0f0; */
+    color: var(--optionalColor);
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    line-height: 34px;
+    position: relative;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: var(--fontSize);
+    font-weight: 800;
 }

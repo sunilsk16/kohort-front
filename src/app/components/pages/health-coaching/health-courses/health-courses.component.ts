@@ -12,62 +12,22 @@ export class HealthCoursesComponent implements OnInit {
     studiesList: any;
     studiesList2: any[];
     selectedValue: any;
-
-
-    public myEvents: Array<any> = [
-        {
-            id: 1,
-            mentorTitle: ' Alex Morgan',
-            about: '',
-        },
-        {
-            id: 2,
-            mentorTitle: ' Kirill Eremenko',
-            about: '',
-        },
-        {
-            id: 3,
-            mentorTitle: ' Ben Tristem ',
-            about: '',
-        },
-        {
-            id: 4,
-            mentorTitle: ' Jose Portilla',
-            about: '',
-        },
-        {
-            id: 5,
-            mentorTitle: ' Daragh Walsh',
-            about: '',
-        },
-        {
-            id: 6,
-            mentorTitle: ' Hadelin  ',
-            about: '',
-        },
-
-    ];
     constructor(private mentorService: MentorService) {
     }
 
     ngOnInit(): void {
+
         // this.studiesList2=this.studiesList
 
         this.mentorService.getAllStudies()
             .then((res: any) => {
                 console.log('studiesList ', res);
                 this.studiesList = res;
-                return this.studiesList2 = this.studiesList.filter((x: any) => x.name.toLowerCase() == "France".toLowerCase())
+                return this.studiesList2 = this.studiesList.filter((x:any) => x.name.toLowerCase().includes( "France".toLowerCase()))
             })
-        this.selectedValue = 'France'
+        // this.selectedValue = 'France'
+        // _.groupBy(a,"name")["France"].slice(0,3)
     }
-
-    bgImage = [
-        {
-            img: 'assets/img/courses-bg.jpg'
-        }
-    ]
-
     getDate(meetupDate: any) {
         if (meetupDate) {
             return moment(meetupDate, 'DD-MM-YYYY').format('MMM DD, YYYY')
@@ -89,19 +49,15 @@ export class HealthCoursesComponent implements OnInit {
         }
     }
 
-    getValue(event) {
-        this.studiesList2 = this.studiesList.filter((x: any) => x.name.toLowerCase() == this.selectedValue.toLowerCase())
-        console.log('value', this.selectedValue);
+    getValue() {
+      if(!this.selectedValue || !this.selectedValue.length){
+        this.studiesList2 = _.groupBy(this.studiesList, "name")["France"].slice(0, 3)
+      } else {
+        this.studiesList2 = this.studiesList.filter((x:any) => x.name.toLowerCase().includes( this.selectedValue.toLowerCase())).slice(0,3)
+        console.log('value',this.selectedValue);
+      }
     }
 
-
-    //     getValue(event) {
-    //         if(event && event.target) {
-    //           this.studiesList2 = this.studiesList._.filter(x => x.name == event.target.value.name)
-    //           console.log('value',this.studiesList2);
-    //
-    //         }
-    // }
     getReadableTime(userTime, isFirst) {
         if (userTime) {
             let hourFormat = userTime.hour <= 9 ? ('0' + userTime.hour) : userTime.hour

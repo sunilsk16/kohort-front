@@ -17,7 +17,7 @@ export class LearningCoursesComponent implements OnInit {
     this.mentorService.getAllMentors()
     .then((res: any) =>{
       if(res && res.length){
-        this.topMentors = res;
+        this.topMentors = res.slice(0,4);
         console.log('got mentors ', this.topMentors);
       }
     })

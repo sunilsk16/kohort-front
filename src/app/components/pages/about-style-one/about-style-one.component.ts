@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MentorService } from '../../../_services/mentors/mentor.service';
+
 
 @Component({
     selector: 'app-about-style-one',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutStyleOneComponent implements OnInit {
 
-    constructor() { }
+  testiMonialList: any;
+  constructor( private mentorService: MentorService) { }
 
-    ngOnInit(): void {
-    }
+  ngOnInit(): void {
+    this.mentorService.getAllTestiMonial()
+  .then((res:any) =>{
+  console.log('TestiMonial ', res);
+   this.testiMonialList = res;
+  })
+  }
 
-}
+  bgImage = [
+      {
+          img: 'assets/img/courses-bg.jpg'
+      }
+  ]
+
+  }
