@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MentorService } from '../../../../_services/mentors/mentor.service';
 import * as moment from 'moment';
 import * as _ from 'underscore';
+import { countryList } from '../../../../_services/countryList';
+// import { countryList } from '../../services/countryList';
 
 @Component({
     selector: 'app-health-courses',
@@ -12,19 +14,28 @@ export class HealthCoursesComponent implements OnInit {
     studiesList: any;
     studiesList2: any[];
     selectedValue: any;
-    constructor(private mentorService: MentorService) {
+    countrylist: any[];
+     searchTerm: string = '';
+     filteredResult: any[] = [];
+    filteredResult2: any[] = [];
+
+    constructor(private mentorService: MentorService,
+        private _countryService: countryList
+    ) {
     }
 
     ngOnInit(): void {
 
-        // this.studiesList2=this.studiesList
-
+ this.countrylist = this._countryService.getCountrylist();
         this.mentorService.getAllStudies()
             .then((res: any) => {
                 console.log('studiesList ', res);
                 this.studiesList = res;
+                this.filteredResult2= [...new Set(res.map(item => item.name))];
+                console.log(this.filteredResult2);
                 return this.studiesList2 = this.studiesList.filter((x:any) => x.name.toLowerCase().includes( "France".toLowerCase()))
             })
+
         // this.selectedValue = 'France'
         // _.groupBy(a,"name")["France"].slice(0,3)
     }
@@ -74,5 +85,21 @@ export class HealthCoursesComponent implements OnInit {
             }
         }
     }
+    filterCountryList() {
+            if (this.selectedValue && this.selectedValue !== '') {
+                let _term = this.selectedValue.toLowerCase();
+                this.filteredResult = this.countrylist.filter(function (el: any) {
+                    return el.name.toLowerCase().indexOf(_term.toLowerCase()) > -1;
+                });
+            } else {
+                this.filteredResult = [];
+            }
+        }
+
+        //set selected country
+        selectCountry(name) {
+            this.selectedValue = name;
+            this.filteredResult = [];
+        }
 
 }

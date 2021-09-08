@@ -174,7 +174,9 @@ color: #FFFFFF;
     font-weight: normal;
     font-size: 16px;
   color: #151B24;
+     padding: .0em;
 }
+
 
 .search-box {
 
@@ -192,11 +194,12 @@ color: #FFFFFF;
         background: #FFFFFF;
   border: 3px solid #9BADFD;
   box-sizing: border-box;
-
-        font: {
-            size: var(--fontSize);
-            weight: 400;
-        };
+  font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 150%;
+      color: #333333;
         padding: {
             left: 15px;
             top: 1px;
@@ -354,8 +357,14 @@ box-sizing: border-box;
 }
 
 .card {
-    border: 2px solid #4264FB;
+    // border: 2px solid #4264FB;
     box-sizing: border-box;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    border: 2px solid #4264FB;
 }
 
 .card-timing {
@@ -364,6 +373,29 @@ box-sizing: border-box;
     margin-left: 10px;
 }
 
+ol, ul, dl {
+  width: 225px;
+height: 250px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+  background-color: white;
+    overflow-y:scroll;
+    cursor: grab;
+}
+li{
+  list-style: none;
+}
+span{
+ font-family: Silka;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 150%;
+   color: #333333;
+}
 
 @media only screen and (max-width: 1279px){
   .card-title-hdr {

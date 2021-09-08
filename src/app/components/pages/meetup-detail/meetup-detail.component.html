@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-8 col-md-12">
                 <div class="get-instant-courses-content-style-two">
-                    <h1 class="name">{{ meetupData.name }}</h1>
+                    <h1 class="name">{{ meetupData && meetupData.name }}</h1>
                     <a routerLink="/checkout/{{meetupData.id}}" class="default-btn">₹ {{ meetupData.price }} - Buy Tickets </a>
                     <div class="events-share">
                         <div class="share-info">
@@ -44,16 +44,16 @@
                     <div class="col-md-8">
                         <div>
 
-                            <p>{{mentorData.achievement}}</p>
-                            <h6>{{mentorData.specialties}} and country (flag)</h6>
+                            <p>{{mentorData && mentorData.achievement}}</p>
+                            <h6>{{mentorData && mentorData.specialties}} and country (flag)</h6>
 
                             <div class="events-share2">
                                 <div class="share-info2">
                                     <ul class="social-link2" style="list-style:none">
-                                        <li *ngIf="mentorData.facebook"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-link.png" alt="image"></a></li>
-                                        <li *ngIf="mentorData.twitter"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-twitter.png" alt="image"></a></li>
-                                        <li *ngIf="mentorData.instagram"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-fb.png" alt="image"></a></li>
-                                        <li *ngIf="mentorData.website"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-link.png" alt="image"></a></li>
+                                        <li *ngIf="mentorData && mentorData.facebook"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-link.png" alt="image"></a></li>
+                                        <li *ngIf="mentorData && mentorData.twitter"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-twitter.png" alt="image"></a></li>
+                                        <li *ngIf="mentorData && mentorData.instagram"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-fb.png" alt="image"></a></li>
+                                        <li *ngIf=" mentorData && mentorData.website"><a href="#" class="d-block" target="_blank"><img src="../assets/icon/kohort-link.png" alt="image"></a></li>
                                     </ul>
                                 </div>
 
@@ -67,9 +67,9 @@
                 <div class="col-lg-8 col-md-12">
                     <h4> What is this meetup about? </h4>
                     <div class="slogan">
-                        <p>{{meetupData.about}}
+                        <p>{{meetupData && meetupData.about}}
                         </p>
-                        <p>{{meetupData.description}}</p>
+                        <p>{{meetupData && meetupData.description}}</p>
                     </div>
                 </div>
             </div>

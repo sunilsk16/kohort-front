@@ -11,17 +11,20 @@
 
         <div class="row align-items-center">
             <div class="col-lg-4 col-md-12">
-
-
-                <label class="label">Language</label>
+                <label class="label"></label>
                 <form class="search-box">
-                    <input type="text" class="input-search" placeholder="Search for anything" (input)="getValue()" [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}">
+                    <input type="text" [(ngModel)]="selectedValue" placeholder="Country name" (keyup)="filterCountryList()" class="input-search" placeholder="Search"   [ngModelOptions]="{standalone: true}">
+                    <ul *ngIf="filteredResult.length>0">
+                        <li *ngFor="let c of filteredResult" (click)="selectCountry(c.name)">
+                            <span>{{c.name}}</span>
+                        </li>
+                    </ul>
                     <!-- <button type="submit"><i class="flaticon-search"></i></button> -->
                 </form>
             </div>
 
-            <div class="col-lg-4 col-md-12">
-                <label for=""></label>
+            <div class="col-lg-4 col-md-12" style="margin-left: 25px;">
+
                 <div class="search-box">
                     <button _ngcontent-xtx-c146="" type="submit" (click)="getValue()">
                         <!-- <i class="fa fa-refresh fa-spin" ></i> -->
@@ -30,7 +33,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="row" style="margin-top:50px;">
 

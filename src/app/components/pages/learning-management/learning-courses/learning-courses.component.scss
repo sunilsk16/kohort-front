@@ -22,6 +22,26 @@
   color: #151B24;
 }
 
+.experience-content1 {
+    /* position: relative; */
+    /* z-index: 1; */
+    text-align: end;
+    margin-bottom: 25px;
+}
+
+.glyphicon-chevron-right:before {
+    font-size: 22px;
+    color: #0062e4;
+    margin-left: 35px;
+  border: solid 3px;
+    margin-right: 25px;
+}
+.glyphicon-chevron-left:before {
+    font-size: 22px;
+    color: #0062e4;
+    // margin-left: 50px;
+  border: solid 3px;
+}
 .explore{
   text-align: end;
   font-family: Gosha Sans;
@@ -30,16 +50,17 @@
     font-size: 20px;
     line-height: 125%;
     color: #4264FB;
+    margin-right: 25px;
 }
 .glyphicon-chevron-left:before {
     content: "\e079";
-    font-size: 22px;
-     color: #0062e4;
+    font-size: 15px;
+     color: #4264FB;
 }
 .glyphicon-chevron-right:before {
     // content: "\e079";
-    font-size: 22px;
-   color: #0062e4;
+    font-size: 15px;
+   color: #4264FB;
 }
 
 ._sexpk1 {
@@ -83,8 +104,8 @@ font-style: normal;
 font-weight: bold;
 font-size: 40px;
 line-height: 125%;
-margin-top: -50px;
-margin-bottom: 50px;
+// margin-top: -50px;
+// margin-bottom: 50px;
 /* identical to box height, or 50px */
 
 

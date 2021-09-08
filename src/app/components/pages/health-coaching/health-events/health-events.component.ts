@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MentorService } from '../../../../_services/mentors/mentor.service';
 import * as moment from 'moment';
 import * as _ from 'underscore';
+import { countryList } from '../../../../_services/countryList';
 
 @Component({
   selector: 'app-health-events',
@@ -12,45 +13,17 @@ export class HealthEventsComponent implements OnInit {
   studiesList: any;
   studiesList2: any [];
   selectedValue: any;
+  countrylist: any[];
+   searchTerm: string = '';
+   filteredResult: any[] = [];
 
 
-public myEvents:Array<any> = [
-    {
-      id: 1,
-      mentorTitle: ' Alex Morgan',
-      about: '',
-   },
-    {
-      id: 2,
-      mentorTitle: ' Kirill Eremenko',
-      about: '',
-    },
-    {
-      id: 3,
-      mentorTitle: ' Ben Tristem ',
-      about: '',
-    },
-    {
-      id: 4,
-      mentorTitle: ' Jose Portilla',
-      about: '',
-    },
-    {
-      id: 5,
-      mentorTitle: ' Daragh Walsh',
-      about: '',
-    },
-    {
-      id: 6,
-    mentorTitle: ' Hadelin  ',
-    about: '',
-  },
-
-];
-  constructor( private mentorService: MentorService) {
+  constructor( private mentorService: MentorService,
+  private _countryService: countryList) {
 }
 
   ngOnInit(): void {
+     this.countrylist = this._countryService.getCountrylist();
     this.mentorService.getAllLanguage()
 .then((res:any) =>{
  console.log('studiesList ', res);
@@ -112,5 +85,22 @@ getValue() {
       }
     }
   }
+
+  filterCountryList() {
+          if (this.selectedValue && this.selectedValue !== '') {
+              let _term = this.selectedValue.toLowerCase();
+              this.filteredResult = this.countrylist.filter(function (el: any) {
+                  return el.name.toLowerCase().indexOf(_term.toLowerCase()) > -1;
+              });
+          } else {
+              this.filteredResult = [];
+          }
+      }
+
+      //set selected country
+      selectCountry(name) {
+          this.selectedValue = name;
+          this.filteredResult = [];
+      }
 
 }

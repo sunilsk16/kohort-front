@@ -100,6 +100,16 @@ color: #0B6144;
     // margin-left: 10px;
 }
 
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    border: 2px solid #65EDBF;
+}
+.card {
+     border: 0px solid #65EDBF;
+    box-sizing: border-box;
+}
+
 .h5 {
     left: 4.36%;
     right: 8.82%;
@@ -173,7 +183,8 @@ a {
     text-decoration-line: underline;
     /* Primary */
     color: #4264FB;
-margin-top: 25px;
+margin-top: 10px;
+margin-bottom: 15px;
 }
 
 .single-courses-item {

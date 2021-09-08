@@ -1,10 +1,10 @@
 <div class="courses-area ptb-100 " style="background: #F0F3FF;">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-8 col-md-12">
                 <div class="banner-wrapper-content">
                     <h1>Study Abroad </h1>
-                    <h6>Join specialized mentoring sessions </h6>
+                    <h6>Get honest advice from experts whose been there & done that. </h6>
                 </div>
             </div>
         </div>
@@ -14,12 +14,17 @@
 
               <label class="label" for="">Continent/Country </label>
                 <form class="search-box">
-                    <input type="text" class="input-search" placeholder="Search for anything" (input) ="getValue()" [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}">
+                    <input type="text" class="input-search" placeholder="Search for anything"  [(ngModel)]="selectedValue" placeholder="Country name" (keyup)="filterCountryList()" [ngModelOptions]="{standalone: true}">
+                    <ul *ngIf="filteredResult.length>0">
+                        <li *ngFor="let c of filteredResult" (click)="selectCountry(c.name)">
+                            <span>{{c.name}}</span>
+                        </li>
+                    </ul>
                     <!-- <button type="submit"><i class="flaticon-search"></i></button> -->
                 </form>
             </div>
 
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12" style="margin-left: 25px;">
                 <label for=""></label>
                   <div class="search-box">
                       <button _ngcontent-xtx-c146="" type="submit"  (click)="getValue()">

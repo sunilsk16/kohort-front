@@ -58,8 +58,6 @@ return this.mentorService.getReviewsBId(this.mentorId)
                     }
                 })
 
-
-
             this.last_index = (this.mentorData['achievement'].substring(0, 100)).lastIndexOf(' ');
             if (this.last_index > 70)
                 this.last_index = 70;

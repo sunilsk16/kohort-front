@@ -62,10 +62,16 @@ color: #FFFFFF;
 
 
 
-.card {
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
     border: 2px solid #AAAAAA;
+}
+.card {
+     border: 0px solid #AAAAAA;
     box-sizing: border-box;
 }
+
 
 .card-timing {
     margin-right: 30px;

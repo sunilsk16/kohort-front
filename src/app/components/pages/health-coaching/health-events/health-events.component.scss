@@ -167,7 +167,8 @@ color: #000000;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    color: #151B24;
+  color: #151B24;
+     padding: .0em;
 }
 
 .search-box {
@@ -186,11 +187,12 @@ color: #000000;
         background: #FFFFFF;
   border: 3px solid #65EDBF;
   box-sizing: border-box;
-
-        font: {
-            size: var(--fontSize);
-            weight: 400;
-        };
+  font-family: Silka;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 150%;
+      color: #333333;
         padding: {
             left: 15px;
             top: 1px;
@@ -368,7 +370,7 @@ color: #151B24;
 }
 
 .card {
-    border: 2px solid #65EDBF;
+    // border: 2px solid #65EDBF;
     box-sizing: border-box;
 }
 
@@ -377,7 +379,39 @@ color: #151B24;
     display: inline-block;
     margin-left: 10px;
 }
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    border: 2px solid #65EDBF;
+}
 
+
+ol, ul, dl {
+  width: 225px;
+height: 250px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+  background-color: white;
+    overflow-y:scroll;
+    cursor: grab;
+}
+li{
+  list-style: none;
+
+
+}
+
+ span{
+  font-family: Silka;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #333333;
+}
 
 @media only screen and (max-width: 1279px){
   .card-title-hdr {
