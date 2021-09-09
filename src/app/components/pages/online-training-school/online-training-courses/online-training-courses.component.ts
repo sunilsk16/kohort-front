@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MeetupService } from '../../../../_services/meetups/meetup.service';
 import * as moment from 'moment';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-online-training-courses',
@@ -19,7 +20,7 @@ export class OnlineTrainingCoursesComponent implements OnInit {
     this.meetupService.getAllMeetups()
     .then((res: any) =>{
       console.log('meetups ', res);
-      this.meetupList = res;
+      this.meetupList = _.reject(res, {'isActive': true});
     })
   }
 

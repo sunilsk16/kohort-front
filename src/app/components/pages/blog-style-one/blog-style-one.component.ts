@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MentorService } from '../../../_services/mentors/mentor.service';
-
+import * as moment from 'moment';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-blog-style-one',
@@ -24,7 +25,8 @@ export class BlogStyleOneComponent implements OnInit {
     this.mentorService.getAllMentors()
     .then((res: any) =>{
       if(res && res.length){
-        this.topMentors = res;
+        // this.topMentors = res;
+          this.topMentors = _.reject(res, {'isActive': true});
         console.log('got mentors ', this.topMentors);
       }
     })

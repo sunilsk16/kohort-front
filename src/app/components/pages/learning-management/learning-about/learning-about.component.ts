@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MentorService } from '../../../../_services/mentors/mentor.service';
-
+import * as moment from 'moment';
+import * as _ from 'underscore';
 @Component({
   selector: 'app-learning-about',
   templateUrl: './learning-about.component.html',
@@ -14,7 +15,8 @@ export class LearningAboutComponent implements OnInit {
     this.mentorService.getAllTestiMonial()
   .then((res:any) =>{
   console.log('TestiMonial ', res);
-   this.testiMonialList = res;
+  this.testiMonialList = _.reject(res, {'isActive': true});
+   // this.testiMonialList = res;
   })
   }
 
