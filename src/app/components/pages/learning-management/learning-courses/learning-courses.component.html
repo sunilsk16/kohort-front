@@ -8,7 +8,7 @@
 
               <div class="experience-content1">
 
- <a class="explore"  href="/blog-1" >Explore Mentors</a>
+ <a class="explore"  href="/mentorsList" >Explore Mentors</a>
                 <a  href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span>
@@ -34,7 +34,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListOne">
                             <div class="single-advisor-item">
                                 <div class="advisor-image">
                                   <!-- <img *ngIf="mentor.fileSource" [src]="mentor.fileSource"  routerLink="/profile/{{mentor.id}}"  alt="image"> -->
@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="item">
-                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListTwo">
                             <div class="single-advisor-item">
                                 <div class="advisor-image">
                                     <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
@@ -76,7 +76,7 @@
                     </div>
 
                     <div class="item">
-                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentors">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListThree">
                             <div class="single-advisor-item">
                                 <div class="advisor-image">
                                     <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">

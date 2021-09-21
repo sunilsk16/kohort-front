@@ -16,6 +16,7 @@ export class HealthEventsComponent implements OnInit {
   countrylist: any[];
    searchTerm: string = '';
    filteredResult: any[] = [];
+     show = 3;
 
 
   constructor( private mentorService: MentorService,
@@ -102,5 +103,10 @@ getValue() {
           this.selectedValue = name;
           this.filteredResult = [];
       }
+
+      increaseShow() {
+        this.show += 3;
+      }
+
 
 }

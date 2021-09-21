@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router'
 import { MeetupService } from '../../../_services/meetups/meetup.service';
 import { HelperService } from '../../../_services/helper/helper.service';
 import { MentorService } from '../../../_services/mentors/mentor.service';
-
+import * as _ from 'underscore';
 
 import * as moment from 'moment';
 declare var Razorpay: any;
@@ -21,7 +21,10 @@ export class CheckoutComponent implements OnInit {
     paymentAmount: number = 5000;
     meetupData: any;
     mentorData: any;
-    meetupId: any
+    reviewList: any;
+    mentorId: any;
+    meetupId: any;
+    testiMonialList: any;
     quantity: any = 1;
     userData: any = {
       firstName: '',
@@ -57,8 +60,22 @@ export class CheckoutComponent implements OnInit {
         })
         .then((res: any) =>{
           this.mentorData = res;
+          this.mentorId=res.id;
           console.log('mentorData ', res);
+          return this.mentorService.getReviewsBId(this.mentorId)
+
+
         })
+        .then((res: any) =>{
+          this.reviewList = res;
+          console.log('reviewList ', res);
+        })
+        this.mentorService.getAllTestiMonial()
+      .then((res:any) =>{
+      console.log('TestiMonial ', res);
+      this.testiMonialList = _.reject(res, {'isActive': true});
+       // this.testiMonialList = res;
+      })
 
       }
     }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MentorService } from '../../../_services/mentors/mentor.service';
-
+import * as _ from 'underscore';
 
 @Component({
     selector: 'app-about-style-one',
@@ -16,7 +16,8 @@ export class AboutStyleOneComponent implements OnInit {
     this.mentorService.getAllTestiMonial()
   .then((res:any) =>{
   console.log('TestiMonial ', res);
-   this.testiMonialList = res;
+  this.testiMonialList = _.reject(res, {'isActive': true}).slice(0,6);;
+
   })
   }
 

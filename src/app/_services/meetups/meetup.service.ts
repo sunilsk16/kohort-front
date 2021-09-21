@@ -3,6 +3,8 @@ import { AngularFirestore } from 'angularfire2/firestore';
 // import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import firebase from 'firebase/app';
+import * as moment from 'moment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -52,6 +54,47 @@ export class MeetupService {
         })
     })
   }
+
+  getLiveMeetups() {
+  let timeStamp = moment().format('x')
+   return new Promise((resolve) => {
+     this.firestore.collection('meetups',
+       ref => ref
+         .where('startDateTime', '>=', timeStamp)
+         .orderBy('startDateTime', 'desc')
+     ).snapshotChanges()
+       .subscribe(users => {
+         let contactList = users.map(item => {
+           return {
+             ...item.payload.doc.data() as {},
+             id: item.payload.doc.id
+           };
+         });
+         resolve(contactList);
+       })
+   })
+ }
+
+ getPastMeetups() {
+ let timeStamp = moment().format('x')
+  return new Promise((resolve) => {
+    this.firestore.collection('meetups',
+      ref => ref
+        .where('startDateTime', '<', timeStamp)
+        .orderBy('startDateTime', 'desc')
+    ).snapshotChanges()
+      .subscribe(users => {
+        let contactList = users.map(item => {
+          return {
+            ...item.payload.doc.data() as {},
+            id: item.payload.doc.id
+          };
+        });
+        resolve(contactList);
+      })
+  })
+}
+
 
 getMeetupById(id: any) {
     return new Promise((resolve) => {

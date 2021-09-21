@@ -18,7 +18,40 @@ line-height: 150%;
 color: #333333;
 
 }
+.swal2-popup {
+    height: 150px;
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    grid-template-columns: minmax(0,100%);
+    /* width: 32em; */
+    max-width: 100%;
+    padding: 0 0 1.25em;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #545454;
+    font-family: inherit;
+    font-size: 1rem;
+}
 
+.swal2-container .swal2-popup.swal2-toast {
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+.swal2-container .swal2-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px !important;
+}
+
+.swal2-container .swal2-popup.swal2-toast .swal2-title,
+.swal2-container .swal2-popup.swal2-toast .swal2-content {
+    margin-left: 50px;
+    text-align: left;
+}
 .explore{
   text-align: end;
   font-family: Gosha Sans;
@@ -198,6 +231,14 @@ margin-bottom: 20px;
 
 
 
+}
+
+.active {
+ background-color: red;
+}
+
+.myClass{
+  background-color: #4264FB;
 }
 
 .single-courses-item{

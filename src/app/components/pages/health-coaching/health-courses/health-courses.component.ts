@@ -18,6 +18,7 @@ export class HealthCoursesComponent implements OnInit {
      searchTerm: string = '';
      filteredResult: any[] = [];
     filteredResult2: any[] = [];
+    show: 3;
 
     constructor(private mentorService: MentorService,
         private _countryService: countryList
@@ -100,6 +101,10 @@ export class HealthCoursesComponent implements OnInit {
         selectCountry(name) {
             this.selectedValue = name;
             this.filteredResult = [];
+        }
+
+        increaseShow() {
+          this.show += 3;
         }
 
 }

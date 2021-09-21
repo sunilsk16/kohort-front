@@ -126,9 +126,8 @@
                 <div class="banner-wrapper-content">
                     <h1>Reviews </h1>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-12" *ngFor="let review of reviewsList">
                     <aside class="widget-area">
-
                         <div class="widget widget_odemy_posts_thumb">
                             <article class="item">
                                 <a routerLink="/single-blog-1" class="thumb">
@@ -136,141 +135,21 @@
                                         <img src="assets/img/advisor/img4.jpg" alt="image"></span>
                                 </a>
                                 <div class="info">
-                                    <h4 class="titel"><a routerLink="/single-blog-1">Penny</a></h4>
-                                    <p>June 10, 2020</p>
-                                </div>
-
-                            </article>
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply.</p>
-                        </div>
-
-
-                    </aside>
-                </div>
-
-                <div class="col-lg-4 col-md-12">
-                    <aside class="widget-area">
-
-                        <div class="widget widget_odemy_posts_thumb">
-                            <article class="item">
-                                <a routerLink="/single-blog-1" class="thumb">
-                                    <span class="fullimage-cover " role="img">
-                                        <img src="assets/img/advisor/img4.jpg" alt="image"></span>
-                                </a>
-                                <div class="info">
-                                    <h4 class="titel"><a routerLink="/single-blog-1">Penny</a></h4>
-                                    <p >June 21, 2020</p>
+                                    <h4 class="titel"><a routerLink="/single-blog-1">{{review && review.name}}</a></h4>
+                                    <p>{{readableDateFormat(review && review.startDate)}}</p>
 
                                 </div>
                                 <div class="clear"></div>
                             </article>
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply.</p>
-
+                            <p>{{review && review.about}}</p>
                         </div>
-
-
-                    </aside>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <aside class="widget-area">
-
-                        <div class="widget widget_odemy_posts_thumb">
-                            <article class="item">
-                                <a routerLink="/single-blog-1" class="thumb">
-                                    <span class="fullimage-cover " role="img">
-                                        <img src="assets/img/advisor/img4.jpg" alt="image"></span>
-                                </a>
-                                <div class="info">
-                                    <h4 class="titel"><a routerLink="/single-blog-1">Penny</a></h4>
-                                    <p>June 10, 2020</p>
-
-                                </div>
-                                <div class="clear"></div>
-                            </article>
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply.</p>
-
-                        </div>
-
-
-                    </aside>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <aside class="widget-area">
-
-                        <div class="widget widget_odemy_posts_thumb">
-
-
-                            <article class="item">
-                                <a routerLink="/single-blog-1" class="thumb">
-                                    <span class="fullimage-cover " role="img">
-                                        <img src="assets/img/advisor/img4.jpg"></span>
-                                </a>
-                                <div class="info">
-                                    <h4 class="titel"><a routerLink="/single-blog-1">Penny</a></h4>
-                                    <p>June 10, 2020</p>
-
-                                </div>
-                                <div class="clear"></div>
-                            </article>
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply.</p>
-
-                        </div>
-
-
-                    </aside>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <aside class="widget-area">
-
-                        <div class="widget widget_odemy_posts_thumb">
-
-
-                            <article class="item">
-                                <a routerLink="/single-blog-1" class="thumb">
-                                    <span class="fullimage-cover " role="img">
-                                        <img src="assets/img/advisor/img4.jpg" alt="image"></span>
-                                </a>
-                                <div class="info">
-                                    <h4 class="titel"><a routerLink="/single-blog-1">Penny</a></h4>
-                                    <p>June 10, 2020</p>
-
-                                </div>
-                            </article>
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply.</p>
-                        </div>
-
-
                     </aside>
                 </div>
 
-                <div class="col-lg-4 col-md-12">
-                    <aside class="widget-area">
-
-                        <div class="widget widget_odemy_posts_thumb">
-
-                            <article class="item">
-                                <a routerLink="/single-blog-1" class="thumb">
-                                    <span class="fullimage-cover " role="img">
-                                        <img src="assets/img/advisor/img4.jpg" alt="image"></span>
-                                </a>
-                                <div class="info">
-                                    <h4 class="titel"><a routerLink="/single-blog-1">Penny</a></h4>
-                                    <p>June 10, 2020</p>
-
-                                </div>
-                                <div class="clear"></div>
-                            </article>
-                            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum is simply.</p>
-                        </div>
-
-
-                    </aside>
-                </div>
-                <div class="col-lg-4 col-md-12">
                     <aside class="widget-area">
                         <button routerLink="/" class="details-btn" type="button" name="button">Show all review</button>
                     </aside>
-                </div>
+
 
 
 
@@ -280,34 +159,6 @@
 </div>
 
 
-<!-- <div class="advisor-area pt-100 pb-70">
-
-    <div class="container">
-        <div class="banner-wrapper-content">
-            <h1>Explore our Mentors </h1>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-3 col-sm-6 col-md-6">
-                <div class="single-advisor-item">
-                    <div class="advisor-image">
-                        <img src="assets/img/advisor/img4.jpg" alt="image">
-                        <ul class="social-link">
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="advisor-content">
-                        <span>Join meetups, find support, share knowledge, grow together and explore your passion.</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div> -->
 <div class="advisor-area pt-100 pb-70">
     <div class="container">
         <div class="row">
@@ -333,7 +184,8 @@
             </div>
 
                         <div class="explore">
-                      <a style="cursor: grab;" *ngIf="show < topMentors && topMentors.length" (click)="increaseShow()" >Explore Mentors</a>
+                      <!-- <a style="cursor: grab;" *ngIf="show < topMentors && topMentors.length" (click)="increaseShow()" >Explore Mentors</a> -->
+                       <a class="explore"  href="/mentorsList" >Explore Mentors</a>
                         </div>
                     </div>
             </div>

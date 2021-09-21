@@ -7,10 +7,17 @@
 
     h2 {
         margin-bottom: 25px;
-        font: {
-            size: 36px;
-            weight: 800;
-        };
+        font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 120%;
+  /* identical to box height, or 66px */
+
+
+  /* main/primary */
+
+  color: #4264FB;
     }
     form {
         .form-group {
@@ -19,8 +26,18 @@
             label {
                 display: block;
                 margin-bottom: 8px;
-                color: var(--blackColor);
-                font-weight: 700;
+                font-family: Silka;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  // display: flex;
+  align-items: center;
+
+  color: #333333;
+
             }
         }
         .remember-me-wrap {
@@ -121,6 +138,18 @@
             }
         }
         button {
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
             margin-top: 22px;
             border: none;
             display: block;
@@ -132,10 +161,7 @@
             width: 100%;
             border-radius: 5px;
             padding: 14.5px 30px;
-            font: {
-                weight: 700;
-                size: var(--fontSize);
-            };
+
             &:hover {
                 background-color: var(--blackColor);
                 color: var(--whiteColor);
@@ -150,20 +176,36 @@
     };
     h2 {
         margin-bottom: 25px;
-        font: {
-            size: 36px;
-            weight: 800;
-        };
+        font-family: Gosha Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 120%;
+  /* identical to box height, or 66px */
+
+
+  /* main/primary */
+
+  color: #4264FB;
     }
     form {
         .form-group {
             margin-bottom: 25px;
 
             label {
-                display: block;
-                margin-bottom: 8px;
-                color: var(--blackColor);
-                font-weight: 700;
+              display: block;
+              margin-bottom: 8px;
+              font-family: Silka;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+// display: flex;
+align-items: center;
+
+color: #333333;
             }
         }
         .description {
@@ -175,6 +217,18 @@
             };
         }
         button {
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+/* or 30px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
             margin-top: 22px;
             border: none;
             display: block;
@@ -186,10 +240,7 @@
             width: 100%;
             border-radius: 5px;
             padding: 14.5px 30px;
-            font: {
-                weight: 700;
-                size: var(--fontSize);
-            };
+            
             &:hover {
                 background-color: var(--blackColor);
                 color: var(--whiteColor);
@@ -205,9 +256,17 @@
         margin-right: 0;
 
         h2 {
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 25px;
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+line-height: 120%;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
         }
         form {
             .lost-your-password-wrap {
@@ -216,7 +275,18 @@
             }
             button {
                 padding: 13px 30px;
-                font-size: 15px;
+                font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 150%;
+      /* or 30px */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #FFFFFF;
             }
         }
     }
@@ -228,9 +298,17 @@
             top: 30px;
         };
         h2 {
-            margin-bottom: 20px;
-            text-align: center;
-            font-size: 25px;
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+line-height: 120%;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
         }
         form {
             .lost-your-password-wrap {
@@ -239,7 +317,18 @@
             }
             button {
                 padding: 13px 30px;
-                font-size: 15px;
+                font-family: Gosha Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 150%;
+      /* or 30px */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #FFFFFF;
             }
         }
     }
@@ -254,7 +343,17 @@
         margin-right: 0;
 
         h2 {
-            font-size: 30px;
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 120%;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
         }
     }
     .register-form {
@@ -264,7 +363,17 @@
             left: 0;
         };
         h2 {
-            font-size: 30px;
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 120%;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
         }
     }
 
@@ -275,14 +384,34 @@
         padding: 30px 40px;
 
         h2 {
-            font-size: 30px;
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 120%;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
         }
     }
     .register-form {
         padding-top: 25px;
 
         h2 {
-            font-size: 30px;
+          font-family: Gosha Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 120%;
+/* identical to box height, or 66px */
+
+
+/* main/primary */
+
+color: #4264FB;
         }
     }
 

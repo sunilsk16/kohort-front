@@ -396,7 +396,7 @@ height: 250px;
     z-index: 1;
   background-color: white;
     overflow-y:scroll;
-    cursor: grab;
+    cursor: pointer;
 }
 li{
   list-style: none;
@@ -488,6 +488,15 @@ h1 {
       left: 80%;
 }
 
+.explore{
+  text-align: end;
+  font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 125%;
+    color: #4264FB;
+}
 
 .tooltip {
   width: 100%;

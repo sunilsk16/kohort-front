@@ -37,7 +37,7 @@
 
 
         <div class="row" style="margin-top:50px;">
-            <div class="col-lg-4 col-md-12" *ngFor="let meetup of studiesList2  " style="padding-bottom: 30px">
+            <div class="col-lg-4 col-md-12" *ngFor="let meetup of studiesList2 | slice:0:show; let i=index " style="padding-bottom: 30px">
                 <div class="card">
                     <div class="card-title-hdr">
                       <img  src="../assets/img/kohort-calw.svg" alt="image" >
@@ -61,18 +61,9 @@
                 </div>
             </div>
         </div>
-
-
-
-
-        <!--
-
-            <div class="col-lg-12 col-md-12">
-                <div class="courses-info">
-                    <a routerLink="/courses-1" class="default-btn"><i class="flaticon-user"></i>View All Courses<span></span></a>
-                    <p>Get into details now?​ <a routerLink="/courses-1">PM Master’s Program</a></p>
-                </div>
-            </div> -->
+        <div class="explore">
+            <a style="cursor: pointer;" *ngIf="show < studiesList2.length" (click)="increaseShow()">Explore Mentors</a>
+        </div>
     </div>
 </div>
 <!-- <div class="shape16"><img src="assets/img/shape15.png" alt="image"></div> -->

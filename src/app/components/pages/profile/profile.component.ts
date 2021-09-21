@@ -3,6 +3,8 @@ import { MeetupService } from '../../../_services/meetups/meetup.service';
 import { MentorService } from '../../../_services/mentors/mentor.service';
 import { ActivatedRoute, Router } from '@angular/router'
 import * as moment from 'moment';
+import * as _ from 'underscore';
+
 
 
 @Component({
@@ -41,15 +43,15 @@ export class ProfileComponent implements OnInit {
                     this.imageList = res.fileSource || [];
                     // this.imageList = res[index]['fileSource'] || []
                     console.log('got id ', this.imageList);
-return this.mentorService.getReviewsBId(this.mentorId)
+                    return this.mentorService.getReviewsBId(this.mentorId)
                 })
 
-                    .then((res: any) => {
-                        if (res && res.length) {
-                            this.reviewsList = res;
-                            console.log('gotRecview ', this.reviewsList);
-                        }
-                    })
+                .then((res: any) => {
+                    if (res && res.length) {
+                        this.reviewsList = res.slice(0, 6);
+                        console.log('gotRecview ', this.reviewsList);
+                    }
+                })
             this.mentorService.getAllMentors()
                 .then((res: any) => {
                     if (res && res.length) {
@@ -71,6 +73,19 @@ return this.mentorService.getReviewsBId(this.mentorId)
             return moment(meetupDate, 'DD-MM-YYYY').format('MMM DD, YYYY')
         } else {
             return ''
+        }
+    }
+    readableDateFormat(userDate: any) {
+        if (!_.isObject(userDate)) {
+            return moment(userDate, 'DD-MM-YYYY').format('MMM DD, YYYY')
+
+        } else {
+            let year = userDate.year;
+            let month = userDate.month <= 9 ? '0' + userDate.month : userDate.month;;
+            let day = userDate.day <= 9 ? '0' + userDate.day : userDate.day;;
+            let finalDate = day + "-" + month + "-" + year;
+            return moment(finalDate, 'DD-MM-YYYY').format('MMM DD, YYYY')
+
         }
     }
 

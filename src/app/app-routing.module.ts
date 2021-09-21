@@ -63,14 +63,15 @@ const routes: Routes = [
   {path: '', component: LearningManagementComponent},
   {path: 'meetups', component: OnlineTrainingSchoolComponent},
   {path: 'meetup/:id', component: MeetupDetailComponent},
-  {path: 'mentors', component: HealthCoachingComponent},
+  {path: 'about-3', component: HealthCoachingComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'profile/:id', component: ProfileComponent},
   {path: 'about-1', component: AboutStyleOneComponent},
-  {path: 'about-3', component: AboutStyleThreeComponent},
+  {path: 'mentors', component: AboutStyleThreeComponent},
   {path: 'checkout', component: CheckoutComponent},
   {path: 'checkout/:id', component: CheckoutComponent},
-  {path: 'blog-1', component: BlogStyleOneComponent},
+  {path: 'mentorsList', component: BlogStyleOneComponent},
+  {path: 'profile-authentication', component: ProfileAuthenticationComponent},
 
 
     // {path: '', component: ElearningSchoolComponent},

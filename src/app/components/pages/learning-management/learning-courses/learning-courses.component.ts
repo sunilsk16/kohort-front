@@ -2,13 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { MentorService } from '../../../../_services/mentors/mentor.service';
 import * as moment from 'moment';
 import * as _ from 'underscore';
+
 @Component({
   selector: 'app-learning-courses',
   templateUrl: './learning-courses.component.html',
   styleUrls: ['./learning-courses.component.scss']
 })
 export class LearningCoursesComponent implements OnInit {
-  topMentors: any = [];
+  topMentorsListOne: any = [];
+  topMentorsListTwo: any = [];
+  topMentorsListThree: any = [];
 
   constructor(
     private mentorService: MentorService
@@ -18,9 +21,12 @@ export class LearningCoursesComponent implements OnInit {
     this.mentorService.getAllMentors()
     .then((res: any) =>{
       if(res && res.length){
-          this.topMentors = _.reject(res, {'isActive': true}).slice(0,4);
+          this.topMentorsListOne = _.reject(res, {'isActive': true}).slice(0,4);
+          this.topMentorsListTwo = _.reject(res, {'isActive': true}).slice(5,9);
+          this.topMentorsListThree = _.reject(res, {'isActive': true}).slice(10,14);
+
         // this.topMentors = res.slice(0,4);
-        console.log('got mentors ', this.topMentors);
+        console.log('got mentors ', this.topMentorsListOne);
       }
     })
   }

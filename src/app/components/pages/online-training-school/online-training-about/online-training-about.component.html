@@ -11,21 +11,23 @@
             </div>
 
         </div>
+
+
         <div class="row" style="margin-top:30px">
-            <div class="col-md-4" *ngFor="let meetup of meetupList | slice:0:show; let i=index" style="padding-bottom: 30px">
+            <div class="col-md-4" *ngFor="let meetup of pastMeetupList | slice:0:show; let i=index" style="padding-bottom: 30px">
                 <div class="card">
                     <div class="card-title-hdr">
                         <ul class="courses-box-footer d-flex justify-content-between align-items-center">
                             <li>
                                 <img src="../assets/img/kohort-calw.svg" alt="image" style="margin-right:5px;">
-                                {{ getDate(meetup.dates) }}
+                                {{ readableDateFormat(meetup.startDate) }}
                             </li>
                             <li>
                                 <img src="../assets/img/kohort-timew.svg" alt="image" style="margin-right:5px;">
                                 {{ getReadableTime(meetup.startTime) }} - {{ getReadableTime(meetup.endTime, true) }}
                             </li>
                             <li>
-                                <img src="../assets/img/kohort-likew.svg" alt="image">
+                                <img   src="../assets/img/kohort-likew.svg"  alt="image"  color="{{meetup.color}}"   (click)="swal()">
 
                             </li>
                         </ul>
@@ -38,12 +40,13 @@
                             <h5>{{meetup.name}}</h5>
                             <h4>{{ meetup.description }}</h4>
                         </div>
-                        <a routerLink="/" style="float: right;">learn More </a>
+                        <a (click)="viewMeetups(meetup)" style="float: right;color: #4264FB;text-decoration-line: underline;">learn More </a>
+
                     </div>
                 </div>
             </div>
             <div class="explore">
-          <a style="cursor: grab;" *ngIf="show < meetupList.length" (click)="increaseShow()" >Explore Meetups</a>
+          <a style="cursor: grab;" *ngIf="show < pastMeetupList.length" (click)="increaseShow()" >Explore Meetups</a>
             </div>
         </div>
 

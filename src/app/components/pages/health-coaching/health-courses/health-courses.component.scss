@@ -383,7 +383,7 @@ height: 250px;
     z-index: 1;
   background-color: white;
     overflow-y:scroll;
-    cursor: grab;
+    cursor: pointer;
 }
 li{
   list-style: none;
@@ -396,6 +396,16 @@ span{
    line-height: 150%;
    color: #333333;
 }
+.explore{
+  text-align: end;
+  font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 125%;
+    color: #4264FB;
+}
+
 
 @media only screen and (max-width: 1279px){
   .card-title-hdr {

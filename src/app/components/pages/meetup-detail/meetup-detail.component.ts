@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
 import { MeetupService } from '../../../_services/meetups/meetup.service';
 import { MentorService } from '../../../_services/mentors/mentor.service';
 import { ActivatedRoute, Router } from '@angular/router'
 import * as moment from 'moment';
+import * as _ from 'underscore';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,8 @@ export class MeetupDetailComponent implements OnInit {
   meetupData: any;
   mentorData: any;
   mentorId: any = '';
+  isShow: any = true;
+
 
   constructor(
     private meetupService: MeetupService,
@@ -23,6 +26,11 @@ export class MeetupDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+      let isArchiveMeetup = window.location.href.split('?type=')[1] ? true : false
+      if( isArchiveMeetup === true){
+        this.isShow = false
+      }
+
     if (this.route.snapshot.params.id) {
       this.meetupId = this.route.snapshot.params.id;
       console.log('got id ', this.meetupId);
@@ -50,6 +58,24 @@ export class MeetupDetailComponent implements OnInit {
       return ''
     }
   }
+
+  getFlag(){
+    return 'flag-icon-' + (this.mentorData.countryCode ) ;
+  }
+
+  readableDateFormat(userDate: any) {
+      if (!_.isObject(userDate)) {
+        return moment(userDate, 'DD-MM-YYYY').format('MMM DD, YYYY')
+
+      } else {
+        let year = userDate.year;
+        let month = userDate.month <= 9 ? '0' + userDate.month : userDate.month;;
+        let day = userDate.day <= 9 ? '0' + userDate.day : userDate.day;;
+        let finalDate = day + "-" + month + "-" + year;
+        return moment(finalDate, 'DD-MM-YYYY').format('MMM DD, YYYY')
+
+      }
+    }
 
   getReadableTime(userTime, isFirst) {
     if(userTime){

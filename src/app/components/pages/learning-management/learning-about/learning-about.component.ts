@@ -15,7 +15,7 @@ export class LearningAboutComponent implements OnInit {
     this.mentorService.getAllTestiMonial()
   .then((res:any) =>{
   console.log('TestiMonial ', res);
-  this.testiMonialList = _.reject(res, {'isActive': true});
+  this.testiMonialList = _.reject(res, {'isActive': true}).slice(0,6);;
    // this.testiMonialList = res;
   })
   }
