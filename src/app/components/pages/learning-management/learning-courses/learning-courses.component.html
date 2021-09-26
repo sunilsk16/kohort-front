@@ -2,23 +2,26 @@
     <div class="container">
         <div class="row">
             <div class="experience-content">
-                <h3>Learn from the World’s best <br /><span style="color:#4264FB">  </span> </h3>
+                <h3>Learn by the World’s best <br /><span style="color:#4264FB">  </span> </h3>
+                <p>Discover new skills, knowledge, opportunities and make your dream come true</p>
+                <div class="experience-content1">
 
+              <a class="explore"  href="/mentorsList" >Explore All</a>
+                  <a  href="#myCarousel" data-slide="prev">
+                    <img style="margin-right: 20px;" src="assets/img/arrow.svg" alt="image" routerLink="">
+
+                      <!-- <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span> -->
+                  </a>
+                  <!-- <a  href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                  </a> -->
+
+              </div>
             </div>
 
-              <div class="experience-content1">
 
- <a class="explore"  href="/mentorsList" >Explore Mentors</a>
-                <a  href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a  href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-
-</div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <!-- <ol class="carousel-indicators">
@@ -37,8 +40,33 @@
                         <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListOne">
                             <div class="single-advisor-item">
                                 <div class="advisor-image">
-                                  <!-- <img *ngIf="mentor.fileSource" [src]="mentor.fileSource"  routerLink="/profile/{{mentor.id}}"  alt="image"> -->
-                                    <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
+                                  <img *ngIf="mentor.fileSource" [src]="mentor.fileSource"  routerLink="/profile/{{mentor.id}}"  alt="image">
+                                    <!-- <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}"> -->
+                                    <ul class="social-link">
+                                        <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                        <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                        <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                        <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
+                                    </ul>
+                                    <!-- <h3 class="social-link"><a routerLink="/profile">James Andy</a></h3> -->
+                                </div>
+                                <div class="advisor-content">
+                                  <span style="font-size:15px">{{ mentor.name }}</span>
+                                  <!-- <span class="flag-icon flag-icon-squared" [ngClass]="getFlag()"></span> -->
+                                    <span>{{ mentor.specialties }}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="item">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListOne">
+                            <div class="single-advisor-item">
+                                <div class="advisor-image">
+                                  <img *ngIf="mentor.fileSource" [src]="mentor.fileSource"  routerLink="/profile/{{mentor.id}}"  alt="image">
+
+                                    <!-- <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}"> -->
                                     <ul class="social-link">
                                         <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
                                         <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
@@ -52,34 +80,15 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="item">
-                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListTwo">
+                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListOne">
                             <div class="single-advisor-item">
                                 <div class="advisor-image">
-                                    <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
-                                    <ul class="social-link">
-                                        <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                        <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                        <li *ngIf="mentor.instagram"><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                        <li *ngIf="mentor.website"><a href="#" class="d-block" target="_blank"><i class='bx bxl-edge'></i></a></li>
-                                    </ul>
-                                    <!-- <h3 class="social-link"><a routerLink="/profile">James Andy</a></h3> -->
-                                </div>
-                                <div class="advisor-content">
-                                    <span>{{ mentor.achievement }}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let mentor of topMentorsListThree">
-                            <div class="single-advisor-item">
-                                <div class="advisor-image">
-                                    <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}">
+                                  <img *ngIf="mentor.fileSource" [src]="mentor.fileSource"  routerLink="/profile/{{mentor.id}}"  alt="image">
+                                  
+                                    <!-- <img src="assets/img/advisor/img4.jpg" alt="image" routerLink="/profile/{{mentor.id}}"> -->
                                     <ul class="social-link">
                                         <li *ngIf="mentor.facebook"><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
                                         <li *ngIf="mentor.twitter"><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>

@@ -31,4 +31,8 @@ export class LearningCoursesComponent implements OnInit {
     })
   }
 
+  getFlag(){
+    return 'flag-icon-' + (this.topMentorsListOne.countryCode ) ;
+  }
+
 }

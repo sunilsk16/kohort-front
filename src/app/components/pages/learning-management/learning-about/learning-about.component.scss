@@ -140,7 +140,7 @@ color: #151B24;
   font-family: Gosha Sans;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 150%;
   /* or 30px */
 margin-top: 15px;
@@ -167,11 +167,28 @@ margin-top: 40px;
 
 .post-image img{
   height: 238.80477905273438px;
-width: 180.706909px;
+width: 165.706909px;
 left: 0.7740478515625px;
 top: 0.8780517578125px;
 border-radius: 0px;
 
+}
+.experience-content1 {
+    /* position: relative; */
+    /* z-index: 1; */
+    text-align: end;
+    margin-bottom: 25px;
+}
+.explore{
+  text-align: end;
+  font-family: Gosha Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 125%;
+
+  color: #000000;
+    margin-right: 25px;
 }
 // .banner-wrapper-image1{
 //    background-image: url('../assets/img/Blob11.png');
@@ -277,7 +294,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 150%;
 display: flex;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -289,6 +306,7 @@ color: #222222;
 }
 .post-content p
 {
+  margin-top: 30px;
   font-family: Silka;
 font-style: normal;
 font-weight: normal;
